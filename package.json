@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-netlify-cms",
-  "description": "Example Gatsby, and Netlify CMS project",
-  "version": "1.0.0",
-  "author": "Austin Green",
+  "name": "lenaruppert.de",
+  "description": "Lenaruppert website",
+  "version": "1.0.0-beta",
+  "author": "Florian Hirsch",
   "dependencies": {
     "bulma": "^0.6.0",
     "gatsby": "^1.9.63",
@@ -17,7 +17,8 @@
     "gatsby-transformer-sharp": "^1.6.13"
   },
   "keywords": ["gatsby"],
-  "license": "MIT",
+  "license": "UNLICENSED",
+  "private": true,
   "main": "n/a",
   "scripts": {
     "build": "npm run build:cms && npm run build:site",
