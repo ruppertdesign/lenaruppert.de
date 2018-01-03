@@ -79,13 +79,11 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 };
 
 // TODO: Remove landing blocker page
-exports.onCreatePage = ({ page, boundActionCreators }) => {
+exports.onCreatePage = ({ page, boundActionCreators }, pluginOptions, cb) => {
   const { createPage } = boundActionCreators;
-  return new Promise((resolve, reject) => {
-    if (page.path.indexOf('preview') !== -1) {
-      page.layout = 'landing';
-      createPage(page);
-    }
-    resolve();
-  });
+  if (page.path.indexOf('preview') === -1) {
+    page.layout = 'landing';
+    createPage(page);
+  }
+  cb();
 };
