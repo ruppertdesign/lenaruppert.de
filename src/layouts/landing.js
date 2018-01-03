@@ -1,7 +1,7 @@
-import React from 'react';
-import Link from 'gatsby-link';
-import Helmet from 'react-helmet';
-import './landing.sass';
+import React from 'react'
+import Link from 'gatsby-link'
+import Helmet from 'react-helmet'
+import './landing.sass'
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -11,6 +11,6 @@ const TemplateWrapper = ({ children }) => (
     </Helmet>
     <div>{children()}</div>
   </div>
-);
+)
 
-export default TemplateWrapper;
+export default TemplateWrapper
