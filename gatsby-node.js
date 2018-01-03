@@ -79,7 +79,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 };
 
 // TODO: Remove landing blocker page
-exports.onCreatePage = async ({ page, boundActionCreators }) => {
+exports.onCreatePage = ({ page, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
   return new Promise((resolve, reject) => {
     if (page.path.indexOf('preview') !== -1) {
