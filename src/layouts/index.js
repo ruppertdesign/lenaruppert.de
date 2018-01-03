@@ -37,7 +37,10 @@ const Navbar = () => (
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet title="Home | Gatsby + Netlify CMS" />
+    <Helmet>
+      <meta name="robots" content="noindex,nofollow" />
+      <title>Home | lenaruppert.de</title>
+    </Helmet>
     <Navbar />
     <div>{children()}</div>
   </div>
