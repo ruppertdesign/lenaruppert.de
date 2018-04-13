@@ -1,9 +1,14 @@
-import React from 'react'
+import * as React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import Script from 'react-load-script'
+import { RootQueryType } from '../graphql-types'
 
-export default class IndexPage extends React.Component {
+interface Props {
+  data: RootQueryType
+}
+
+export default class IndexPage extends React.Component<Props, {}> {
   handleScriptLoad() {
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on('init', user => {
@@ -17,15 +22,11 @@ export default class IndexPage extends React.Component {
     window.netlifyIdentity.init()
   }
 
-  render() {
+  public render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
     return (
       <section className="section">
-        <Script
-          url="https://identity.netlify.com/v1/netlify-identity-widget.js"
-          onLoad={this.handleScriptLoad.bind(this)}
-        />
         <div className="container">
           <div className="content">
             <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
