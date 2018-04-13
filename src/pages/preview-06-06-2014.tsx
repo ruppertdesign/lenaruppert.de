@@ -1,90 +1,33 @@
 import * as React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
-import Script from 'react-load-script'
-import { RootQueryType } from '../graphql-types'
 
-interface Props {
-  data: RootQueryType
-}
-
-export default class IndexPage extends React.Component<Props, {}> {
-  handleScriptLoad() {
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on('init', user => {
-        if (!user) {
-          window.netlifyIdentity.on('login', () => {
-            document.location.href = '/admin/'
-          })
-        }
-      })
-    }
-    window.netlifyIdentity.init()
-  }
-
+export default class IndexPage extends React.Component<{}, {}> {
   public render() {
-    const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
     return (
-      <section className="section">
-        <div className="container">
-          <div className="content">
-            <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
-          </div>
-          {posts
-            .filter(post => post.node.frontmatter.templateKey === 'blog-post')
-            .map(({ node: post }) => {
-              return (
-                <div
-                  className="content"
-                  style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
-                  key={post.id}
-                >
-                  <p>
-                    <Link
-                      className="has-text-primary"
-                      to={post.frontmatter.path}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <small>{post.frontmatter.date}</small>
-                  </p>
-                  <p>
-                    {post.excerpt}
-                    <br />
-                    <br />
-                    <Link
-                      className="button is-small"
-                      to={post.frontmatter.path}
-                    >
-                      Keep Reading →
-                    </Link>
-                  </p>
-                </div>
-              )
-            })}
+      <div style={{ margin: '3rem auto', maxWidth: 600 }}>
+        <h1>Richard Hamming on Luck</h1>
+        <div>
+          <p>
+            From Richard Hamming’s classic and must-read talk, “
+            <a href="http://www.cs.virginia.edu/~robins/YouAndYourResearch.html">
+              You and Your Research
+            </a>”.
+          </p>
+          <blockquote>
+            <p>
+              There is indeed an element of luck, and no, there isn’t. The
+              prepared mind sooner or later finds something important and does
+              it. So yes, it is luck.{' '}
+              <em>
+                The particular thing you do is luck, but that you do something
+                is not.
+              </em>
+            </p>
+          </blockquote>
         </div>
-      </section>
+        <p>Posted April 09, 2011</p>
+      </div>
     )
   }
 }
-
-export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          excerpt(pruneLength: 400)
-          id
-          frontmatter {
-            title
-            templateKey
-            date(formatString: "MMMM DD, YYYY")
-            path
-          }
-        }
-      }
-    }
-  }
-`
