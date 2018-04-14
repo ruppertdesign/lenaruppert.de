@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Helmet from 'react-helmet'
+import Header from './Header'
 import { RootQueryType } from '../graphql-types'
 
 interface Props {
@@ -9,7 +10,6 @@ interface Props {
 
 export default class MainLayout extends React.PureComponent<Props, {}> {
   public render() {
-    console.info(this.props)
     const {
       children,
       data: { site },
@@ -20,6 +20,7 @@ export default class MainLayout extends React.PureComponent<Props, {}> {
           <meta name="robots" content="noindex, nofollow" />
           <title>{site.siteMetadata.title}</title>
         </Helmet>
+        <Header />
         <main>{children()}</main>
       </section>
     )

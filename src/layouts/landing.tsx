@@ -1,7 +1,6 @@
 import * as React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
-import './landing.sass'
 
 export default ({ children }: any) => (
   <div>

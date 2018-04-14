@@ -4,7 +4,6 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'
-import './all.sass'
 
 const Navbar = () => (
   <nav className="navbar is-transparent">

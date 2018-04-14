@@ -1,7 +1,17 @@
 import * as React from 'react'
+import styled from 'react-emotion'
+
+const Container = styled('div')`
+  text-align: center;
+  margin-top: 10rem;
+`
+
+const Title = styled('h1')`
+  font-size: 2rem;
+`
 
 export default () => (
-  <div className="landing center">
+  <Container>
     <h1>lenaruppert.de</h1>
-  </div>
+  </Container>
 )
