@@ -69,6 +69,7 @@ export interface SitePlugin extends Node {
   version?: string | null
   pluginOptions?: pluginOptions_2 | null
   nodeAPIs?: string[] | null
+  browserAPIs?: string[] | null
   ssrAPIs?: string[] | null
   pluginFilepath?: string | null
   packageJson?: packageJson_2 | null
@@ -76,6 +77,7 @@ export interface SitePlugin extends Node {
 }
 
 export interface pluginOptions_2 {
+  pathToConfigModule?: string | null
   path?: string | null
   name?: string | null
 }
@@ -537,6 +539,7 @@ export interface sitePageConnectionPluginCreatorInputObject {
   version?: sitePageConnectionPluginCreatorVersionQueryString | null
   pluginOptions?: sitePageConnectionPluginCreatorPluginOptionsInputObject | null
   nodeAPIs?: sitePageConnectionPluginCreatorNodeApIsQueryList | null
+  browserAPIs?: sitePageConnectionPluginCreatorBrowserApIsQueryList | null
   ssrAPIs?: sitePageConnectionPluginCreatorSsrApIsQueryList | null
   pluginFilepath?: sitePageConnectionPluginCreatorPluginFilepathQueryString | null
   packageJson?: sitePageConnectionPluginCreatorPackageJsonInputObject | null
@@ -573,8 +576,16 @@ export interface sitePageConnectionPluginCreatorVersionQueryString {
 }
 
 export interface sitePageConnectionPluginCreatorPluginOptionsInputObject {
+  pathToConfigModule?: sitePageConnectionPluginCreatorPluginOptionsPathToConfigModuleQueryString | null
   path?: sitePageConnectionPluginCreatorPluginOptionsPathQueryString | null
   name?: sitePageConnectionPluginCreatorPluginOptionsNameQueryString | null
+}
+
+export interface sitePageConnectionPluginCreatorPluginOptionsPathToConfigModuleQueryString {
+  eq?: string | null
+  ne?: string | null
+  regex?: string | null
+  glob?: string | null
 }
 
 export interface sitePageConnectionPluginCreatorPluginOptionsPathQueryString {
@@ -592,6 +603,14 @@ export interface sitePageConnectionPluginCreatorPluginOptionsNameQueryString {
 }
 
 export interface sitePageConnectionPluginCreatorNodeApIsQueryList {
+  eq?: string | null
+  ne?: string | null
+  regex?: string | null
+  glob?: string | null
+  in?: string[] | null
+}
+
+export interface sitePageConnectionPluginCreatorBrowserApIsQueryList {
   eq?: string | null
   ne?: string | null
   regex?: string | null
@@ -846,6 +865,7 @@ export interface filterSitePlugin {
   version?: sitePluginConnectionVersionQueryString_2 | null
   pluginOptions?: sitePluginConnectionPluginOptionsInputObject_2 | null
   nodeAPIs?: sitePluginConnectionNodeApIsQueryList_2 | null
+  browserAPIs?: sitePluginConnectionBrowserApIsQueryList_2 | null
   ssrAPIs?: sitePluginConnectionSsrApIsQueryList_2 | null
   pluginFilepath?: sitePluginConnectionPluginFilepathQueryString_2 | null
   packageJson?: sitePluginConnectionPackageJsonInputObject_2 | null
@@ -881,8 +901,16 @@ export interface sitePluginConnectionVersionQueryString_2 {
 }
 
 export interface sitePluginConnectionPluginOptionsInputObject_2 {
+  pathToConfigModule?: sitePluginConnectionPluginOptionsPathToConfigModuleQueryString_2 | null
   path?: sitePluginConnectionPluginOptionsPathQueryString_2 | null
   name?: sitePluginConnectionPluginOptionsNameQueryString_2 | null
+}
+
+export interface sitePluginConnectionPluginOptionsPathToConfigModuleQueryString_2 {
+  eq?: string | null
+  ne?: string | null
+  regex?: string | null
+  glob?: string | null
 }
 
 export interface sitePluginConnectionPluginOptionsPathQueryString_2 {
@@ -900,6 +928,14 @@ export interface sitePluginConnectionPluginOptionsNameQueryString_2 {
 }
 
 export interface sitePluginConnectionNodeApIsQueryList_2 {
+  eq?: string | null
+  ne?: string | null
+  regex?: string | null
+  glob?: string | null
+  in?: string[] | null
+}
+
+export interface sitePluginConnectionBrowserApIsQueryList_2 {
   eq?: string | null
   ne?: string | null
   regex?: string | null
@@ -2135,6 +2171,7 @@ export interface sitePagePluginCreatorInputObject {
   version?: sitePagePluginCreatorVersionQueryString | null
   pluginOptions?: sitePagePluginCreatorPluginOptionsInputObject | null
   nodeAPIs?: sitePagePluginCreatorNodeApIsQueryList | null
+  browserAPIs?: sitePagePluginCreatorBrowserApIsQueryList | null
   ssrAPIs?: sitePagePluginCreatorSsrApIsQueryList | null
   pluginFilepath?: sitePagePluginCreatorPluginFilepathQueryString | null
   packageJson?: sitePagePluginCreatorPackageJsonInputObject | null
@@ -2171,8 +2208,16 @@ export interface sitePagePluginCreatorVersionQueryString {
 }
 
 export interface sitePagePluginCreatorPluginOptionsInputObject {
+  pathToConfigModule?: sitePagePluginCreatorPluginOptionsPathToConfigModuleQueryString | null
   path?: sitePagePluginCreatorPluginOptionsPathQueryString | null
   name?: sitePagePluginCreatorPluginOptionsNameQueryString | null
+}
+
+export interface sitePagePluginCreatorPluginOptionsPathToConfigModuleQueryString {
+  eq?: string | null
+  ne?: string | null
+  regex?: string | null
+  glob?: string | null
 }
 
 export interface sitePagePluginCreatorPluginOptionsPathQueryString {
@@ -2190,6 +2235,14 @@ export interface sitePagePluginCreatorPluginOptionsNameQueryString {
 }
 
 export interface sitePagePluginCreatorNodeApIsQueryList {
+  eq?: string | null
+  ne?: string | null
+  regex?: string | null
+  glob?: string | null
+  in?: string[] | null
+}
+
+export interface sitePagePluginCreatorBrowserApIsQueryList {
   eq?: string | null
   ne?: string | null
   regex?: string | null
@@ -2455,8 +2508,16 @@ export interface sitePluginVersionQueryString_2 {
 }
 
 export interface sitePluginPluginOptionsInputObject_2 {
+  pathToConfigModule?: sitePluginPluginOptionsPathToConfigModuleQueryString_2 | null
   path?: sitePluginPluginOptionsPathQueryString_2 | null
   name?: sitePluginPluginOptionsNameQueryString_2 | null
+}
+
+export interface sitePluginPluginOptionsPathToConfigModuleQueryString_2 {
+  eq?: string | null
+  ne?: string | null
+  regex?: string | null
+  glob?: string | null
 }
 
 export interface sitePluginPluginOptionsPathQueryString_2 {
@@ -2474,6 +2535,14 @@ export interface sitePluginPluginOptionsNameQueryString_2 {
 }
 
 export interface sitePluginNodeApIsQueryList_2 {
+  eq?: string | null
+  ne?: string | null
+  regex?: string | null
+  glob?: string | null
+  in?: string[] | null
+}
+
+export interface sitePluginBrowserApIsQueryList_2 {
   eq?: string | null
   ne?: string | null
   regex?: string | null
@@ -3682,6 +3751,7 @@ export interface SitePluginRootQueryTypeArgs {
   version?: sitePluginVersionQueryString_2 | null
   pluginOptions?: sitePluginPluginOptionsInputObject_2 | null
   nodeAPIs?: sitePluginNodeApIsQueryList_2 | null
+  browserAPIs?: sitePluginBrowserApIsQueryList_2 | null
   ssrAPIs?: sitePluginSsrApIsQueryList_2 | null
   pluginFilepath?: sitePluginPluginFilepathQueryString_2 | null
   packageJson?: sitePluginPackageJsonInputObject_2 | null
@@ -4164,6 +4234,7 @@ export enum SitePluginConnectionSortByFieldsEnum {
   name = 'name',
   version = 'version',
   pluginOptions___plugins = 'pluginOptions___plugins',
+  pluginOptions___pathToConfigModule = 'pluginOptions___pathToConfigModule',
   pluginOptions___path = 'pluginOptions___path',
   pluginOptions___name = 'pluginOptions___name',
   nodeAPIs = 'nodeAPIs',
@@ -4199,9 +4270,11 @@ export enum sitePluginDistinctEnum {
   id = 'id',
   name = 'name',
   version = 'version',
+  pluginOptions___pathToConfigModule = 'pluginOptions___pathToConfigModule',
   pluginOptions___path = 'pluginOptions___path',
   pluginOptions___name = 'pluginOptions___name',
   nodeAPIs = 'nodeAPIs',
+  browserAPIs = 'browserAPIs',
   ssrAPIs = 'ssrAPIs',
   pluginFilepath = 'pluginFilepath',
   packageJson___name = 'packageJson___name',
@@ -4225,9 +4298,11 @@ export enum sitePluginGroupEnum {
   id = 'id',
   name = 'name',
   version = 'version',
+  pluginOptions___pathToConfigModule = 'pluginOptions___pathToConfigModule',
   pluginOptions___path = 'pluginOptions___path',
   pluginOptions___name = 'pluginOptions___name',
   nodeAPIs = 'nodeAPIs',
+  browserAPIs = 'browserAPIs',
   ssrAPIs = 'ssrAPIs',
   pluginFilepath = 'pluginFilepath',
   packageJson___name = 'packageJson___name',

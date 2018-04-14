@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`
+    title: `Lena Ruppert`
   },
   plugins: [
     `gatsby-plugin-typescript`,
