@@ -5,3 +5,5 @@ interface Window {
 }
 
 declare var window: Window
+
+declare module '*.png'

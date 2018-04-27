@@ -1,9 +1,23 @@
 import * as React from 'react'
+import Link from 'gatsby-link'
 import styled from 'react-emotion'
+import styleVars from '../styles/styleVars'
+import * as logo from '../img/logo.png'
+import * as headerImage from '../img/header.png'
+
+const Header = styled('header')`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
+const Logo = styled('img')`
+  width: 15rem;
+  margin: 2rem 0 4rem 0;
+`
 
 const Nav = styled('nav')`
-  background-color: #333;
-  padding: 5px 0;
+  margin-bottom: 0.5rem;
 `
 
 const NavList = styled('ul')`
@@ -17,21 +31,37 @@ const NavList = styled('ul')`
 const Li = styled('li')`
   display: inline-block;
   margin: 0 25px;
-  color: #fff;
+  a {
+    color: ${styleVars.colors.textColor};
+    text-transform: uppercase;
+    &:hover {
+      color: ${styleVars.colors.linkColor};
+    }
+  }
 `
 
-const NavLink = ({ title }) => <Li>{title}</Li>
+const HeaderImage = styled('img')`
+  width: 100%;
+`
+
+const NavLink = ({ title, to }) => (
+  <Li>
+    <Link to={to}>{title}</Link>
+  </Li>
+)
 
 export default () => (
-  <header>
+  <Header>
+    <Logo src={logo} />
     <Nav>
       <NavList>
-        <NavLink title="Textproben" />
-        <NavLink title="Referenzen" />
-        <NavLink title="Über mich" />
-        <NavLink title="Kontakt" />
-        <NavLink title="Impressum" />
+        <NavLink title="Textproben" to="" />
+        <NavLink title="Referenzen" to="" />
+        <NavLink title="Über mich" to="" />
+        <NavLink title="Kontakt" to="" />
+        <NavLink title="Impressum" to="" />
       </NavList>
     </Nav>
-  </header>
+    <HeaderImage src={headerImage} />
+  </Header>
 )
