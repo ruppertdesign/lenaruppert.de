@@ -23,7 +23,7 @@ const StandardPage = ({ data }) => {
 export default StandardPage
 
 export const standardPageQuery = graphql`
-  query AboutPage($id: String!) {
+  query StandardPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
