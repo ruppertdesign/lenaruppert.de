@@ -1,9 +1,9 @@
 import * as React from 'react'
 import Link from 'gatsby-link'
 import styled from 'react-emotion'
-import styleVars from '../styles/styleVars'
-import * as logo from '../img/logo.png'
-import * as headerImage from '../img/header.png'
+import styleVars from '../../styles/styleVars'
+import * as logo from '../../img/logo.png'
+import * as headerImage from '../../img/header.png'
 
 const Header = styled('header')`
   display: flex;

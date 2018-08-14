@@ -1,5 +1,6 @@
 import * as React from 'react'
 import styled from 'react-emotion'
+import Helmet from 'react-helmet'
 
 const Container = styled('div')`
   text-align: center;
@@ -11,7 +12,13 @@ const Title = styled('h1')`
 `
 
 export default () => (
-  <Container>
-    <h1>lenaruppert.de</h1>
-  </Container>
+  <div>
+    <Helmet>
+      <meta name="robots" content="noindex,nofollow" />
+      <title>lenaruppert.de</title>
+    </Helmet>
+    <Container>
+      <h1>lenaruppert.de</h1>
+    </Container>
+  </div>
 )
