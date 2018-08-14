@@ -1,5 +1,5 @@
 import CMS from 'netlify-cms'
 
-import AboutPagePreview from './preview-templates/AboutPagePreview'
+import PagePreview from './preview-templates/PagePreview'
 
-CMS.registerPreviewTemplate('about', AboutPagePreview)
+CMS.registerPreviewTemplate('page', PagePreview)

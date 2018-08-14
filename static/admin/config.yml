@@ -11,9 +11,15 @@ collections:
     files:
       - file: "src/pages/ueber-mich/index.md"
         label: "Über mich"
-        name: "about"
+        name: "ueber-mich"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "standard-page"}
-          - {label: "Path", name: "path", widget: "hidden", default: "/ueber-mich"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/impressum/index.md"
+        label: "Impressum"
+        name: "impressum"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "standard-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}

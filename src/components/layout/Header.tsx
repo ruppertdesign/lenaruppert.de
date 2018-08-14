@@ -47,14 +47,16 @@ const NavLink = ({ title, to }) => (
 
 export default () => (
   <Header>
-    <Logo src={logo} />
+    <Link to="/preview-06-06-2014">
+      <Logo src={logo} />
+    </Link>
     <Nav>
       <NavList>
-        <NavLink title="Textproben" to="" />
-        <NavLink title="Referenzen" to="" />
-        <NavLink title="Über mich" to="" />
-        <NavLink title="Kontakt" to="" />
-        <NavLink title="Impressum" to="" />
+        <NavLink title="Textproben" to="/textproben" />
+        <NavLink title="Referenzen" to="/referenzen" />
+        <NavLink title="Über mich" to="/ueber-mich" />
+        <NavLink title="Kontakt" to="/kontakt" />
+        <NavLink title="Impressum" to="/impressum" />
       </NavList>
     </Nav>
   </Header>
