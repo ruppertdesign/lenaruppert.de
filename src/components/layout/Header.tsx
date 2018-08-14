@@ -3,7 +3,6 @@ import Link from 'gatsby-link'
 import styled from 'react-emotion'
 import styleVars from '../../styles/styleVars'
 import * as logo from '../../img/logo.png'
-import * as headerImage from '../../img/header.png'
 
 const Header = styled('header')`
   display: flex;
@@ -40,10 +39,6 @@ const Li = styled('li')`
   }
 `
 
-const HeaderImage = styled('img')`
-  width: 100%;
-`
-
 const NavLink = ({ title, to }) => (
   <Li>
     <Link to={to}>{title}</Link>
@@ -62,6 +57,5 @@ export default () => (
         <NavLink title="Impressum" to="" />
       </NavList>
     </Nav>
-    <HeaderImage src={headerImage} />
   </Header>
 )

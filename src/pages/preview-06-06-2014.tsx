@@ -2,11 +2,17 @@ import * as React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import PageWrapper from '../components/layout/PageWrapper'
+import * as headerImage from '../img/header.png'
+import styled from 'react-emotion'
 
+const HeaderImage = styled('img')`
+  width: 100%;
+`
 export default class IndexPage extends React.Component<{}, {}> {
   public render() {
     return (
-      <PageWrapper title="test">
+      <PageWrapper title="Willkommen">
+        <HeaderImage src={headerImage} />
         <div style={{ margin: '3rem auto', maxWidth: 600 }}>
           <h1>Richard Hamming on Luck</h1>
           <div>

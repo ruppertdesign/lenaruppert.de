@@ -4,7 +4,7 @@ import styled from 'react-emotion'
 import Header from './Header'
 
 interface Props {
-  children: React.ReactElement<any>
+  children: React.ReactNode
   title: string
 }
 
