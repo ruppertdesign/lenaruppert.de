@@ -2,8 +2,8 @@ import * as React from 'react'
 import { HTMLContent } from '../Content'
 
 interface Props {
-  title: string
-  content: string
+  title?: string | null
+  content?: string | null
 }
 
 export default ({ title, content }: Props) => {

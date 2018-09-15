@@ -1,6 +1,4 @@
 import * as React from 'react'
-import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
 import PageWrapper from '../components/layout/PageWrapper'
 import * as headerImage from '../img/header.png'
 import styled from 'react-emotion'

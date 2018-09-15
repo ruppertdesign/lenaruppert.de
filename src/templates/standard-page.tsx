@@ -5,11 +5,16 @@ import PageWrapper from '../components/layout/PageWrapper'
 import { MarkdownRemark } from '../../typings/graphql-types'
 
 interface Props {
-  data: MarkdownRemark
+  data: {
+    markdownRemark: MarkdownRemark
+  }
 }
 
-const StandardPage = ({ data }) => {
+const StandardPage = ({ data }: Props) => {
   const { markdownRemark: post } = data
+  if (post == null || post.frontmatter == null) {
+    return null
+  }
   return (
     <PageWrapper title={post.frontmatter.title}>
       <StandardPageTemplate

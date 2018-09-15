@@ -5,7 +5,7 @@ import Header from './Header'
 
 interface Props {
   children: React.ReactNode
-  title: string
+  title?: string | null
 }
 
 const Wrapper = styled('section')`
@@ -17,7 +17,9 @@ export default ({ children, title }: Props) => (
   <section>
     <Helmet>
       <meta name="robots" content="noindex, nofollow" />
-      <title>{`${title} | Lena Ruppert`}</title>
+      <title>
+        {title == null ? 'Lena Ruppert' : `${title} | Lena Ruppert`}
+      </title>
     </Helmet>
     <Wrapper>
       <Header />

@@ -2,10 +2,10 @@
 import { GraphQLResolveInfo } from "graphql";
 
 export type Resolver<Result, Parent = any, Context = any, Args = any> = (
-  parent?: Parent,
-  args?: Args,
-  context?: Context,
-  info?: GraphQLResolveInfo
+  parent: Parent,
+  args: Args,
+  context: Context,
+  info: GraphQLResolveInfo
 ) => Promise<Result> | Result;
 
 export type SubscriptionResolver<
@@ -15,16 +15,16 @@ export type SubscriptionResolver<
   Args = any
 > = {
   subscribe<R = Result, P = Parent>(
-    parent?: P,
-    args?: Args,
-    context?: Context,
-    info?: GraphQLResolveInfo
+    parent: P,
+    args: Args,
+    context: Context,
+    info: GraphQLResolveInfo
   ): AsyncIterator<R | Result>;
   resolve?<R = Result, P = Parent>(
-    parent?: P,
-    args?: Args,
-    context?: Context,
-    info?: GraphQLResolveInfo
+    parent: P,
+    args: Args,
+    context: Context,
+    info: GraphQLResolveInfo
   ): R | Result | Promise<R | Result>;
 };
 
@@ -606,6 +606,7 @@ export interface SitePageConnectionJsonNameQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionInternalComponentNameQueryString {
@@ -614,6 +615,7 @@ export interface SitePageConnectionInternalComponentNameQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPathQueryString_2 {
@@ -622,6 +624,7 @@ export interface SitePageConnectionPathQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionComponentQueryString {
@@ -630,6 +633,7 @@ export interface SitePageConnectionComponentQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionComponentChunkNameQueryString {
@@ -638,6 +642,7 @@ export interface SitePageConnectionComponentChunkNameQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionContextInputObject {
@@ -650,6 +655,7 @@ export interface SitePageConnectionContextIdQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorInputObject {
@@ -673,6 +679,7 @@ export interface SitePageConnectionPluginCreatorResolveQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorIdQueryString {
@@ -681,6 +688,7 @@ export interface SitePageConnectionPluginCreatorIdQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorNameQueryString {
@@ -689,6 +697,7 @@ export interface SitePageConnectionPluginCreatorNameQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorVersionQueryString {
@@ -697,6 +706,7 @@ export interface SitePageConnectionPluginCreatorVersionQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsInputObject {
@@ -712,6 +722,7 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPathToConfigModuleQ
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsPathQueryString {
@@ -720,6 +731,7 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPathQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsNameQueryString {
@@ -728,12 +740,14 @@ export interface SitePageConnectionPluginCreatorPluginOptionsNameQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsPathCheckQueryBoolean {
   eq?: boolean | null;
   ne?: boolean | null;
   in?: (boolean | null)[] | null;
+  nin?: (boolean | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorNodeApIsQueryList {
@@ -742,6 +756,7 @@ export interface SitePageConnectionPluginCreatorNodeApIsQueryList {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorBrowserApIsQueryList {
@@ -750,6 +765,7 @@ export interface SitePageConnectionPluginCreatorBrowserApIsQueryList {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorSsrApIsQueryList {
@@ -758,6 +774,7 @@ export interface SitePageConnectionPluginCreatorSsrApIsQueryList {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorPluginFilepathQueryString {
@@ -766,6 +783,7 @@ export interface SitePageConnectionPluginCreatorPluginFilepathQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonInputObject {
@@ -787,6 +805,7 @@ export interface SitePageConnectionPluginCreatorPackageJsonNameQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonDescriptionQueryString {
@@ -795,6 +814,7 @@ export interface SitePageConnectionPluginCreatorPackageJsonDescriptionQueryStrin
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonVersionQueryString {
@@ -803,6 +823,7 @@ export interface SitePageConnectionPluginCreatorPackageJsonVersionQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonMainQueryString {
@@ -811,6 +832,7 @@ export interface SitePageConnectionPluginCreatorPackageJsonMainQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonAuthorQueryString {
@@ -819,6 +841,7 @@ export interface SitePageConnectionPluginCreatorPackageJsonAuthorQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonLicenseQueryString {
@@ -827,6 +850,7 @@ export interface SitePageConnectionPluginCreatorPackageJsonLicenseQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonDependenciesQueryList {
@@ -844,6 +868,7 @@ export interface SitePageConnectionPluginCreatorPackageJsonDependenciesNameQuery
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonDependenciesVersionQueryString {
@@ -852,6 +877,7 @@ export interface SitePageConnectionPluginCreatorPackageJsonDependenciesVersionQu
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonDevDependenciesQueryList {
@@ -869,6 +895,7 @@ export interface SitePageConnectionPluginCreatorPackageJsonDevDependenciesNameQu
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonDevDependenciesVersionQueryString {
@@ -877,6 +904,7 @@ export interface SitePageConnectionPluginCreatorPackageJsonDevDependenciesVersio
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonPeerDependenciesQueryList {
@@ -894,6 +922,7 @@ export interface SitePageConnectionPluginCreatorPackageJsonPeerDependenciesNameQ
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonPeerDependenciesVersionQueryString {
@@ -902,6 +931,7 @@ export interface SitePageConnectionPluginCreatorPackageJsonPeerDependenciesVersi
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonKeywordsQueryList {
@@ -910,6 +940,7 @@ export interface SitePageConnectionPluginCreatorPackageJsonKeywordsQueryList {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorParentQueryString {
@@ -918,6 +949,7 @@ export interface SitePageConnectionPluginCreatorParentQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorInternalInputObject {
@@ -932,6 +964,7 @@ export interface SitePageConnectionPluginCreatorInternalContentDigestQueryString
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorInternalTypeQueryString {
@@ -940,6 +973,7 @@ export interface SitePageConnectionPluginCreatorInternalTypeQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorInternalOwnerQueryString {
@@ -948,6 +982,7 @@ export interface SitePageConnectionPluginCreatorInternalOwnerQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionPluginCreatorIdQueryString_2 {
@@ -956,6 +991,7 @@ export interface SitePageConnectionPluginCreatorIdQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionComponentPathQueryString {
@@ -964,6 +1000,7 @@ export interface SitePageConnectionComponentPathQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionIdQueryString_2 {
@@ -972,6 +1009,7 @@ export interface SitePageConnectionIdQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionInternalInputObject_2 {
@@ -987,6 +1025,7 @@ export interface SitePageConnectionInternalTypeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionInternalContentDigestQueryString_2 {
@@ -995,6 +1034,7 @@ export interface SitePageConnectionInternalContentDigestQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionInternalDescriptionQueryString {
@@ -1003,6 +1043,7 @@ export interface SitePageConnectionInternalDescriptionQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageConnectionInternalOwnerQueryString_2 {
@@ -1011,6 +1052,7 @@ export interface SitePageConnectionInternalOwnerQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionSort {
@@ -1038,6 +1080,7 @@ export interface SitePluginConnectionResolveQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionIdQueryString_2 {
@@ -1046,6 +1089,7 @@ export interface SitePluginConnectionIdQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionNameQueryString_2 {
@@ -1054,6 +1098,7 @@ export interface SitePluginConnectionNameQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionVersionQueryString_2 {
@@ -1062,6 +1107,7 @@ export interface SitePluginConnectionVersionQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionPluginOptionsInputObject_2 {
@@ -1077,6 +1123,7 @@ export interface SitePluginConnectionPluginOptionsPathToConfigModuleQueryString_
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionPluginOptionsPathQueryString_2 {
@@ -1085,6 +1132,7 @@ export interface SitePluginConnectionPluginOptionsPathQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionPluginOptionsNameQueryString_2 {
@@ -1093,12 +1141,14 @@ export interface SitePluginConnectionPluginOptionsNameQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionPluginOptionsPathCheckQueryBoolean_2 {
   eq?: boolean | null;
   ne?: boolean | null;
   in?: (boolean | null)[] | null;
+  nin?: (boolean | null)[] | null;
 }
 
 export interface SitePluginConnectionNodeApIsQueryList_2 {
@@ -1107,6 +1157,7 @@ export interface SitePluginConnectionNodeApIsQueryList_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionBrowserApIsQueryList_2 {
@@ -1115,6 +1166,7 @@ export interface SitePluginConnectionBrowserApIsQueryList_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionSsrApIsQueryList_2 {
@@ -1123,6 +1175,7 @@ export interface SitePluginConnectionSsrApIsQueryList_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionPluginFilepathQueryString_2 {
@@ -1131,6 +1184,7 @@ export interface SitePluginConnectionPluginFilepathQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionPackageJsonInputObject_2 {
@@ -1152,6 +1206,7 @@ export interface SitePluginConnectionPackageJsonNameQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionPackageJsonDescriptionQueryString_2 {
@@ -1160,6 +1215,7 @@ export interface SitePluginConnectionPackageJsonDescriptionQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionPackageJsonVersionQueryString_2 {
@@ -1168,6 +1224,7 @@ export interface SitePluginConnectionPackageJsonVersionQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionPackageJsonMainQueryString_2 {
@@ -1176,6 +1233,7 @@ export interface SitePluginConnectionPackageJsonMainQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionPackageJsonAuthorQueryString_2 {
@@ -1184,6 +1242,7 @@ export interface SitePluginConnectionPackageJsonAuthorQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionPackageJsonLicenseQueryString_2 {
@@ -1192,6 +1251,7 @@ export interface SitePluginConnectionPackageJsonLicenseQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionPackageJsonDependenciesQueryList_2 {
@@ -1209,6 +1269,7 @@ export interface SitePluginConnectionPackageJsonDependenciesNameQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionPackageJsonDependenciesVersionQueryString_2 {
@@ -1217,6 +1278,7 @@ export interface SitePluginConnectionPackageJsonDependenciesVersionQueryString_2
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionPackageJsonDevDependenciesQueryList_2 {
@@ -1234,6 +1296,7 @@ export interface SitePluginConnectionPackageJsonDevDependenciesNameQueryString_2
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionPackageJsonDevDependenciesVersionQueryString_2 {
@@ -1242,6 +1305,7 @@ export interface SitePluginConnectionPackageJsonDevDependenciesVersionQueryStrin
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionPackageJsonPeerDependenciesQueryList_2 {
@@ -1259,6 +1323,7 @@ export interface SitePluginConnectionPackageJsonPeerDependenciesNameQueryString_
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionPackageJsonPeerDependenciesVersionQueryString_2 {
@@ -1267,6 +1332,7 @@ export interface SitePluginConnectionPackageJsonPeerDependenciesVersionQueryStri
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionPackageJsonKeywordsQueryList_2 {
@@ -1275,6 +1341,7 @@ export interface SitePluginConnectionPackageJsonKeywordsQueryList_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionInternalInputObject_2 {
@@ -1289,6 +1356,7 @@ export interface SitePluginConnectionInternalContentDigestQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionInternalTypeQueryString_2 {
@@ -1297,6 +1365,7 @@ export interface SitePluginConnectionInternalTypeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginConnectionInternalOwnerQueryString_2 {
@@ -1305,6 +1374,7 @@ export interface SitePluginConnectionInternalOwnerQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryConnectionSort {
@@ -1338,7 +1408,7 @@ export interface FilterDirectory {
   gid?: DirectoryConnectionGidQueryInteger_2 | null;
   rdev?: DirectoryConnectionRdevQueryInteger_2 | null;
   blksize?: DirectoryConnectionBlksizeQueryInteger_2 | null;
-  ino?: DirectoryConnectionInoQueryFloat_2 | null;
+  ino?: DirectoryConnectionInoQueryInteger_2 | null;
   blocks?: DirectoryConnectionBlocksQueryInteger_2 | null;
   atimeMs?: DirectoryConnectionAtimeMsQueryFloat_2 | null;
   mtimeMs?: DirectoryConnectionMtimeMsQueryFloat_2 | null;
@@ -1356,6 +1426,7 @@ export interface DirectoryConnectionIdQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryConnectionInternalInputObject_2 {
@@ -1371,6 +1442,7 @@ export interface DirectoryConnectionInternalContentDigestQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryConnectionInternalTypeQueryString_2 {
@@ -1379,6 +1451,7 @@ export interface DirectoryConnectionInternalTypeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryConnectionInternalDescriptionQueryString_2 {
@@ -1387,6 +1460,7 @@ export interface DirectoryConnectionInternalDescriptionQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryConnectionInternalOwnerQueryString_2 {
@@ -1395,6 +1469,7 @@ export interface DirectoryConnectionInternalOwnerQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryConnectionSourceInstanceNameQueryString_2 {
@@ -1403,6 +1478,7 @@ export interface DirectoryConnectionSourceInstanceNameQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryConnectionAbsolutePathQueryString_2 {
@@ -1411,6 +1487,7 @@ export interface DirectoryConnectionAbsolutePathQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryConnectionRelativePathQueryString_2 {
@@ -1419,6 +1496,7 @@ export interface DirectoryConnectionRelativePathQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryConnectionExtensionQueryString_2 {
@@ -1427,6 +1505,7 @@ export interface DirectoryConnectionExtensionQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryConnectionSizeQueryInteger_2 {
@@ -1437,6 +1516,7 @@ export interface DirectoryConnectionSizeQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryConnectionPrettySizeQueryString_2 {
@@ -1445,6 +1525,7 @@ export interface DirectoryConnectionPrettySizeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryConnectionModifiedTimeQueryString_2 {
@@ -1453,6 +1534,7 @@ export interface DirectoryConnectionModifiedTimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryConnectionAccessTimeQueryString_2 {
@@ -1461,6 +1543,7 @@ export interface DirectoryConnectionAccessTimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryConnectionChangeTimeQueryString_2 {
@@ -1469,6 +1552,7 @@ export interface DirectoryConnectionChangeTimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryConnectionBirthTimeQueryString_2 {
@@ -1477,6 +1561,7 @@ export interface DirectoryConnectionBirthTimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryConnectionRootQueryString_2 {
@@ -1485,6 +1570,7 @@ export interface DirectoryConnectionRootQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryConnectionDirQueryString_2 {
@@ -1493,6 +1579,7 @@ export interface DirectoryConnectionDirQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryConnectionBaseQueryString_2 {
@@ -1501,6 +1588,7 @@ export interface DirectoryConnectionBaseQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryConnectionExtQueryString_2 {
@@ -1509,6 +1597,7 @@ export interface DirectoryConnectionExtQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryConnectionNameQueryString_2 {
@@ -1517,6 +1606,7 @@ export interface DirectoryConnectionNameQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryConnectionRelativeDirectoryQueryString_2 {
@@ -1525,6 +1615,7 @@ export interface DirectoryConnectionRelativeDirectoryQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryConnectionDevQueryInteger_2 {
@@ -1535,6 +1626,7 @@ export interface DirectoryConnectionDevQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryConnectionModeQueryInteger_2 {
@@ -1545,6 +1637,7 @@ export interface DirectoryConnectionModeQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryConnectionNlinkQueryInteger_2 {
@@ -1555,6 +1648,7 @@ export interface DirectoryConnectionNlinkQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryConnectionUidQueryInteger_2 {
@@ -1565,6 +1659,7 @@ export interface DirectoryConnectionUidQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryConnectionGidQueryInteger_2 {
@@ -1575,6 +1670,7 @@ export interface DirectoryConnectionGidQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryConnectionRdevQueryInteger_2 {
@@ -1585,6 +1681,7 @@ export interface DirectoryConnectionRdevQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryConnectionBlksizeQueryInteger_2 {
@@ -1595,9 +1692,10 @@ export interface DirectoryConnectionBlksizeQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
-export interface DirectoryConnectionInoQueryFloat_2 {
+export interface DirectoryConnectionInoQueryInteger_2 {
   eq?: number | null;
   ne?: number | null;
   gt?: number | null;
@@ -1605,6 +1703,7 @@ export interface DirectoryConnectionInoQueryFloat_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryConnectionBlocksQueryInteger_2 {
@@ -1615,6 +1714,7 @@ export interface DirectoryConnectionBlocksQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryConnectionAtimeMsQueryFloat_2 {
@@ -1625,6 +1725,7 @@ export interface DirectoryConnectionAtimeMsQueryFloat_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryConnectionMtimeMsQueryFloat_2 {
@@ -1635,6 +1736,7 @@ export interface DirectoryConnectionMtimeMsQueryFloat_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryConnectionCtimeMsQueryFloat_2 {
@@ -1645,6 +1747,7 @@ export interface DirectoryConnectionCtimeMsQueryFloat_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryConnectionBirthtimeMsQueryFloat_2 {
@@ -1655,6 +1758,7 @@ export interface DirectoryConnectionBirthtimeMsQueryFloat_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryConnectionAtimeQueryString_2 {
@@ -1663,6 +1767,7 @@ export interface DirectoryConnectionAtimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryConnectionMtimeQueryString_2 {
@@ -1671,6 +1776,7 @@ export interface DirectoryConnectionMtimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryConnectionCtimeQueryString_2 {
@@ -1679,6 +1785,7 @@ export interface DirectoryConnectionCtimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryConnectionBirthtimeQueryString_2 {
@@ -1687,6 +1794,7 @@ export interface DirectoryConnectionBirthtimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionSort {
@@ -1720,7 +1828,7 @@ export interface FilterFile {
   gid?: FileConnectionGidQueryInteger_2 | null;
   rdev?: FileConnectionRdevQueryInteger_2 | null;
   blksize?: FileConnectionBlksizeQueryInteger_2 | null;
-  ino?: FileConnectionInoQueryFloat_2 | null;
+  ino?: FileConnectionInoQueryInteger_2 | null;
   blocks?: FileConnectionBlocksQueryInteger_2 | null;
   atimeMs?: FileConnectionAtimeMsQueryFloat_2 | null;
   mtimeMs?: FileConnectionMtimeMsQueryFloat_2 | null;
@@ -1739,6 +1847,7 @@ export interface FileConnectionIdQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionInternalInputObject_2 {
@@ -1755,6 +1864,7 @@ export interface FileConnectionInternalContentDigestQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionInternalTypeQueryString_2 {
@@ -1763,6 +1873,7 @@ export interface FileConnectionInternalTypeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionInternalMediaTypeQueryString_2 {
@@ -1771,6 +1882,7 @@ export interface FileConnectionInternalMediaTypeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionInternalDescriptionQueryString_2 {
@@ -1779,6 +1891,7 @@ export interface FileConnectionInternalDescriptionQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionInternalOwnerQueryString_2 {
@@ -1787,6 +1900,7 @@ export interface FileConnectionInternalOwnerQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionSourceInstanceNameQueryString_2 {
@@ -1795,6 +1909,7 @@ export interface FileConnectionSourceInstanceNameQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionAbsolutePathQueryString_2 {
@@ -1803,6 +1918,7 @@ export interface FileConnectionAbsolutePathQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionRelativePathQueryString_2 {
@@ -1811,6 +1927,7 @@ export interface FileConnectionRelativePathQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionExtensionQueryString_2 {
@@ -1819,6 +1936,7 @@ export interface FileConnectionExtensionQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionSizeQueryInteger_2 {
@@ -1829,6 +1947,7 @@ export interface FileConnectionSizeQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileConnectionPrettySizeQueryString_2 {
@@ -1837,6 +1956,7 @@ export interface FileConnectionPrettySizeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionModifiedTimeQueryString_2 {
@@ -1845,6 +1965,7 @@ export interface FileConnectionModifiedTimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionAccessTimeQueryString_2 {
@@ -1853,6 +1974,7 @@ export interface FileConnectionAccessTimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionChangeTimeQueryString_2 {
@@ -1861,6 +1983,7 @@ export interface FileConnectionChangeTimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionBirthTimeQueryString_2 {
@@ -1869,6 +1992,7 @@ export interface FileConnectionBirthTimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionRootQueryString_2 {
@@ -1877,6 +2001,7 @@ export interface FileConnectionRootQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionDirQueryString_2 {
@@ -1885,6 +2010,7 @@ export interface FileConnectionDirQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionBaseQueryString_2 {
@@ -1893,6 +2019,7 @@ export interface FileConnectionBaseQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionExtQueryString_2 {
@@ -1901,6 +2028,7 @@ export interface FileConnectionExtQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionNameQueryString_2 {
@@ -1909,6 +2037,7 @@ export interface FileConnectionNameQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionRelativeDirectoryQueryString_2 {
@@ -1917,6 +2046,7 @@ export interface FileConnectionRelativeDirectoryQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionDevQueryInteger_2 {
@@ -1927,6 +2057,7 @@ export interface FileConnectionDevQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileConnectionModeQueryInteger_2 {
@@ -1937,6 +2068,7 @@ export interface FileConnectionModeQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileConnectionNlinkQueryInteger_2 {
@@ -1947,6 +2079,7 @@ export interface FileConnectionNlinkQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileConnectionUidQueryInteger_2 {
@@ -1957,6 +2090,7 @@ export interface FileConnectionUidQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileConnectionGidQueryInteger_2 {
@@ -1967,6 +2101,7 @@ export interface FileConnectionGidQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileConnectionRdevQueryInteger_2 {
@@ -1977,6 +2112,7 @@ export interface FileConnectionRdevQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileConnectionBlksizeQueryInteger_2 {
@@ -1987,9 +2123,10 @@ export interface FileConnectionBlksizeQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
-export interface FileConnectionInoQueryFloat_2 {
+export interface FileConnectionInoQueryInteger_2 {
   eq?: number | null;
   ne?: number | null;
   gt?: number | null;
@@ -1997,6 +2134,7 @@ export interface FileConnectionInoQueryFloat_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileConnectionBlocksQueryInteger_2 {
@@ -2007,6 +2145,7 @@ export interface FileConnectionBlocksQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileConnectionAtimeMsQueryFloat_2 {
@@ -2017,6 +2156,7 @@ export interface FileConnectionAtimeMsQueryFloat_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileConnectionMtimeMsQueryFloat_2 {
@@ -2027,6 +2167,7 @@ export interface FileConnectionMtimeMsQueryFloat_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileConnectionCtimeMsQueryFloat_2 {
@@ -2037,6 +2178,7 @@ export interface FileConnectionCtimeMsQueryFloat_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileConnectionBirthtimeMsQueryFloat_2 {
@@ -2047,6 +2189,7 @@ export interface FileConnectionBirthtimeMsQueryFloat_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileConnectionAtimeQueryString_2 {
@@ -2055,6 +2198,7 @@ export interface FileConnectionAtimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionMtimeQueryString_2 {
@@ -2063,6 +2207,7 @@ export interface FileConnectionMtimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionCtimeQueryString_2 {
@@ -2071,6 +2216,7 @@ export interface FileConnectionCtimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileConnectionBirthtimeQueryString_2 {
@@ -2079,6 +2225,7 @@ export interface FileConnectionBirthtimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface PublicUrlQueryString_4 {
@@ -2087,6 +2234,7 @@ export interface PublicUrlQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DuotoneGradient {
@@ -2133,6 +2281,7 @@ export interface MarkdownRemarkConnectionIdQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkConnectionInternalInputObject_2 {
@@ -2149,6 +2298,7 @@ export interface MarkdownRemarkConnectionInternalContentQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkConnectionInternalTypeQueryString_2 {
@@ -2157,6 +2307,7 @@ export interface MarkdownRemarkConnectionInternalTypeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkConnectionInternalContentDigestQueryString_2 {
@@ -2165,6 +2316,7 @@ export interface MarkdownRemarkConnectionInternalContentDigestQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkConnectionInternalOwnerQueryString_2 {
@@ -2173,6 +2325,7 @@ export interface MarkdownRemarkConnectionInternalOwnerQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkConnectionInternalFieldOwnersInputObject_2 {
@@ -2185,6 +2338,7 @@ export interface MarkdownRemarkConnectionInternalFieldOwnersSlugQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkConnectionFrontmatterInputObject_2 {
@@ -2200,6 +2354,7 @@ export interface MarkdownRemarkConnectionFrontmatterTitleQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkConnectionFrontmatterTemplateKeyQueryString_2 {
@@ -2208,6 +2363,7 @@ export interface MarkdownRemarkConnectionFrontmatterTemplateKeyQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkConnectionFrontmatterPathQueryString_2 {
@@ -2216,6 +2372,7 @@ export interface MarkdownRemarkConnectionFrontmatterPathQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkConnectionFrontmatterParentQueryString_2 {
@@ -2224,6 +2381,7 @@ export interface MarkdownRemarkConnectionFrontmatterParentQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ExcerptQueryString_4 {
@@ -2232,6 +2390,7 @@ export interface ExcerptQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkConnectionRawMarkdownBodyQueryString_2 {
@@ -2240,6 +2399,7 @@ export interface MarkdownRemarkConnectionRawMarkdownBodyQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkConnectionFileAbsolutePathQueryString_2 {
@@ -2248,6 +2408,7 @@ export interface MarkdownRemarkConnectionFileAbsolutePathQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkConnectionFieldsInputObject_2 {
@@ -2260,6 +2421,7 @@ export interface MarkdownRemarkConnectionFieldsSlugQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface HtmlQueryString_4 {
@@ -2268,6 +2430,7 @@ export interface HtmlQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface HeadingsQueryList_4 {
@@ -2285,6 +2448,7 @@ export interface HeadingsListElemValueQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface HeadingsListElemDepthQueryInt_4 {
@@ -2295,6 +2459,7 @@ export interface HeadingsListElemDepthQueryInt_4 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface TimeToReadQueryInt_4 {
@@ -2305,6 +2470,7 @@ export interface TimeToReadQueryInt_4 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface TableOfContentsQueryString_4 {
@@ -2313,6 +2479,7 @@ export interface TableOfContentsQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface WordCountTypeName_4 {
@@ -2329,6 +2496,7 @@ export interface WordCountParagraphsQueryInt_4 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface WordCountSentencesQueryInt_4 {
@@ -2339,6 +2507,7 @@ export interface WordCountSentencesQueryInt_4 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface WordCountWordsQueryInt_4 {
@@ -2349,6 +2518,7 @@ export interface WordCountWordsQueryInt_4 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface ImageSharpConnectionSort {
@@ -2373,6 +2543,7 @@ export interface ImageSharpConnectionIdQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ImageSharpConnectionInternalInputObject_2 {
@@ -2387,6 +2558,7 @@ export interface ImageSharpConnectionInternalContentDigestQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ImageSharpConnectionInternalTypeQueryString_2 {
@@ -2395,6 +2567,7 @@ export interface ImageSharpConnectionInternalTypeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ImageSharpConnectionInternalOwnerQueryString_2 {
@@ -2403,6 +2576,7 @@ export interface ImageSharpConnectionInternalOwnerQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FixedTypeName_4 {
@@ -2424,6 +2598,7 @@ export interface FixedBase64QueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FixedTracedSvgQueryString_4 {
@@ -2432,6 +2607,7 @@ export interface FixedTracedSvgQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FixedAspectRatioQueryFloat_4 {
@@ -2442,6 +2618,7 @@ export interface FixedAspectRatioQueryFloat_4 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FixedWidthQueryFloat_4 {
@@ -2452,6 +2629,7 @@ export interface FixedWidthQueryFloat_4 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FixedHeightQueryFloat_4 {
@@ -2462,6 +2640,7 @@ export interface FixedHeightQueryFloat_4 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FixedSrcQueryString_4 {
@@ -2470,6 +2649,7 @@ export interface FixedSrcQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FixedSrcSetQueryString_4 {
@@ -2478,6 +2658,7 @@ export interface FixedSrcSetQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FixedSrcWebpQueryString_4 {
@@ -2486,6 +2667,7 @@ export interface FixedSrcWebpQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FixedSrcSetWebpQueryString_4 {
@@ -2494,6 +2676,7 @@ export interface FixedSrcSetWebpQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FixedOriginalNameQueryString_4 {
@@ -2502,6 +2685,7 @@ export interface FixedOriginalNameQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ResolutionsTypeName_4 {
@@ -2523,6 +2707,7 @@ export interface ResolutionsBase64QueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ResolutionsTracedSvgQueryString_4 {
@@ -2531,6 +2716,7 @@ export interface ResolutionsTracedSvgQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ResolutionsAspectRatioQueryFloat_4 {
@@ -2541,6 +2727,7 @@ export interface ResolutionsAspectRatioQueryFloat_4 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface ResolutionsWidthQueryFloat_4 {
@@ -2551,6 +2738,7 @@ export interface ResolutionsWidthQueryFloat_4 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface ResolutionsHeightQueryFloat_4 {
@@ -2561,6 +2749,7 @@ export interface ResolutionsHeightQueryFloat_4 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface ResolutionsSrcQueryString_4 {
@@ -2569,6 +2758,7 @@ export interface ResolutionsSrcQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ResolutionsSrcSetQueryString_4 {
@@ -2577,6 +2767,7 @@ export interface ResolutionsSrcSetQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ResolutionsSrcWebpQueryString_4 {
@@ -2585,6 +2776,7 @@ export interface ResolutionsSrcWebpQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ResolutionsSrcSetWebpQueryString_4 {
@@ -2593,6 +2785,7 @@ export interface ResolutionsSrcSetWebpQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ResolutionsOriginalNameQueryString_4 {
@@ -2601,6 +2794,7 @@ export interface ResolutionsOriginalNameQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FluidTypeName_4 {
@@ -2622,6 +2816,7 @@ export interface FluidBase64QueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FluidTracedSvgQueryString_4 {
@@ -2630,6 +2825,7 @@ export interface FluidTracedSvgQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FluidAspectRatioQueryFloat_4 {
@@ -2640,6 +2836,7 @@ export interface FluidAspectRatioQueryFloat_4 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FluidSrcQueryString_4 {
@@ -2648,6 +2845,7 @@ export interface FluidSrcQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FluidSrcSetQueryString_4 {
@@ -2656,6 +2854,7 @@ export interface FluidSrcSetQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FluidSrcWebpQueryString_4 {
@@ -2664,6 +2863,7 @@ export interface FluidSrcWebpQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FluidSrcSetWebpQueryString_4 {
@@ -2672,6 +2872,7 @@ export interface FluidSrcSetWebpQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FluidSizesQueryString_4 {
@@ -2680,6 +2881,7 @@ export interface FluidSizesQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FluidOriginalImgQueryString_4 {
@@ -2688,6 +2890,7 @@ export interface FluidOriginalImgQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FluidOriginalNameQueryString_4 {
@@ -2696,6 +2899,7 @@ export interface FluidOriginalNameQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SizesTypeName_4 {
@@ -2717,6 +2921,7 @@ export interface SizesBase64QueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SizesTracedSvgQueryString_4 {
@@ -2725,6 +2930,7 @@ export interface SizesTracedSvgQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SizesAspectRatioQueryFloat_4 {
@@ -2735,6 +2941,7 @@ export interface SizesAspectRatioQueryFloat_4 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface SizesSrcQueryString_4 {
@@ -2743,6 +2950,7 @@ export interface SizesSrcQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SizesSrcSetQueryString_4 {
@@ -2751,6 +2959,7 @@ export interface SizesSrcSetQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SizesSrcWebpQueryString_4 {
@@ -2759,6 +2968,7 @@ export interface SizesSrcWebpQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SizesSrcSetWebpQueryString_4 {
@@ -2767,6 +2977,7 @@ export interface SizesSrcSetWebpQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SizesSizesQueryString_4 {
@@ -2775,6 +2986,7 @@ export interface SizesSizesQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SizesOriginalImgQueryString_4 {
@@ -2783,6 +2995,7 @@ export interface SizesOriginalImgQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SizesOriginalNameQueryString_4 {
@@ -2791,6 +3004,7 @@ export interface SizesOriginalNameQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface OriginalTypeName_4 {
@@ -2807,6 +3021,7 @@ export interface OriginalWidthQueryFloat_4 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface OriginalHeightQueryFloat_4 {
@@ -2817,6 +3032,7 @@ export interface OriginalHeightQueryFloat_4 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface OriginalSrcQueryString_4 {
@@ -2825,6 +3041,7 @@ export interface OriginalSrcQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ResizeTypeName_4 {
@@ -2842,6 +3059,7 @@ export interface ResizeSrcQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ResizeTracedSvgQueryString_4 {
@@ -2850,6 +3068,7 @@ export interface ResizeTracedSvgQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ResizeWidthQueryInt_4 {
@@ -2860,6 +3079,7 @@ export interface ResizeWidthQueryInt_4 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface ResizeHeightQueryInt_4 {
@@ -2870,6 +3090,7 @@ export interface ResizeHeightQueryInt_4 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface ResizeAspectRatioQueryFloat_4 {
@@ -2880,6 +3101,7 @@ export interface ResizeAspectRatioQueryFloat_4 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface ResizeOriginalNameQueryString_4 {
@@ -2888,6 +3110,7 @@ export interface ResizeOriginalNameQueryString_4 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageJsonNameQueryString {
@@ -2896,6 +3119,7 @@ export interface SitePageJsonNameQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageInternalComponentNameQueryString {
@@ -2904,6 +3128,7 @@ export interface SitePageInternalComponentNameQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePathQueryString_2 {
@@ -2912,6 +3137,7 @@ export interface SitePagePathQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageComponentQueryString {
@@ -2920,6 +3146,7 @@ export interface SitePageComponentQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageComponentChunkNameQueryString {
@@ -2928,6 +3155,7 @@ export interface SitePageComponentChunkNameQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageContextInputObject {
@@ -2940,6 +3168,7 @@ export interface SitePageContextIdQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorInputObject {
@@ -2963,6 +3192,7 @@ export interface SitePagePluginCreatorResolveQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorIdQueryString {
@@ -2971,6 +3201,7 @@ export interface SitePagePluginCreatorIdQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorNameQueryString {
@@ -2979,6 +3210,7 @@ export interface SitePagePluginCreatorNameQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorVersionQueryString {
@@ -2987,6 +3219,7 @@ export interface SitePagePluginCreatorVersionQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorPluginOptionsInputObject {
@@ -3002,6 +3235,7 @@ export interface SitePagePluginCreatorPluginOptionsPathToConfigModuleQueryString
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorPluginOptionsPathQueryString {
@@ -3010,6 +3244,7 @@ export interface SitePagePluginCreatorPluginOptionsPathQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorPluginOptionsNameQueryString {
@@ -3018,12 +3253,14 @@ export interface SitePagePluginCreatorPluginOptionsNameQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorPluginOptionsPathCheckQueryBoolean {
   eq?: boolean | null;
   ne?: boolean | null;
   in?: (boolean | null)[] | null;
+  nin?: (boolean | null)[] | null;
 }
 
 export interface SitePagePluginCreatorNodeApIsQueryList {
@@ -3032,6 +3269,7 @@ export interface SitePagePluginCreatorNodeApIsQueryList {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorBrowserApIsQueryList {
@@ -3040,6 +3278,7 @@ export interface SitePagePluginCreatorBrowserApIsQueryList {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorSsrApIsQueryList {
@@ -3048,6 +3287,7 @@ export interface SitePagePluginCreatorSsrApIsQueryList {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorPluginFilepathQueryString {
@@ -3056,6 +3296,7 @@ export interface SitePagePluginCreatorPluginFilepathQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorPackageJsonInputObject {
@@ -3077,6 +3318,7 @@ export interface SitePagePluginCreatorPackageJsonNameQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorPackageJsonDescriptionQueryString {
@@ -3085,6 +3327,7 @@ export interface SitePagePluginCreatorPackageJsonDescriptionQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorPackageJsonVersionQueryString {
@@ -3093,6 +3336,7 @@ export interface SitePagePluginCreatorPackageJsonVersionQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorPackageJsonMainQueryString {
@@ -3101,6 +3345,7 @@ export interface SitePagePluginCreatorPackageJsonMainQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorPackageJsonAuthorQueryString {
@@ -3109,6 +3354,7 @@ export interface SitePagePluginCreatorPackageJsonAuthorQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorPackageJsonLicenseQueryString {
@@ -3117,6 +3363,7 @@ export interface SitePagePluginCreatorPackageJsonLicenseQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorPackageJsonDependenciesQueryList {
@@ -3134,6 +3381,7 @@ export interface SitePagePluginCreatorPackageJsonDependenciesNameQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorPackageJsonDependenciesVersionQueryString {
@@ -3142,6 +3390,7 @@ export interface SitePagePluginCreatorPackageJsonDependenciesVersionQueryString 
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorPackageJsonDevDependenciesQueryList {
@@ -3159,6 +3408,7 @@ export interface SitePagePluginCreatorPackageJsonDevDependenciesNameQueryString 
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorPackageJsonDevDependenciesVersionQueryString {
@@ -3167,6 +3417,7 @@ export interface SitePagePluginCreatorPackageJsonDevDependenciesVersionQueryStri
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorPackageJsonPeerDependenciesQueryList {
@@ -3184,6 +3435,7 @@ export interface SitePagePluginCreatorPackageJsonPeerDependenciesNameQueryString
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorPackageJsonPeerDependenciesVersionQueryString {
@@ -3192,6 +3444,7 @@ export interface SitePagePluginCreatorPackageJsonPeerDependenciesVersionQueryStr
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorPackageJsonKeywordsQueryList {
@@ -3200,6 +3453,7 @@ export interface SitePagePluginCreatorPackageJsonKeywordsQueryList {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorParentQueryString {
@@ -3208,6 +3462,7 @@ export interface SitePagePluginCreatorParentQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorInternalInputObject {
@@ -3222,6 +3477,7 @@ export interface SitePagePluginCreatorInternalContentDigestQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorInternalTypeQueryString {
@@ -3230,6 +3486,7 @@ export interface SitePagePluginCreatorInternalTypeQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorInternalOwnerQueryString {
@@ -3238,6 +3495,7 @@ export interface SitePagePluginCreatorInternalOwnerQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePagePluginCreatorIdQueryString_2 {
@@ -3246,6 +3504,7 @@ export interface SitePagePluginCreatorIdQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageComponentPathQueryString {
@@ -3254,6 +3513,7 @@ export interface SitePageComponentPathQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageIdQueryString_2 {
@@ -3262,6 +3522,7 @@ export interface SitePageIdQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageInternalInputObject_2 {
@@ -3277,6 +3538,7 @@ export interface SitePageInternalTypeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageInternalContentDigestQueryString_2 {
@@ -3285,6 +3547,7 @@ export interface SitePageInternalContentDigestQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageInternalDescriptionQueryString {
@@ -3293,6 +3556,7 @@ export interface SitePageInternalDescriptionQueryString {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePageInternalOwnerQueryString_2 {
@@ -3301,6 +3565,7 @@ export interface SitePageInternalOwnerQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginResolveQueryString_2 {
@@ -3309,6 +3574,7 @@ export interface SitePluginResolveQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginIdQueryString_2 {
@@ -3317,6 +3583,7 @@ export interface SitePluginIdQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginNameQueryString_2 {
@@ -3325,6 +3592,7 @@ export interface SitePluginNameQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginVersionQueryString_2 {
@@ -3333,6 +3601,7 @@ export interface SitePluginVersionQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginPluginOptionsInputObject_2 {
@@ -3348,6 +3617,7 @@ export interface SitePluginPluginOptionsPathToConfigModuleQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginPluginOptionsPathQueryString_2 {
@@ -3356,6 +3626,7 @@ export interface SitePluginPluginOptionsPathQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginPluginOptionsNameQueryString_2 {
@@ -3364,12 +3635,14 @@ export interface SitePluginPluginOptionsNameQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginPluginOptionsPathCheckQueryBoolean_2 {
   eq?: boolean | null;
   ne?: boolean | null;
   in?: (boolean | null)[] | null;
+  nin?: (boolean | null)[] | null;
 }
 
 export interface SitePluginNodeApIsQueryList_2 {
@@ -3378,6 +3651,7 @@ export interface SitePluginNodeApIsQueryList_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginBrowserApIsQueryList_2 {
@@ -3386,6 +3660,7 @@ export interface SitePluginBrowserApIsQueryList_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginSsrApIsQueryList_2 {
@@ -3394,6 +3669,7 @@ export interface SitePluginSsrApIsQueryList_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginPluginFilepathQueryString_2 {
@@ -3402,6 +3678,7 @@ export interface SitePluginPluginFilepathQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginPackageJsonInputObject_2 {
@@ -3423,6 +3700,7 @@ export interface SitePluginPackageJsonNameQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginPackageJsonDescriptionQueryString_2 {
@@ -3431,6 +3709,7 @@ export interface SitePluginPackageJsonDescriptionQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginPackageJsonVersionQueryString_2 {
@@ -3439,6 +3718,7 @@ export interface SitePluginPackageJsonVersionQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginPackageJsonMainQueryString_2 {
@@ -3447,6 +3727,7 @@ export interface SitePluginPackageJsonMainQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginPackageJsonAuthorQueryString_2 {
@@ -3455,6 +3736,7 @@ export interface SitePluginPackageJsonAuthorQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginPackageJsonLicenseQueryString_2 {
@@ -3463,6 +3745,7 @@ export interface SitePluginPackageJsonLicenseQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginPackageJsonDependenciesQueryList_2 {
@@ -3480,6 +3763,7 @@ export interface SitePluginPackageJsonDependenciesNameQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginPackageJsonDependenciesVersionQueryString_2 {
@@ -3488,6 +3772,7 @@ export interface SitePluginPackageJsonDependenciesVersionQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginPackageJsonDevDependenciesQueryList_2 {
@@ -3505,6 +3790,7 @@ export interface SitePluginPackageJsonDevDependenciesNameQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginPackageJsonDevDependenciesVersionQueryString_2 {
@@ -3513,6 +3799,7 @@ export interface SitePluginPackageJsonDevDependenciesVersionQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginPackageJsonPeerDependenciesQueryList_2 {
@@ -3530,6 +3817,7 @@ export interface SitePluginPackageJsonPeerDependenciesNameQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginPackageJsonPeerDependenciesVersionQueryString_2 {
@@ -3538,6 +3826,7 @@ export interface SitePluginPackageJsonPeerDependenciesVersionQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginPackageJsonKeywordsQueryList_2 {
@@ -3546,6 +3835,7 @@ export interface SitePluginPackageJsonKeywordsQueryList_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginInternalInputObject_2 {
@@ -3560,6 +3850,7 @@ export interface SitePluginInternalContentDigestQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginInternalTypeQueryString_2 {
@@ -3568,6 +3859,7 @@ export interface SitePluginInternalTypeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePluginInternalOwnerQueryString_2 {
@@ -3576,6 +3868,7 @@ export interface SitePluginInternalOwnerQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SiteSiteMetadataInputObject_2 {
@@ -3588,6 +3881,7 @@ export interface SiteSiteMetadataTitleQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePortQueryString_2 {
@@ -3596,6 +3890,7 @@ export interface SitePortQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SiteHostQueryString_2 {
@@ -3604,6 +3899,7 @@ export interface SiteHostQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePathPrefixQueryString_2 {
@@ -3612,12 +3908,14 @@ export interface SitePathPrefixQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SitePolyfillQueryBoolean_2 {
   eq?: boolean | null;
   ne?: boolean | null;
   in?: (boolean | null)[] | null;
+  nin?: (boolean | null)[] | null;
 }
 
 export interface SiteBuildTimeQueryString_2 {
@@ -3626,6 +3924,7 @@ export interface SiteBuildTimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SiteIdQueryString_2 {
@@ -3634,6 +3933,7 @@ export interface SiteIdQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SiteInternalInputObject_2 {
@@ -3648,6 +3948,7 @@ export interface SiteInternalContentDigestQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SiteInternalTypeQueryString_2 {
@@ -3656,6 +3957,7 @@ export interface SiteInternalTypeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SiteInternalOwnerQueryString_2 {
@@ -3664,6 +3966,7 @@ export interface SiteInternalOwnerQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryIdQueryString_2 {
@@ -3672,6 +3975,7 @@ export interface DirectoryIdQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryInternalInputObject_2 {
@@ -3687,6 +3991,7 @@ export interface DirectoryInternalContentDigestQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryInternalTypeQueryString_2 {
@@ -3695,6 +4000,7 @@ export interface DirectoryInternalTypeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryInternalDescriptionQueryString_2 {
@@ -3703,6 +4009,7 @@ export interface DirectoryInternalDescriptionQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryInternalOwnerQueryString_2 {
@@ -3711,6 +4018,7 @@ export interface DirectoryInternalOwnerQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectorySourceInstanceNameQueryString_2 {
@@ -3719,6 +4027,7 @@ export interface DirectorySourceInstanceNameQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryAbsolutePathQueryString_2 {
@@ -3727,6 +4036,7 @@ export interface DirectoryAbsolutePathQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryRelativePathQueryString_2 {
@@ -3735,6 +4045,7 @@ export interface DirectoryRelativePathQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryExtensionQueryString_2 {
@@ -3743,6 +4054,7 @@ export interface DirectoryExtensionQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectorySizeQueryInteger_2 {
@@ -3753,6 +4065,7 @@ export interface DirectorySizeQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryPrettySizeQueryString_2 {
@@ -3761,6 +4074,7 @@ export interface DirectoryPrettySizeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryModifiedTimeQueryString_2 {
@@ -3769,6 +4083,7 @@ export interface DirectoryModifiedTimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryAccessTimeQueryString_2 {
@@ -3777,6 +4092,7 @@ export interface DirectoryAccessTimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryChangeTimeQueryString_2 {
@@ -3785,6 +4101,7 @@ export interface DirectoryChangeTimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryBirthTimeQueryString_2 {
@@ -3793,6 +4110,7 @@ export interface DirectoryBirthTimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryRootQueryString_2 {
@@ -3801,6 +4119,7 @@ export interface DirectoryRootQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryDirQueryString_2 {
@@ -3809,6 +4128,7 @@ export interface DirectoryDirQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryBaseQueryString_2 {
@@ -3817,6 +4137,7 @@ export interface DirectoryBaseQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryExtQueryString_2 {
@@ -3825,6 +4146,7 @@ export interface DirectoryExtQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryNameQueryString_2 {
@@ -3833,6 +4155,7 @@ export interface DirectoryNameQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryRelativeDirectoryQueryString_2 {
@@ -3841,6 +4164,7 @@ export interface DirectoryRelativeDirectoryQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryDevQueryInteger_2 {
@@ -3851,6 +4175,7 @@ export interface DirectoryDevQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryModeQueryInteger_2 {
@@ -3861,6 +4186,7 @@ export interface DirectoryModeQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryNlinkQueryInteger_2 {
@@ -3871,6 +4197,7 @@ export interface DirectoryNlinkQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryUidQueryInteger_2 {
@@ -3881,6 +4208,7 @@ export interface DirectoryUidQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryGidQueryInteger_2 {
@@ -3891,6 +4219,7 @@ export interface DirectoryGidQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryRdevQueryInteger_2 {
@@ -3901,6 +4230,7 @@ export interface DirectoryRdevQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryBlksizeQueryInteger_2 {
@@ -3911,9 +4241,10 @@ export interface DirectoryBlksizeQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
-export interface DirectoryInoQueryFloat_2 {
+export interface DirectoryInoQueryInteger_2 {
   eq?: number | null;
   ne?: number | null;
   gt?: number | null;
@@ -3921,6 +4252,7 @@ export interface DirectoryInoQueryFloat_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryBlocksQueryInteger_2 {
@@ -3931,6 +4263,7 @@ export interface DirectoryBlocksQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryAtimeMsQueryFloat_2 {
@@ -3941,6 +4274,7 @@ export interface DirectoryAtimeMsQueryFloat_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryMtimeMsQueryFloat_2 {
@@ -3951,6 +4285,7 @@ export interface DirectoryMtimeMsQueryFloat_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryCtimeMsQueryFloat_2 {
@@ -3961,6 +4296,7 @@ export interface DirectoryCtimeMsQueryFloat_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryBirthtimeMsQueryFloat_2 {
@@ -3971,6 +4307,7 @@ export interface DirectoryBirthtimeMsQueryFloat_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface DirectoryAtimeQueryString_2 {
@@ -3979,6 +4316,7 @@ export interface DirectoryAtimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryMtimeQueryString_2 {
@@ -3987,6 +4325,7 @@ export interface DirectoryMtimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryCtimeQueryString_2 {
@@ -3995,6 +4334,7 @@ export interface DirectoryCtimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface DirectoryBirthtimeQueryString_2 {
@@ -4003,6 +4343,7 @@ export interface DirectoryBirthtimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileIdQueryString_2 {
@@ -4011,6 +4352,7 @@ export interface FileIdQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileInternalInputObject_2 {
@@ -4027,6 +4369,7 @@ export interface FileInternalContentDigestQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileInternalTypeQueryString_2 {
@@ -4035,6 +4378,7 @@ export interface FileInternalTypeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileInternalMediaTypeQueryString_2 {
@@ -4043,6 +4387,7 @@ export interface FileInternalMediaTypeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileInternalDescriptionQueryString_2 {
@@ -4051,6 +4396,7 @@ export interface FileInternalDescriptionQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileInternalOwnerQueryString_2 {
@@ -4059,6 +4405,7 @@ export interface FileInternalOwnerQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileSourceInstanceNameQueryString_2 {
@@ -4067,6 +4414,7 @@ export interface FileSourceInstanceNameQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileAbsolutePathQueryString_2 {
@@ -4075,6 +4423,7 @@ export interface FileAbsolutePathQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileRelativePathQueryString_2 {
@@ -4083,6 +4432,7 @@ export interface FileRelativePathQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileExtensionQueryString_2 {
@@ -4091,6 +4441,7 @@ export interface FileExtensionQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileSizeQueryInteger_2 {
@@ -4101,6 +4452,7 @@ export interface FileSizeQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FilePrettySizeQueryString_2 {
@@ -4109,6 +4461,7 @@ export interface FilePrettySizeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileModifiedTimeQueryString_2 {
@@ -4117,6 +4470,7 @@ export interface FileModifiedTimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileAccessTimeQueryString_2 {
@@ -4125,6 +4479,7 @@ export interface FileAccessTimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileChangeTimeQueryString_2 {
@@ -4133,6 +4488,7 @@ export interface FileChangeTimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileBirthTimeQueryString_2 {
@@ -4141,6 +4497,7 @@ export interface FileBirthTimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileRootQueryString_2 {
@@ -4149,6 +4506,7 @@ export interface FileRootQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileDirQueryString_2 {
@@ -4157,6 +4515,7 @@ export interface FileDirQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileBaseQueryString_2 {
@@ -4165,6 +4524,7 @@ export interface FileBaseQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileExtQueryString_2 {
@@ -4173,6 +4533,7 @@ export interface FileExtQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileNameQueryString_2 {
@@ -4181,6 +4542,7 @@ export interface FileNameQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileRelativeDirectoryQueryString_2 {
@@ -4189,6 +4551,7 @@ export interface FileRelativeDirectoryQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileDevQueryInteger_2 {
@@ -4199,6 +4562,7 @@ export interface FileDevQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileModeQueryInteger_2 {
@@ -4209,6 +4573,7 @@ export interface FileModeQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileNlinkQueryInteger_2 {
@@ -4219,6 +4584,7 @@ export interface FileNlinkQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileUidQueryInteger_2 {
@@ -4229,6 +4595,7 @@ export interface FileUidQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileGidQueryInteger_2 {
@@ -4239,6 +4606,7 @@ export interface FileGidQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileRdevQueryInteger_2 {
@@ -4249,6 +4617,7 @@ export interface FileRdevQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileBlksizeQueryInteger_2 {
@@ -4259,9 +4628,10 @@ export interface FileBlksizeQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
-export interface FileInoQueryFloat_2 {
+export interface FileInoQueryInteger_2 {
   eq?: number | null;
   ne?: number | null;
   gt?: number | null;
@@ -4269,6 +4639,7 @@ export interface FileInoQueryFloat_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileBlocksQueryInteger_2 {
@@ -4279,6 +4650,7 @@ export interface FileBlocksQueryInteger_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileAtimeMsQueryFloat_2 {
@@ -4289,6 +4661,7 @@ export interface FileAtimeMsQueryFloat_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileMtimeMsQueryFloat_2 {
@@ -4299,6 +4672,7 @@ export interface FileMtimeMsQueryFloat_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileCtimeMsQueryFloat_2 {
@@ -4309,6 +4683,7 @@ export interface FileCtimeMsQueryFloat_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileBirthtimeMsQueryFloat_2 {
@@ -4319,6 +4694,7 @@ export interface FileBirthtimeMsQueryFloat_2 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FileAtimeQueryString_2 {
@@ -4327,6 +4703,7 @@ export interface FileAtimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileMtimeQueryString_2 {
@@ -4335,6 +4712,7 @@ export interface FileMtimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileCtimeQueryString_2 {
@@ -4343,6 +4721,7 @@ export interface FileCtimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FileBirthtimeQueryString_2 {
@@ -4351,6 +4730,7 @@ export interface FileBirthtimeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface PublicUrlQueryString_3 {
@@ -4359,6 +4739,7 @@ export interface PublicUrlQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkIdQueryString_2 {
@@ -4367,6 +4748,7 @@ export interface MarkdownRemarkIdQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkInternalInputObject_2 {
@@ -4383,6 +4765,7 @@ export interface MarkdownRemarkInternalContentQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkInternalTypeQueryString_2 {
@@ -4391,6 +4774,7 @@ export interface MarkdownRemarkInternalTypeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkInternalContentDigestQueryString_2 {
@@ -4399,6 +4783,7 @@ export interface MarkdownRemarkInternalContentDigestQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkInternalOwnerQueryString_2 {
@@ -4407,6 +4792,7 @@ export interface MarkdownRemarkInternalOwnerQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkInternalFieldOwnersInputObject_2 {
@@ -4419,6 +4805,7 @@ export interface MarkdownRemarkInternalFieldOwnersSlugQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkFrontmatterInputObject_2 {
@@ -4434,6 +4821,7 @@ export interface MarkdownRemarkFrontmatterTitleQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkFrontmatterTemplateKeyQueryString_2 {
@@ -4442,6 +4830,7 @@ export interface MarkdownRemarkFrontmatterTemplateKeyQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkFrontmatterPathQueryString_2 {
@@ -4450,6 +4839,7 @@ export interface MarkdownRemarkFrontmatterPathQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkFrontmatterParentQueryString_2 {
@@ -4458,6 +4848,7 @@ export interface MarkdownRemarkFrontmatterParentQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ExcerptQueryString_3 {
@@ -4466,6 +4857,7 @@ export interface ExcerptQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkRawMarkdownBodyQueryString_2 {
@@ -4474,6 +4866,7 @@ export interface MarkdownRemarkRawMarkdownBodyQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkFileAbsolutePathQueryString_2 {
@@ -4482,6 +4875,7 @@ export interface MarkdownRemarkFileAbsolutePathQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface MarkdownRemarkFieldsInputObject_2 {
@@ -4494,6 +4888,7 @@ export interface MarkdownRemarkFieldsSlugQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface HtmlQueryString_3 {
@@ -4502,6 +4897,7 @@ export interface HtmlQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface HeadingsQueryList_3 {
@@ -4519,6 +4915,7 @@ export interface HeadingsListElemValueQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface HeadingsListElemDepthQueryInt_3 {
@@ -4529,6 +4926,7 @@ export interface HeadingsListElemDepthQueryInt_3 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface TimeToReadQueryInt_3 {
@@ -4539,6 +4937,7 @@ export interface TimeToReadQueryInt_3 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface TableOfContentsQueryString_3 {
@@ -4547,6 +4946,7 @@ export interface TableOfContentsQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface WordCountTypeName_3 {
@@ -4563,6 +4963,7 @@ export interface WordCountParagraphsQueryInt_3 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface WordCountSentencesQueryInt_3 {
@@ -4573,6 +4974,7 @@ export interface WordCountSentencesQueryInt_3 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface WordCountWordsQueryInt_3 {
@@ -4583,6 +4985,7 @@ export interface WordCountWordsQueryInt_3 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface ImageSharpIdQueryString_2 {
@@ -4591,6 +4994,7 @@ export interface ImageSharpIdQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ImageSharpInternalInputObject_2 {
@@ -4605,6 +5009,7 @@ export interface ImageSharpInternalContentDigestQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ImageSharpInternalTypeQueryString_2 {
@@ -4613,6 +5018,7 @@ export interface ImageSharpInternalTypeQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ImageSharpInternalOwnerQueryString_2 {
@@ -4621,6 +5027,7 @@ export interface ImageSharpInternalOwnerQueryString_2 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FixedTypeName_3 {
@@ -4642,6 +5049,7 @@ export interface FixedBase64QueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FixedTracedSvgQueryString_3 {
@@ -4650,6 +5058,7 @@ export interface FixedTracedSvgQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FixedAspectRatioQueryFloat_3 {
@@ -4660,6 +5069,7 @@ export interface FixedAspectRatioQueryFloat_3 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FixedWidthQueryFloat_3 {
@@ -4670,6 +5080,7 @@ export interface FixedWidthQueryFloat_3 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FixedHeightQueryFloat_3 {
@@ -4680,6 +5091,7 @@ export interface FixedHeightQueryFloat_3 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FixedSrcQueryString_3 {
@@ -4688,6 +5100,7 @@ export interface FixedSrcQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FixedSrcSetQueryString_3 {
@@ -4696,6 +5109,7 @@ export interface FixedSrcSetQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FixedSrcWebpQueryString_3 {
@@ -4704,6 +5118,7 @@ export interface FixedSrcWebpQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FixedSrcSetWebpQueryString_3 {
@@ -4712,6 +5127,7 @@ export interface FixedSrcSetWebpQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FixedOriginalNameQueryString_3 {
@@ -4720,6 +5136,7 @@ export interface FixedOriginalNameQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ResolutionsTypeName_3 {
@@ -4741,6 +5158,7 @@ export interface ResolutionsBase64QueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ResolutionsTracedSvgQueryString_3 {
@@ -4749,6 +5167,7 @@ export interface ResolutionsTracedSvgQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ResolutionsAspectRatioQueryFloat_3 {
@@ -4759,6 +5178,7 @@ export interface ResolutionsAspectRatioQueryFloat_3 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface ResolutionsWidthQueryFloat_3 {
@@ -4769,6 +5189,7 @@ export interface ResolutionsWidthQueryFloat_3 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface ResolutionsHeightQueryFloat_3 {
@@ -4779,6 +5200,7 @@ export interface ResolutionsHeightQueryFloat_3 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface ResolutionsSrcQueryString_3 {
@@ -4787,6 +5209,7 @@ export interface ResolutionsSrcQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ResolutionsSrcSetQueryString_3 {
@@ -4795,6 +5218,7 @@ export interface ResolutionsSrcSetQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ResolutionsSrcWebpQueryString_3 {
@@ -4803,6 +5227,7 @@ export interface ResolutionsSrcWebpQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ResolutionsSrcSetWebpQueryString_3 {
@@ -4811,6 +5236,7 @@ export interface ResolutionsSrcSetWebpQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ResolutionsOriginalNameQueryString_3 {
@@ -4819,6 +5245,7 @@ export interface ResolutionsOriginalNameQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FluidTypeName_3 {
@@ -4840,6 +5267,7 @@ export interface FluidBase64QueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FluidTracedSvgQueryString_3 {
@@ -4848,6 +5276,7 @@ export interface FluidTracedSvgQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FluidAspectRatioQueryFloat_3 {
@@ -4858,6 +5287,7 @@ export interface FluidAspectRatioQueryFloat_3 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface FluidSrcQueryString_3 {
@@ -4866,6 +5296,7 @@ export interface FluidSrcQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FluidSrcSetQueryString_3 {
@@ -4874,6 +5305,7 @@ export interface FluidSrcSetQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FluidSrcWebpQueryString_3 {
@@ -4882,6 +5314,7 @@ export interface FluidSrcWebpQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FluidSrcSetWebpQueryString_3 {
@@ -4890,6 +5323,7 @@ export interface FluidSrcSetWebpQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FluidSizesQueryString_3 {
@@ -4898,6 +5332,7 @@ export interface FluidSizesQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FluidOriginalImgQueryString_3 {
@@ -4906,6 +5341,7 @@ export interface FluidOriginalImgQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface FluidOriginalNameQueryString_3 {
@@ -4914,6 +5350,7 @@ export interface FluidOriginalNameQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SizesTypeName_3 {
@@ -4935,6 +5372,7 @@ export interface SizesBase64QueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SizesTracedSvgQueryString_3 {
@@ -4943,6 +5381,7 @@ export interface SizesTracedSvgQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SizesAspectRatioQueryFloat_3 {
@@ -4953,6 +5392,7 @@ export interface SizesAspectRatioQueryFloat_3 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface SizesSrcQueryString_3 {
@@ -4961,6 +5401,7 @@ export interface SizesSrcQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SizesSrcSetQueryString_3 {
@@ -4969,6 +5410,7 @@ export interface SizesSrcSetQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SizesSrcWebpQueryString_3 {
@@ -4977,6 +5419,7 @@ export interface SizesSrcWebpQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SizesSrcSetWebpQueryString_3 {
@@ -4985,6 +5428,7 @@ export interface SizesSrcSetWebpQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SizesSizesQueryString_3 {
@@ -4993,6 +5437,7 @@ export interface SizesSizesQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SizesOriginalImgQueryString_3 {
@@ -5001,6 +5446,7 @@ export interface SizesOriginalImgQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface SizesOriginalNameQueryString_3 {
@@ -5009,6 +5455,7 @@ export interface SizesOriginalNameQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface OriginalTypeName_3 {
@@ -5025,6 +5472,7 @@ export interface OriginalWidthQueryFloat_3 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface OriginalHeightQueryFloat_3 {
@@ -5035,6 +5483,7 @@ export interface OriginalHeightQueryFloat_3 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface OriginalSrcQueryString_3 {
@@ -5043,6 +5492,7 @@ export interface OriginalSrcQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ResizeTypeName_3 {
@@ -5060,6 +5510,7 @@ export interface ResizeSrcQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ResizeTracedSvgQueryString_3 {
@@ -5068,6 +5519,7 @@ export interface ResizeTracedSvgQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 
 export interface ResizeWidthQueryInt_3 {
@@ -5078,6 +5530,7 @@ export interface ResizeWidthQueryInt_3 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface ResizeHeightQueryInt_3 {
@@ -5088,6 +5541,7 @@ export interface ResizeHeightQueryInt_3 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface ResizeAspectRatioQueryFloat_3 {
@@ -5098,6 +5552,7 @@ export interface ResizeAspectRatioQueryFloat_3 {
   lt?: number | null;
   lte?: number | null;
   in?: (number | null)[] | null;
+  nin?: (number | null)[] | null;
 }
 
 export interface ResizeOriginalNameQueryString_3 {
@@ -5106,6 +5561,7 @@ export interface ResizeOriginalNameQueryString_3 {
   regex?: string | null;
   glob?: string | null;
   in?: (string | null)[] | null;
+  nin?: (string | null)[] | null;
 }
 export interface AllSitePageQueryArgs {
   skip?: number | null;
@@ -5205,7 +5661,7 @@ export interface DirectoryQueryArgs {
   gid?: DirectoryGidQueryInteger_2 | null;
   rdev?: DirectoryRdevQueryInteger_2 | null;
   blksize?: DirectoryBlksizeQueryInteger_2 | null;
-  ino?: DirectoryInoQueryFloat_2 | null;
+  ino?: DirectoryInoQueryInteger_2 | null;
   blocks?: DirectoryBlocksQueryInteger_2 | null;
   atimeMs?: DirectoryAtimeMsQueryFloat_2 | null;
   mtimeMs?: DirectoryMtimeMsQueryFloat_2 | null;
@@ -5242,7 +5698,7 @@ export interface FileQueryArgs {
   gid?: FileGidQueryInteger_2 | null;
   rdev?: FileRdevQueryInteger_2 | null;
   blksize?: FileBlksizeQueryInteger_2 | null;
-  ino?: FileInoQueryFloat_2 | null;
+  ino?: FileInoQueryInteger_2 | null;
   blocks?: FileBlocksQueryInteger_2 | null;
   atimeMs?: FileAtimeMsQueryFloat_2 | null;
   mtimeMs?: FileMtimeMsQueryFloat_2 | null;
@@ -5536,6 +5992,7 @@ export interface BirthtimeFileArgs {
 }
 export interface ExcerptMarkdownRemarkArgs {
   pruneLength?: number | null;
+  truncate?: boolean | null;
 }
 export interface HeadingsMarkdownRemarkArgs {
   depth?: HeadingLevels | null;
@@ -5665,12 +6122,12 @@ export enum SitePageConnectionSortByFieldsEnum {
   internal___owner = "internal___owner"
 }
 
-export enum sitePageConnectionSortOrderValues {
+export enum SitePageConnectionSortOrderValues {
   ASC = "ASC",
   DESC = "DESC"
 }
 
-export enum sitePageDistinctEnum {
+export enum SitePageDistinctEnum {
   jsonName = "jsonName",
   internalComponentName = "internalComponentName",
   path = "path",
@@ -5688,7 +6145,7 @@ export enum sitePageDistinctEnum {
   internal___owner = "internal___owner"
 }
 
-export enum sitePageGroupEnum {
+export enum SitePageGroupEnum {
   jsonName = "jsonName",
   internalComponentName = "internalComponentName",
   path = "path",
@@ -5735,12 +6192,12 @@ export enum SitePluginConnectionSortByFieldsEnum {
   internal___owner = "internal___owner"
 }
 
-export enum sitePluginConnectionSortOrderValues {
+export enum SitePluginConnectionSortOrderValues {
   ASC = "ASC",
   DESC = "DESC"
 }
 
-export enum sitePluginDistinctEnum {
+export enum SitePluginDistinctEnum {
   resolve = "resolve",
   id = "id",
   name = "name",
@@ -5769,7 +6226,7 @@ export enum sitePluginDistinctEnum {
   internal___owner = "internal___owner"
 }
 
-export enum sitePluginGroupEnum {
+export enum SitePluginGroupEnum {
   resolve = "resolve",
   id = "id",
   name = "name",
@@ -5840,12 +6297,12 @@ export enum DirectoryConnectionSortByFieldsEnum {
   birthtime = "birthtime"
 }
 
-export enum directoryConnectionSortOrderValues {
+export enum DirectoryConnectionSortOrderValues {
   ASC = "ASC",
   DESC = "DESC"
 }
 
-export enum directoryDistinctEnum {
+export enum DirectoryDistinctEnum {
   id = "id",
   parent = "parent",
   internal___contentDigest = "internal___contentDigest",
@@ -5887,7 +6344,7 @@ export enum directoryDistinctEnum {
   birthtime = "birthtime"
 }
 
-export enum directoryGroupEnum {
+export enum DirectoryGroupEnum {
   id = "id",
   parent = "parent",
   internal___contentDigest = "internal___contentDigest",
@@ -5974,7 +6431,7 @@ export enum FileConnectionSortByFieldsEnum {
   publicURL = "publicURL"
 }
 
-export enum fileConnectionSortOrderValues {
+export enum FileConnectionSortOrderValues {
   ASC = "ASC",
   DESC = "DESC"
 }
@@ -6018,7 +6475,7 @@ export enum ImageCropFocus {
   ATTENTION = "ATTENTION"
 }
 
-export enum fileDistinctEnum {
+export enum FileDistinctEnum {
   id = "id",
   children = "children",
   parent = "parent",
@@ -6062,7 +6519,7 @@ export enum fileDistinctEnum {
   birthtime = "birthtime"
 }
 
-export enum fileGroupEnum {
+export enum FileGroupEnum {
   id = "id",
   children = "children",
   parent = "parent",
@@ -6131,12 +6588,12 @@ export enum MarkdownRemarkConnectionSortByFieldsEnum {
   wordCount___words = "wordCount___words"
 }
 
-export enum markdownRemarkConnectionSortOrderValues {
+export enum MarkdownRemarkConnectionSortOrderValues {
   ASC = "ASC",
   DESC = "DESC"
 }
 
-export enum markdownRemarkDistinctEnum {
+export enum MarkdownRemarkDistinctEnum {
   id = "id",
   parent = "parent",
   internal___content = "internal___content",
@@ -6154,7 +6611,7 @@ export enum markdownRemarkDistinctEnum {
   fields___slug = "fields___slug"
 }
 
-export enum markdownRemarkGroupEnum {
+export enum MarkdownRemarkGroupEnum {
   id = "id",
   parent = "parent",
   internal___content = "internal___content",
@@ -6229,12 +6686,12 @@ export enum ImageSharpConnectionSortByFieldsEnum {
   resize___originalName = "resize___originalName"
 }
 
-export enum imageSharpConnectionSortOrderValues {
+export enum ImageSharpConnectionSortOrderValues {
   ASC = "ASC",
   DESC = "DESC"
 }
 
-export enum imageSharpDistinctEnum {
+export enum ImageSharpDistinctEnum {
   id = "id",
   parent = "parent",
   internal___contentDigest = "internal___contentDigest",
@@ -6242,7 +6699,7 @@ export enum imageSharpDistinctEnum {
   internal___owner = "internal___owner"
 }
 
-export enum imageSharpGroupEnum {
+export enum ImageSharpGroupEnum {
   id = "id",
   parent = "parent",
   internal___contentDigest = "internal___contentDigest",
@@ -6452,7 +6909,7 @@ export namespace QueryResolvers {
     gid?: DirectoryGidQueryInteger_2 | null;
     rdev?: DirectoryRdevQueryInteger_2 | null;
     blksize?: DirectoryBlksizeQueryInteger_2 | null;
-    ino?: DirectoryInoQueryFloat_2 | null;
+    ino?: DirectoryInoQueryInteger_2 | null;
     blocks?: DirectoryBlocksQueryInteger_2 | null;
     atimeMs?: DirectoryAtimeMsQueryFloat_2 | null;
     mtimeMs?: DirectoryMtimeMsQueryFloat_2 | null;
@@ -6495,7 +6952,7 @@ export namespace QueryResolvers {
     gid?: FileGidQueryInteger_2 | null;
     rdev?: FileRdevQueryInteger_2 | null;
     blksize?: FileBlksizeQueryInteger_2 | null;
-    ino?: FileInoQueryFloat_2 | null;
+    ino?: FileInoQueryInteger_2 | null;
     blocks?: FileBlocksQueryInteger_2 | null;
     atimeMs?: FileAtimeMsQueryFloat_2 | null;
     mtimeMs?: FileMtimeMsQueryFloat_2 | null;
@@ -8464,6 +8921,7 @@ export namespace MarkdownRemarkResolvers {
   > = Resolver<R, Parent, Context, ExcerptArgs>;
   export interface ExcerptArgs {
     pruneLength?: number | null;
+    truncate?: boolean | null;
   }
 
   export type HeadingsResolver<

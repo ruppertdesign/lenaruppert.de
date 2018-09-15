@@ -1,7 +1,9 @@
 {
   "defaultSeverity": "error",
   "extends": [
-    "tslint:recommended"
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-config-prettier"
   ],
   "jsRules": {},
   "rules": {
@@ -35,6 +37,9 @@
   },
   "rulesDirectory": [],
   "linterOptions": {
-    "exclude": ["public/**/*", "static/**/*"]
+    "exclude": [
+      "public/**/*",
+      "static/**/*"
+    ]
   }
 }
