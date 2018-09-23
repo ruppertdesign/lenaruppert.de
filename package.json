@@ -14,8 +14,12 @@
     "format": "yarn prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.{js,jsx,ts,tsx}'",
     "graphql-types": "gql-gen --schema http://localhost:8000/___graphql --template graphql-codegen-typescript-template --out ./typings/graphql-types.ts",
     "type-check": "tsc --noEmit",
-    "lint": "yarn tslint --project . --fix",
-    "precommit": "lint-staged"
+    "lint": "yarn tslint --project . --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
@@ -65,7 +69,7 @@
   },
   "devDependencies": {
     "graphql-codegen-typescript-template": "^0.12.2",
-    "husky": "^0.14.3",
+    "husky": "^1.0.0-rc.15",
     "lint-staged": "^7.0.4",
     "prettier": "^1.7.4",
     "rimraf": "^2.6.2"
