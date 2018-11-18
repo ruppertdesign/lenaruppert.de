@@ -1,5 +1,5 @@
 ---
-templateKey: 'standard-page'
+templateKey: 'standard'
 path: /impressum
 title: Impressum
 ---

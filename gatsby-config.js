@@ -31,7 +31,15 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: []
+        plugins: [
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank",
+              rel: "nofollow noopener noreferrer"
+            }
+          }
+        ]
       }
     },
     'gatsby-plugin-netlify-cms',

@@ -22,29 +22,43 @@ exports.createPages = ({ actions, graphql }) => {
       }
     }
   `).then(result => {
-    if (result.errors) {
-      result.errors.forEach(e => console.error(e.toString()))
-      return Promise.reject(result.errors)
-    }
+      if (result.errors) {
+        result.errors.forEach(e => console.error(e.toString()))
+        return Promise.reject(result.errors)
+      }
 
-    const posts = result.data.allMarkdownRemark.edges
+      const posts = result.data.allMarkdownRemark.edges
 
-    posts.forEach(edge => {
-      const id = edge.node.id
+      const start = posts.find(post => post.node.frontmatter.templateKey === 'start')
       createPage({
-        path: edge.node.fields.slug,
-        tags: edge.node.frontmatter.tags,
+        path: '/preview-06-06-2014',
+        tags: start.node.frontmatter.tags,
         component: path.resolve(
-          `src/templates/${String(edge.node.frontmatter.templateKey)}.tsx`
+          `src/templates/start.tsx`
         ),
-        // additional data can be passed via context
         context: {
-          id,
+          id: start.node.id,
         },
       })
-    })
 
-  })
+      posts
+        .filter(post => post.node.frontmatter.templateKey !== 'start')
+        .forEach(post => {
+          const id = post.node.id
+          createPage({
+            path: post.node.fields.slug,
+            tags: post.node.frontmatter.tags,
+            component: path.resolve(
+              `src/templates/${String(post.node.frontmatter.templateKey)}.tsx`
+            ),
+            // additional data can be passed via context
+            context: {
+              id,
+            },
+          })
+        })
+
+    })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
