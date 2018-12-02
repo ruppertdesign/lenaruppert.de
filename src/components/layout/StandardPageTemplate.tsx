@@ -2,6 +2,7 @@ import * as React from 'react'
 import styled from 'react-emotion'
 import { rhythm } from '../../utils/typography'
 import { HTMLContent } from '../Content'
+import styleVars from '../../styles/styleVars'
 
 interface Props {
   title?: string | null
@@ -10,7 +11,7 @@ interface Props {
 
 const Wrapper = styled('section')`
   margin: ${rhythm(2)} auto;
-  max-width: 40rem;
+  max-width: ${styleVars.dimensions.contentWidth};
 `
 
 export default ({ title, content }: Props) => {

@@ -14,6 +14,7 @@ interface Props {
 
 const HeaderImage = styled('img')`
   width: 100%;
+  margin: 0;
 `
 
 const StartPage = ({ data }: Props) => {

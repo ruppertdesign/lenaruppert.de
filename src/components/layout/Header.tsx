@@ -6,9 +6,11 @@ import * as logo from '../../img/logo.png'
 import { rhythm, scale } from '../../utils/typography'
 
 const Header = styled('header')`
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: ${styleVars.dimensions.contentWidth};
 `
 
 const HomeLink = styled(Link)`
@@ -20,27 +22,37 @@ const HomeLink = styled(Link)`
 
 const Logo = styled('img')`
   width: 15rem;
-  margin: ${rhythm(1)} 0 ${rhythm(2)} 0;
+  margin: ${rhythm(1)} 0;
 `
 
-const TmpText = styled('p')`
-  position: relative;
-  top: ${rhythm(-3)};
+const TmpText = styled('div')`
+  position: absolute;
+  width: 100%;
+  top: ${rhythm(0.5)};
+  left: 0;
   text-align: center;
   color: #333;
   ${scale(-0.5)};
 `
 
 const Nav = styled('nav')`
-  margin-bottom: ${rhythm(0.5)};
+  width: 100%;
 `
 
 const NavList = styled('ul')`
-  list-style-type: none;
+  width: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  text-align: center;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+`
+
+const Li = styled('li')`
+  display: block;
+  flex: 0 1 auto;
+  list-style-type: none;
+  font-family: ${styleVars.fonts.header};
 `
 
 const underlined = css`
@@ -60,7 +72,6 @@ const underlined = css`
 
 const linkClass = css`
   color: ${styleVars.colors.bodyColor};
-  text-transform: uppercase;
   position: relative;
   transition: all 0.3s ease-in-out 0s;
   ${underlined}
@@ -81,11 +92,6 @@ const activeLinkClass = css`
     visibility: visible;
     transform: scaleX(1);
   }
-`
-
-const Li = styled('li')`
-  display: inline-block;
-  margin: 0 ${rhythm(1.5)};
 `
 
 const NavLink = ({ title, to }) => (

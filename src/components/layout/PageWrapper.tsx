@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import styled from 'react-emotion'
 import Header from './Header'
 import Footer from './Footer'
+import styleVars from '../../styles/styleVars'
 
 interface Props {
   children: React.ReactNode
@@ -10,7 +11,7 @@ interface Props {
 }
 
 const Wrapper = styled('section')`
-  max-width: 60rem;
+  max-width: ${styleVars.dimensions.pageWidth};
   padding: 0 1rem;
   margin: 0 auto;
 `
