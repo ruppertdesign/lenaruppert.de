@@ -2,6 +2,7 @@ import * as React from 'react'
 import Helmet from 'react-helmet'
 import styled from 'react-emotion'
 import Header from './Header'
+import Footer from './Footer'
 
 interface Props {
   children: React.ReactNode
@@ -24,6 +25,7 @@ export default ({ children, title }: Props) => (
     <Wrapper>
       <Header />
       <main>{children}</main>
+      <Footer />
     </Wrapper>
   </section>
 )

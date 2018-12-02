@@ -108,7 +108,6 @@ export default () => (
         <NavLink title="Referenzen" to="/referenzen" />
         <NavLink title="Über mich" to="/ueber-mich" />
         <NavLink title="Kontakt" to="/kontakt" />
-        <NavLink title="Impressum" to="/impressum" />
       </NavList>
     </Nav>
   </Header>
