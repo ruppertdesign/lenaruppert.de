@@ -7,6 +7,7 @@ import styleVars from '../../styles/styleVars'
 interface Props {
   title?: string | null
   content?: string | null
+  bottomComponent?: React.ReactNode
 }
 
 const Wrapper = styled('section')`
@@ -14,11 +15,12 @@ const Wrapper = styled('section')`
   max-width: ${styleVars.dimensions.contentWidth};
 `
 
-export default ({ title, content }: Props) => {
+export default ({ title, content, bottomComponent }: Props) => {
   return (
     <Wrapper>
       <h1>{title}</h1>
       <HTMLContent className="content" content={content} />
+      {bottomComponent}
     </Wrapper>
   )
 }
