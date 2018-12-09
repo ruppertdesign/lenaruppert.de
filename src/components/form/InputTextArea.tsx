@@ -1,5 +1,12 @@
 import * as React from 'react'
-import { assertDeclareFunction } from 'babel-types'
+import Label from './Label'
+import { rhythm } from '../../utils/typography'
+import css from '@emotion/css'
+import { inputStyles } from './baseFormStyles'
+
+const inputTextareaStyles = css`
+  height: ${rhythm(5)};
+`
 
 interface Props {
   id: string
@@ -24,12 +31,13 @@ export default ({
   errorMsg,
 }: Props) => (
   <React.Fragment>
-    <label htmlFor={id}>{label}</label>
+    <Label htmlFor={id}>{label}</Label>
     <textarea
       id={id}
       name={id}
-      value={value}
+      placeholder={label}
       onChange={onChange}
+      css={[inputStyles, inputTextareaStyles]}
       required={required}
       minLength={minLength}
       rows={rows}

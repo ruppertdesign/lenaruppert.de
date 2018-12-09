@@ -1,9 +1,11 @@
 export default {
   colors: {
-    bodyColor: 'hsla(0,0%,0%,0.8)',
-    grayLight: 'hsla(0,0%,0%,0.4)',
-    headerColor: 'hsla(0,0%,0%,0.9)',
+    bodyColor: 'hsla(0, 0%, 0%, 0.8)',
+    grayLight: 'hsla(0, 0%, 0%, 0.4)',
+    headerColor: 'hsla(0, 0%, 0%, 0.9)',
     linkColor: 'hsla(41, 60%, 56%, 1)',
+    white: 'hsla(0, 0%, 100%, 1)',
+    black: 'hsla(0, 0%, 0%, 1)',
   },
   dimensions: {
     contentWidth: '37rem',

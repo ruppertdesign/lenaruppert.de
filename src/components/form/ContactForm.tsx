@@ -1,6 +1,11 @@
 import * as React from 'react'
 import InputText from './InputText'
 import InputTextArea from './InputTextArea'
+import Fieldset from './Fieldset'
+import Legend from './Legend'
+import HoneyPot from './HoneyPot'
+import styled from '@emotion/styled'
+import Button from './Button'
 
 interface Input {
   value?: string
@@ -21,6 +26,10 @@ const patterns = {
   tel: '[()0-9 /+-]*',
 }
 
+const Form = styled('form')`
+  max-width: 22rem;
+`
+
 export default class ContactForm extends React.PureComponent<{}, State> {
   state: State = {
     submitError: false,
@@ -36,15 +45,15 @@ export default class ContactForm extends React.PureComponent<{}, State> {
 
   render() {
     return (
-      <form
+      <Form
         id="contactForm"
         name="contact"
         action="danke"
         data-netlify="true"
         netlify-honeypot="fax"
       >
-        <fieldset>
-          <legend>Kontakt</legend>
+        <Fieldset>
+          <Legend>Kontakt</Legend>
 
           {this.state.submitError && (
             <div className="error" id="submitError">
@@ -57,7 +66,7 @@ export default class ContactForm extends React.PureComponent<{}, State> {
 
           <InputText
             id="name"
-            label="Name"
+            label="Name *"
             value={this.state.name.value}
             errorMsg={this.state.name.error}
             onChange={this.handleUserInput}
@@ -69,7 +78,7 @@ export default class ContactForm extends React.PureComponent<{}, State> {
 
           <InputText
             id="email"
-            label="E-Mail"
+            label="E-Mail *"
             value={this.state.email.value}
             errorMsg={this.state.email.error}
             onChange={this.handleUserInput}
@@ -90,27 +99,20 @@ export default class ContactForm extends React.PureComponent<{}, State> {
 
           <InputTextArea
             id="message"
-            label="Ihre Nachricht"
+            label="Ihre Nachricht *"
             value={this.state.message.value}
             errorMsg={this.state.message.error}
             onChange={this.handleUserInput}
             rows={6}
           />
 
-          <input
-            type="checkbox"
-            name="fax"
-            value="1"
-            tabIndex={-1}
-            autoComplete="off"
-            className="hideme"
-          />
+          <HoneyPot name="fax" />
 
-          <button id="submit" type="submit">
+          <Button id="submit" type="submit">
             Senden
-          </button>
-        </fieldset>
-      </form>
+          </Button>
+        </Fieldset>
+      </Form>
     )
   }
 }
