@@ -1,5 +1,5 @@
 import * as React from 'react'
-import styled from 'react-emotion'
+import styled from '@emotion/styled'
 import { rhythm } from '../../utils/typography'
 import { HTMLContent } from '../Content'
 import styleVars from '../../styles/styleVars'

@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
-import styled from 'react-emotion'
+import styled from '@emotion/styled'
 import StandardPageTemplate from '../components/layout/StandardPageTemplate'
 import PageWrapper from '../components/layout/PageWrapper'
 import { MarkdownRemark } from '../../typings/graphql-types'

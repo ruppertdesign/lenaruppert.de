@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Link from 'gatsby-link'
-import styled, { css } from 'react-emotion'
+import styled from '@emotion/styled'
+import { css } from '@emotion/core'
 import styleVars from '../../styles/styleVars'
 import * as logo from '../../img/logo.png'
 import { rhythm, scale } from '../../utils/typography'
@@ -70,7 +71,7 @@ const underlined = css`
   }
 `
 
-const linkClass = css`
+const StyledLink = styled(Link)`
   color: ${styleVars.colors.bodyColor};
   position: relative;
   transition: all 0.3s ease-in-out 0s;
@@ -85,7 +86,7 @@ const linkClass = css`
   }
 `
 
-const activeLinkClass = css`
+const activeLinkStyle = css`
   color: ${styleVars.colors.linkColor};
   ${underlined}
   :before {
@@ -96,9 +97,9 @@ const activeLinkClass = css`
 
 const NavLink = ({ title, to }) => (
   <Li>
-    <Link to={to} className={linkClass} activeClassName={activeLinkClass}>
+    <StyledLink to={to} activeStyle={activeLinkStyle}>
       {title}
-    </Link>
+    </StyledLink>
   </Li>
 )
 
