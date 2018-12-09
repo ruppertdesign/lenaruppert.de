@@ -54,6 +54,10 @@ const Li = styled('li')`
   flex: 0 1 auto;
   list-style-type: none;
   font-family: ${styleVars.fonts.header};
+  text-indent: 0;
+  :before {
+    content: '';
+  }
 `
 
 const underlined = css`
