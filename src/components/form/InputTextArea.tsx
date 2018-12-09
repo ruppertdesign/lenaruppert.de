@@ -2,7 +2,11 @@ import * as React from 'react'
 import Label from './Label'
 import { rhythm } from '../../utils/typography'
 import css from '@emotion/css'
-import { inputStyles } from './baseFormStyles'
+import {
+  inputStyles,
+  errorInputStyles,
+  errorMessageStyles,
+} from './baseFormStyles'
 
 const inputTextareaStyles = css`
   height: ${rhythm(5)};
@@ -17,7 +21,8 @@ interface Props {
   minLength?: number
   maxLength?: number
   rows: number
-  errorMsg?: string
+  valid: boolean
+  errorMsg: string
 }
 
 export default ({
@@ -28,6 +33,7 @@ export default ({
   required,
   minLength,
   rows,
+  valid,
   errorMsg,
 }: Props) => (
   <React.Fragment>
@@ -37,11 +43,11 @@ export default ({
       name={id}
       placeholder={label}
       onChange={onChange}
-      css={[inputStyles, inputTextareaStyles]}
+      css={[inputStyles, inputTextareaStyles, !valid && errorInputStyles]}
       required={required}
       minLength={minLength}
       rows={rows}
     />
-    <div className="error">{errorMsg}</div>
+    {!valid && <div css={errorMessageStyles}>{errorMsg}</div>}
   </React.Fragment>
 )

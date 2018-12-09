@@ -6,10 +6,11 @@ import Legend from './Legend'
 import HoneyPot from './HoneyPot'
 import styled from '@emotion/styled'
 import Button from './Button'
+import validator from './validator'
 
 interface Input {
-  value?: string
-  error?: string
+  value: string
+  valid: boolean
 }
 
 interface State {
@@ -20,27 +21,61 @@ interface State {
   message: Input
 }
 
-const patterns = {
-  text: '[0-9a-zA-ZßÖÄÜ\u00E0-\u00FC,. _-]{3,}',
-  email: '[0-9a-zA-Z._%+-]+@[0-9a-zA-Z.-]+.[a-z]{2,4}',
-  tel: '[()0-9 /+-]*',
-}
-
 const Form = styled('form')`
   max-width: 22rem;
 `
 
+const fieldNames = ['name', 'email', 'tel', 'message']
+const initialFormValues = fieldNames.reduce(
+  (acc, curr) => ({
+    ...acc,
+    [curr]: {
+      value: '',
+      valid: true,
+    },
+  }),
+  {}
+)
+
 export default class ContactForm extends React.PureComponent<{}, State> {
+  // @ts-ignore
   state: State = {
     submitError: false,
-    name: {},
-    email: {},
-    tel: {},
-    message: {},
+    ...initialFormValues,
   }
 
-  handleUserInput = ({ target }) => {
-    console.info(target.name, target.value)
+  handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault()
+    const target = event.target as HTMLFormElement
+    const fields = {}
+    // @ts-ignore: no idea how to fix that
+    for (const field of target.elements) {
+      if (!fieldNames.includes(field.name)) {
+        continue
+      }
+      fields[field.name] = {
+        value: this.state[field.name].value,
+        valid: validator.validate(field),
+      }
+    }
+    const formValid = Object.values(fields).every(field => (field as any).valid)
+    if (formValid) {
+      // TODO submit form
+    } else {
+      this.setState(fields)
+    }
+  }
+
+  handleUserInput = (event: React.ChangeEvent) => {
+    const target = event.target as HTMLInputElement
+    const valid = validator.validate(target)
+    // @ts-ignore: we trust that the names match here
+    this.setState({
+      [target.name]: {
+        value: target.value,
+        valid,
+      },
+    })
   }
 
   render() {
@@ -51,6 +86,8 @@ export default class ContactForm extends React.PureComponent<{}, State> {
         action="danke"
         data-netlify="true"
         netlify-honeypot="fax"
+        onSubmit={this.handleSubmit}
+        noValidate={true}
       >
         <Fieldset>
           <Legend>Kontakt</Legend>
@@ -68,42 +105,47 @@ export default class ContactForm extends React.PureComponent<{}, State> {
             id="name"
             label="Name *"
             value={this.state.name.value}
-            errorMsg={this.state.name.error}
+            valid={this.state.name.valid}
             onChange={this.handleUserInput}
             required={true}
             minLength={3}
             maxLength={50}
-            pattern={patterns.text}
+            pattern={validator.patterns.text}
+            errorMsg="Bitte geben Sie Ihren Namen ein"
           />
 
           <InputText
             id="email"
             label="E-Mail *"
             value={this.state.email.value}
-            errorMsg={this.state.email.error}
+            valid={this.state.email.valid}
             onChange={this.handleUserInput}
             required={true}
             maxLength={50}
-            pattern={patterns.email}
+            pattern={validator.patterns.email}
+            errorMsg="Bitte geben Sie eine gültige E-Mail Adresse ein"
           />
 
           <InputText
             id="tel"
             label="Telefon"
             value={this.state.tel.value}
-            errorMsg={this.state.tel.error}
+            valid={this.state.tel.valid}
             onChange={this.handleUserInput}
             maxLength={50}
-            pattern={patterns.tel}
+            pattern={validator.patterns.tel}
+            errorMsg="Bitte geben Sie nur gültige Zeichen ein: 0-9 / + - ( )"
           />
 
           <InputTextArea
             id="message"
             label="Ihre Nachricht *"
             value={this.state.message.value}
-            errorMsg={this.state.message.error}
+            valid={this.state.message.valid}
             onChange={this.handleUserInput}
+            required={true}
             rows={6}
+            errorMsg="Bitte geben Sie Ihre Nachricht ein"
           />
 
           <HoneyPot name="fax" />

@@ -6,6 +6,7 @@ export default {
     linkColor: 'hsla(41, 60%, 56%, 1)',
     white: 'hsla(0, 0%, 100%, 1)',
     black: 'hsla(0, 0%, 0%, 1)',
+    red: 'hsla(0, 1000%, 40%, 1)',
   },
   dimensions: {
     contentWidth: '37rem',
