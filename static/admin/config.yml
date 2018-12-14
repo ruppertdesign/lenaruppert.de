@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: ruppertdesign/lenaruppert.de
   branch: master
 
 media_folder: static/img
