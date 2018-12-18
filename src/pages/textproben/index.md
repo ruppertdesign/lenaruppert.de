@@ -4,6 +4,14 @@ path: /textproben
 title: Textproben
 ---
 
+## Soll eher so aussehen
+
+Bavaria ipsum dolor sit amet Biazelt ned schüds nei nomoi heitzdog Weiznglasl a Maß und no a Maß schnacksln wia da Buachbinda Wanninger. Wos nia greaßt eich nachad um Godds wujn amoi des is a gmahde Wiesn des wiad a Mordsgaudi Weibaleid naa wiavui. Diandldrahn wos Habedehre Milli Foidweg sammawiedaguad, gelbe Rüam. I waar soweid Watschnpladdla wos, a bissal wos gehd ollaweil Zwedschgndadschi i hob di liab. Griasnoggalsubbm umananda Sepp mi kumm geh Bussal Weißwiaschd bitt abfieseln. [[&nbsp;_Weiter lesen..._&nbsp;](https://web.de/magazine/autor/lena-ruppert-31369988)]
+
+## Nächster Artikel
+
+Bavaria ipsum dolor sit amet Biazelt ned schüds nei nomoi heitzdog Weiznglasl a Maß und no a Maß schnacksln wia da Buachbinda Wanninger. Wos nia greaßt eich nachad um Godds wujn amoi des is a gmahde Wiesn des wiad a Mordsgaudi Weibaleid naa wiavui. Diandldrahn wos Habedehre Milli Foidweg sammawiedaguad, gelbe Rüam. I waar soweid Watschnpladdla wos, a bissal wos gehd ollaweil Zwedschgndadschi i hob di liab. Griasnoggalsubbm umananda Sepp mi kumm geh Bussal Weißwiaschd bitt abfieseln. [Weiter lesen...](https://web.de/magazine/autor/lena-ruppert-31369988)
+
 ## Web.de und gmx.de: Schwerpunkt Gesellschaft / Umwelt
 
 * [Meine Überblicksseite von web.de](https://web.de/magazine/autor/lena-ruppert-31369988)
