@@ -3,7 +3,7 @@ export default {
     bodyColor: 'hsla(0, 0%, 0%, 0.8)',
     grayLight: 'hsla(0, 0%, 0%, 0.4)',
     headerColor: 'hsla(0, 0%, 0%, 0.9)',
-    linkColor: 'hsla(41, 60%, 56%, 1)',
+    linkColor: 'hsla(47, 100%, 50%, 1)',
     white: 'hsla(0, 0%, 100%, 1)',
     black: 'hsla(0, 0%, 0%, 1)',
     red: 'hsla(0, 1000%, 40%, 1)',
