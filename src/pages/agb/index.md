@@ -1,7 +1,6 @@
 ---
 templateKey: standard
 title: AGB
-date: 2018-12-26T18:25:25.593Z
 ---
 ## Allgemeines
 

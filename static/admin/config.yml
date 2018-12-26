@@ -16,7 +16,6 @@ pages_fields: &pages_fields
         default: "standard",
       }
     - { label: "Title", name: "title", widget: "string" }
-    - { label: "Date", name: "date", widget: "datetime" }
     - { label: "Body", name: "body", widget: "markdown" }
 
 collections:
