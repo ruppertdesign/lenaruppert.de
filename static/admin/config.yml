@@ -7,21 +7,51 @@ backend:
 media_folder: static/img
 public_folder: /img
 
+pages_fields: &pages_fields
+  fields:
+    - {
+        label: "Template Key",
+        name: "templateKey",
+        widget: "hidden",
+        default: "standard",
+      }
+    - { label: "Title", name: "title", widget: "string" }
+    - { label: "Date", name: "date", widget: "datetime" }
+    - { label: "Body", name: "body", widget: "markdown" }
+
 collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/pages/ueber-mich/index.md"
-        label: "Über mich"
-        name: "ueber-mich"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "standard"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/404/index.md"
+        label: "Fehler 404"
+        name: "fehler-404"
+        <<: *pages_fields
+      - file: "src/pages/agb/index.md"
+        label: "AGB"
+        name: "agb"
+        <<: *pages_fields
+      - file: "src/pages/datenschutz/index.md"
+        label: "Datenschutz"
+        name: "datenschutz"
+        <<: *pages_fields
       - file: "src/pages/impressum/index.md"
         label: "Impressum"
         name: "impressum"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "standard"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+        <<: *pages_fields
+      - file: "src/pages/kontakt/index.md"
+        label: "Kontakt"
+        name: "kontakt"
+        <<: *pages_fields
+      - file: "src/pages/referenzen/index.md"
+        label: "Referenzen"
+        name: "referenzen"
+        <<: *pages_fields
+      - file: "src/pages/start/index.md"
+        label: "Start"
+        name: "start"
+        <<: *pages_fields
+      - file: "src/pages/ueber-mich/index.md"
+        label: "Über mich"
+        name: "ueber-mich"
+        <<: *pages_fields
