@@ -1,10 +1,10 @@
 ---
-templateKey: 'standard'
-path: /ueber-mich
+templateKey: standard
 title: Über mich
 ---
+## Lena Ruppert | Freie Journalistin und Redakteurin
 
-## Lena Ruppert | Freie Journalistin und Redakteurin 
+Das ist ein test.
 
 Nach meinem Studium der Komparatistik, Philosophie und Nordistik konnte ich meine bislang gesammelten journalistischen Erfahrungen in der Kulturredaktion von süddeutsche.de vertiefen. 
 
@@ -16,4 +16,4 @@ Ich habe das Ressort Gesellschaft und Kultur geleitet, war an der Entstehung des
 
 Als Redakteur bei wundermedia habe ich die Online-Auftritte von namhaften Kunden wie msn.de, sat.1.de und maxdome.de mitbetreut.
 
-Um wieder selbst mehr schreiben und gestalten zu können habe ich im Juni 2016 den Schritt in die Freiberuflichkeit gewagt. Seitdem verfasse ich mit viel Freude und Elan Inhalte für Webseiten, Agenturen und Unternehmen. 
+Um wieder selbst mehr schreiben und gestalten zu können habe ich im Juni 2016 den Schritt in die Freiberuflichkeit gewagt. Seitdem verfasse ich mit viel Freude und Elan Inhalte für Webseiten, Agenturen und Unternehmen.
