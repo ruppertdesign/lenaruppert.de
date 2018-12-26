@@ -1,9 +1,8 @@
 ---
-templateKey: 'standard'
-path: /agb
+templateKey: standard
 title: AGB
+date: 2018-12-26T18:25:25.593Z
 ---
-
 ## Allgemeines
 
 Diese Geschäftsbedingungen finden Anwendung auf Text- und Bildbeiträge (Material). Geliefertes Material bleibt stets Eigentum der Journalistin. Es wird vorübergehend zur Ausübung der Rechte für die auf der Auftragsbestätigung angegebenen Nutzungsarten überlassen. 
@@ -21,7 +20,7 @@ Honorare sind stets Netto-Honorare ohne Mehrwertsteuer. Honorare sind sogleich n
 
 Hat der Besteller nicht innerhalb von zwei Wochen nach Lieferung des Materials die Annahme erklärt, kann das Material ohne weitere Bindung an den Besteller anderweitig angeboten werden.
 
-## Urheberrecht 
+## Urheberrecht
 
 Für jede Nutzung gelten neben den getroffenen Vereinbarungen die Bestimmungen des Urheberrechtsgesetzes.
 
