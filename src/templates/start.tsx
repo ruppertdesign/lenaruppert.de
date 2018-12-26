@@ -2,7 +2,7 @@ import * as React from 'react'
 import { graphql } from 'gatsby'
 import styled from '@emotion/styled'
 import StandardPageTemplate from '../components/layout/StandardPageTemplate'
-import PageWrapper from '../components/layout/PageWrapper'
+import MainPage from '../components/layout/MainPage'
 import { MarkdownRemark } from '../../typings/graphql-types'
 import * as headerImage from '../img/header.png'
 
@@ -23,13 +23,13 @@ const StartPage = ({ data }: Props) => {
     return null
   }
   return (
-    <PageWrapper title={post.frontmatter.title}>
+    <MainPage title={post.frontmatter.title}>
       <HeaderImage src={headerImage} />
       <StandardPageTemplate
         title={post.frontmatter.title}
         content={post.html}
       />
-    </PageWrapper>
+    </MainPage>
   )
 }
 

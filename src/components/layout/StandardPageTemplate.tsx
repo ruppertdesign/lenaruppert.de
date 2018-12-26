@@ -1,8 +1,6 @@
 import * as React from 'react'
-import styled from '@emotion/styled'
-import { rhythm } from '../../utils/typography'
 import { HTMLContent } from '../Content'
-import styleVars from '../../styles/styleVars'
+import ContentWrapper from './ContentWrapper'
 
 interface Props {
   title?: string | null
@@ -10,17 +8,13 @@ interface Props {
   bottomComponent?: React.ReactNode
 }
 
-const Wrapper = styled('section')`
-  margin: ${rhythm(2)} auto;
-  max-width: ${styleVars.dimensions.contentWidth};
-`
-
 export default ({ title, content, bottomComponent }: Props) => {
+  console.info(typeof content)
   return (
-    <Wrapper>
+    <ContentWrapper>
       <h1>{title}</h1>
       <HTMLContent className="content" content={content} />
       {bottomComponent}
-    </Wrapper>
+    </ContentWrapper>
   )
 }

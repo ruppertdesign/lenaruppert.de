@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 import StandardPageTemplate from '../components/layout/StandardPageTemplate'
-import PageWrapper from '../components/layout/PageWrapper'
+import MainPage from '../components/layout/MainPage'
 import { MarkdownRemark } from '../../typings/graphql-types'
 import ContactForm from '../components/form/ContactForm'
 
@@ -17,13 +17,13 @@ const ContactPage = ({ data }: Props) => {
     return null
   }
   return (
-    <PageWrapper title={post.frontmatter.title}>
+    <MainPage title={post.frontmatter.title}>
       <StandardPageTemplate
         title={post.frontmatter.title}
         content={post.html}
         bottomComponent={<ContactForm />}
       />
-    </PageWrapper>
+    </MainPage>
   )
 }
 

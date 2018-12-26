@@ -10,7 +10,7 @@ interface Props {
   title?: string | null
 }
 
-const Wrapper = styled('section')`
+const PageWrapper = styled('section')`
   max-width: ${styleVars.dimensions.pageWidth};
   padding: 0 1rem;
   margin: 0 auto;
@@ -23,10 +23,10 @@ export default ({ children, title }: Props) => (
         {title == null ? 'Lena Ruppert' : `${title} | Lena Ruppert`}
       </title>
     </Helmet>
-    <Wrapper>
+    <PageWrapper>
       <Header />
       <main>{children}</main>
       <Footer />
-    </Wrapper>
+    </PageWrapper>
   </section>
 )
