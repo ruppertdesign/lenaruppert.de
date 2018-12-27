@@ -7,6 +7,10 @@ backend:
 media_folder: static/img
 public_folder: /img
 
+display_url: https://www.lenaruppert.de
+# TODO add backend logo
+logo_url: https://www.lenaruppert.de/static/logo-b8b6795b2bfdaef686f9840bdf28f96e.png
+
 pages_fields: &pages_fields
   fields:
     - {

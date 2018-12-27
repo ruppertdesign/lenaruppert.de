@@ -1,9 +1,20 @@
 import * as React from 'react'
 import StandardPageTemplate from '../../components/layout/StandardPageTemplate'
 
-export default ({ entry, widgetFor }) => (
-  <StandardPageTemplate
-    title={entry.getIn(['data', 'title'])}
-    content={widgetFor('body')}
-  />
-)
+interface Props {
+  entry: {
+    getIn: (path: string[]) => any
+  }
+  widgetFor: (name: string) => any
+}
+
+export default ({ entry }: Props) => {
+  const { title, body } = entry.getIn(['data']).toJS()
+  return (
+    <StandardPageTemplate
+      title={title}
+      content={body}
+      contentIsMarkdown={true}
+    />
+  )
+}
