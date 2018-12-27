@@ -23,8 +23,8 @@ collections:
     label: "Pages"
     files:
       - file: "src/pages/404/index.md"
-        label: "Fehler 404"
-        name: "fehler-404"
+        label: "404"
+        name: "404"
         <<: *pages_fields
       - file: "src/pages/agb/index.md"
         label: "AGB"
