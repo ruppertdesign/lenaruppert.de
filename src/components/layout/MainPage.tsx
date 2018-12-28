@@ -3,7 +3,9 @@ import Helmet from 'react-helmet'
 import styled from '@emotion/styled'
 import Header from './Header'
 import Footer from './Footer'
+import { Global } from '@emotion/core'
 import styleVars from '../../styles/styleVars'
+import globalStyles from '../../styles/globalStyles'
 
 interface Props {
   children: React.ReactNode
@@ -23,6 +25,7 @@ export default ({ children, title }: Props) => (
         {title == null ? 'Lena Ruppert' : `${title} | Lena Ruppert`}
       </title>
     </Helmet>
+    <Global styles={globalStyles} />
     <PageWrapper>
       <Header />
       <main>{children}</main>

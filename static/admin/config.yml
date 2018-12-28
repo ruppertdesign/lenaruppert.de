@@ -8,7 +8,7 @@ media_folder: static/img
 public_folder: /img
 
 display_url: https://www.lenaruppert.de
-logo_url: https://www.lenaruppert.de/img/logo.png
+logo_url: https://www.lenaruppert.de/img/logo-lenaruppert.png
 
 pages_fields: &pages_fields
   fields:
