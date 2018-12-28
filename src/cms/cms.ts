@@ -1,5 +1,6 @@
 import CMS from 'netlify-cms'
 import PagePreview from './preview-templates/PagePreview'
+import SamplePreview from './preview-templates/SamplePreview'
 import typography from '../utils/typography'
 import './cms.css'
 
@@ -16,6 +17,9 @@ const defaultPages = [
   'kontakt',
   'referenzen',
   'start',
+  'textproben',
   'ueber-mich',
 ]
 defaultPages.forEach(page => CMS.registerPreviewTemplate(page, PagePreview))
+
+CMS.registerPreviewTemplate('samples', SamplePreview)

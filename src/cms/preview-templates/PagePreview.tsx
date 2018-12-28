@@ -1,14 +1,8 @@
 import * as React from 'react'
 import StandardPageTemplate from '../../components/layout/StandardPageTemplate'
+import { PreviewProps } from './PreviewProps'
 
-interface Props {
-  entry: {
-    getIn: (path: string[]) => any
-  }
-  widgetFor: (name: string) => any
-}
-
-export default ({ entry }: Props) => {
+export default ({ entry }: PreviewProps) => {
   const { title, body } = entry.getIn(['data']).toJS()
   return (
     <StandardPageTemplate

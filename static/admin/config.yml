@@ -24,7 +24,7 @@ pages_fields: &pages_fields
 
 collections:
   - name: "pages"
-    label: "Pages"
+    label: "Seiten"
     files:
       - file: "src/pages/404/index.md"
         label: "404"
@@ -54,14 +54,19 @@ collections:
         label: "Start"
         name: "start"
         <<: *pages_fields
+      - file: "src/pages/textproben/index.md"
+        label: "Textproben"
+        name: "textproben"
+        <<: *pages_fields
       - file: "src/pages/ueber-mich/index.md"
         label: "Über mich"
         name: "ueber-mich"
         <<: *pages_fields
   - name: "samples"
     label: "Textproben"
-    folder: "src-pages/textproben"
+    folder: "src/pages/textproben"
     create: true
+    filter: { field: "templateKey", value: "sample" }
     fields:
       - {
         label: "Template Key",

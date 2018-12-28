@@ -5,6 +5,7 @@ import { A } from '../form/Buttons'
 import styled from '@emotion/styled'
 import styleVars from '../../styles/styleVars'
 import { rhythm, scale } from '../../utils/typography'
+import Sample from './Sample'
 
 export interface SamplesPageProps {
   intro: {
@@ -43,24 +44,7 @@ export default ({ intro, samples, contentIsMarkdown }: SamplesPageProps) => {
         contentIsMarkdown={contentIsMarkdown}
       />
       {samples.map(sample => (
-        <Article key={sample.id}>
-          <h2>{sample.title}</h2>
-          <Subtitle>{sample.subTitle}</Subtitle>
-          <Content
-            className="sample"
-            content={sample.html}
-            contentIsMarkdown={contentIsMarkdown}
-          />
-          {sample.uri != null && (
-            <A
-              href={sample.uri}
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-            >
-              Weiter lesen
-            </A>
-          )}
-        </Article>
+        <Sample {...sample} contentIsMarkdown={contentIsMarkdown} />
       ))}
     </ContentWrapper>
   )
