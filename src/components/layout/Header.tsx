@@ -26,16 +26,6 @@ const Logo = styled('img')`
   margin: ${rhythm(1)} 0;
 `
 
-const TmpText = styled('div')`
-  position: absolute;
-  width: 100%;
-  top: ${rhythm(0.5)};
-  left: 0;
-  text-align: center;
-  color: #333;
-  ${scale(-0.5)};
-`
-
 const Nav = styled('nav')`
   width: 100%;
 `
@@ -107,7 +97,6 @@ export default () => (
   <Header>
     <HomeLink to="/preview-06-06-2014">
       <Logo src={logo} />
-      <TmpText>(Logo ist nur ein Platzhalter)</TmpText>
     </HomeLink>
     <Nav>
       <NavList>
