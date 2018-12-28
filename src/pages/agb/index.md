@@ -1,5 +1,6 @@
 ---
 templateKey: standard
+path: /agb
 title: AGB
 ---
 ## Allgemeines

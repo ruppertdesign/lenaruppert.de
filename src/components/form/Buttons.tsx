@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 import styleVars from '../../styles/styleVars'
 import { rhythm } from '../../utils/typography'
 
-export default styled('button')`
+const styles = `
   margin: ${rhythm(0.5)} 0;
   padding: ${rhythm(0.2)} ${rhythm(0.4)};
   border: 0 none;
@@ -20,3 +20,12 @@ export default styled('button')`
     outline: none;
   }
 `
+
+const Button = styled('button')`
+  ${styles}
+`
+const A = styled('a')`
+  ${styles}
+`
+
+export { Button, A }

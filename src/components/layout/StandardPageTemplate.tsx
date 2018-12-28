@@ -1,12 +1,12 @@
 import * as React from 'react'
 import ReactMarkdown from 'react-markdown'
-import { HTMLContent } from '../Content'
+import Content from '../Content'
 import ContentWrapper from './ContentWrapper'
 
 interface Props {
   title?: string | null
   content?: string | null
-  contentIsMarkdown?: boolean // true for cms backend view
+  contentIsMarkdown?: boolean
   bottomComponent?: React.ReactNode
 }
 
@@ -19,12 +19,11 @@ export default ({
   return (
     <ContentWrapper>
       <h1>{title}</h1>
-      {content != null &&
-        (contentIsMarkdown ? (
-          <ReactMarkdown className="content" source={content} />
-        ) : (
-          <HTMLContent className="content" content={content} />
-        ))}
+      <Content
+        className="content"
+        content={content}
+        contentIsMarkdown={contentIsMarkdown}
+      />
       {bottomComponent}
     </ContentWrapper>
   )

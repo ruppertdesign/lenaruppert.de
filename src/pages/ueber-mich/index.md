@@ -1,7 +1,9 @@
 ---
 templateKey: standard
+path: /ueber-mich
 title: Über mich
 ---
+
 ## Lena Ruppert | Freie Journalistin und Redakteurin
 
 Nach meinem Studium der Komparatistik, Philosophie und Nordistik konnte ich meine bislang gesammelten journalistischen Erfahrungen in der Kulturredaktion von süddeutsche.de vertiefen. 

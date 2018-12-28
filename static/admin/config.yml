@@ -19,8 +19,8 @@ pages_fields: &pages_fields
         widget: "hidden",
         default: "standard",
       }
-    - { label: "Title", name: "title", widget: "string" }
-    - { label: "Body", name: "body", widget: "markdown" }
+    - { label: "Titel", name: "title", widget: "string" }
+    - { label: "Text", name: "body", widget: "markdown" }
 
 collections:
   - name: "pages"
@@ -58,3 +58,19 @@ collections:
         label: "Über mich"
         name: "ueber-mich"
         <<: *pages_fields
+  - name: "samples"
+    label: "Textproben"
+    folder: "src-pages/textproben"
+    create: true
+    fields:
+      - {
+        label: "Template Key",
+        name: "templateKey",
+        widget: "hidden",
+        default: "standard",
+      }
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Untertitel", name: "subTitle", widget: "string" }
+      - { label: "Reihenfolge", name: "order", widget: "number" }
+      - { label: "Link", name: "uri", widget: "string" }
+      - { label: "Text", name: "body", widget: "markdown" }

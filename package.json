@@ -12,7 +12,7 @@
     "build": "yarn clean && gatsby build",
     "serve": "gatsby serve",
     "format": "yarn prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.{js,jsx,ts,tsx}'",
-    "graphql-types": "gql-gen --schema http://localhost:8000/___graphql --template graphql-codegen-typescript-template --out ./typings/graphql-types.ts",
+    "graphql-types": "gql-gen",
     "type-check": "tsc --noEmit",
     "lint": "yarn tslint --project . --fix"
   },

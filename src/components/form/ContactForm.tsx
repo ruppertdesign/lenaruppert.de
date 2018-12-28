@@ -5,7 +5,7 @@ import Fieldset from './Fieldset'
 import Legend from './Legend'
 import HoneyPot from './HoneyPot'
 import styled from '@emotion/styled'
-import Button from './Button'
+import { Button } from './Buttons'
 import validator from './validator'
 
 interface Input {

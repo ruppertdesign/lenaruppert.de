@@ -1,5 +1,6 @@
 ---
 templateKey: 'start'
+path: /preview-06-06-2014
 title: Willkommen
 ---
 
