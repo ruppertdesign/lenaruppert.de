@@ -8,10 +8,14 @@ export default css`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   ul.references li {
     list-style-type: none;
-    margin: ${rhythm(1)};
+    margin-bottom: ${rhythm(2)};
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `
