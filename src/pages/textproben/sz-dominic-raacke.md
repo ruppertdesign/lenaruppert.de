@@ -1,6 +1,6 @@
 ---
 templateKey: "sample"
-title: '„Ich sehe den kleinen Dominic vor mir“'
+title: „Ich sehe den kleinen Dominic vor mir“
 subTitle: "sueddeutsche.de: Schwerpunkt Kultur"
 order: 1
 uri: https://www.sueddeutsche.de/kultur/mein-lied-dominic-raacke-ich-sehe-den-kleinen-dominic-vor-mir-1.997737
