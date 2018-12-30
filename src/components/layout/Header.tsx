@@ -99,8 +99,8 @@ const NavLink = ({ title, to }) => (
 export default () => (
   <Header>
     <Global styles={headerStyles} />
-    <HomeLink to="/preview-06-06-2014">
-      <Logo src={logo} />
+    <HomeLink aria-label="lenaruppert.de start" to="/preview-06-06-2014">
+      <Logo src={logo} alt="Logo Lena Ruppert" />
     </HomeLink>
     <Nav>
       <NavList>

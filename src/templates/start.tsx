@@ -24,7 +24,7 @@ const StartPage = ({ data }: Props) => {
   }
   return (
     <MainPage title={post.frontmatter.title}>
-      <HeaderImage src={headerImage} />
+      <HeaderImage src={headerImage} alt="Willkommen auf lenaruppert.de" />
       <StandardPageTemplate
         title={post.frontmatter.title}
         content={post.html}
