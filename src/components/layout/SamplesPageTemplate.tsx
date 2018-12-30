@@ -1,10 +1,6 @@
 import * as React from 'react'
 import Content from '../Content'
 import ContentWrapper from './ContentWrapper'
-import { A } from '../form/Buttons'
-import styled from '@emotion/styled'
-import styleVars from '../../styles/styleVars'
-import { rhythm, scale } from '../../utils/typography'
 import Sample from './Sample'
 
 export interface SamplesPageProps {
@@ -23,16 +19,6 @@ export interface SamplesPageProps {
   }>
   contentIsMarkdown?: boolean
 }
-
-const Article = styled('article')`
-  border-top: 1px solid ${styleVars.colors.grayLighter};
-  padding-bottom: ${rhythm(1)};
-`
-
-const Subtitle = styled('span')`
-  color: ${styleVars.colors.grayLight};
-  ${scale(-0.2)};
-`
 
 export default ({ intro, samples, contentIsMarkdown }: SamplesPageProps) => {
   return (
