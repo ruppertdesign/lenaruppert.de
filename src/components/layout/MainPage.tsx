@@ -20,6 +20,7 @@ const PageWrapper = styled('section')`
 export default ({ children, title }: Props) => (
   <section>
     <Helmet>
+      <html lang="de" />
       <meta name="robots" content="noindex, nofollow" />
       <title>
         {title == null ? 'Lena Ruppert' : `${title} | Lena Ruppert`}
