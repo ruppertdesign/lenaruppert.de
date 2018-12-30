@@ -83,7 +83,8 @@ export default class ContactForm extends React.PureComponent<{}, State> {
       <Form
         id="contactForm"
         name="contact"
-        action="danke"
+        method="POST"
+        action="/danke"
         data-netlify="true"
         netlify-honeypot="fax"
         onSubmit={this.handleSubmit}
