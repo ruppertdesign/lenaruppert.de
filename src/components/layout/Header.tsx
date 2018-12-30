@@ -2,6 +2,7 @@ import * as React from 'react'
 import Link from 'gatsby-link'
 import styled from '@emotion/styled'
 import { css } from '@emotion/core'
+import { Global } from '@emotion/core'
 import styleVars from '../../styles/styleVars'
 import * as logo from '../../img/logo.png'
 import { rhythm, scale } from '../../utils/typography'
@@ -46,55 +47,58 @@ const Li = styled('li')`
   font-family: ${styleVars.fonts.header};
 `
 
-const underlined = css`
-  :before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: ${styleVars.colors.linkColor};
-    visibility: hidden;
-    transform: scaleX(0);
+const before = `
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: ${styleVars.colors.linkColor};
+`
+
+// didn't find a way to use emotion with activeClassName directly
+const headerStyles = css`
+  .header-link {
+    color: ${styleVars.colors.bodyColor};
+    position: relative;
     transition: all 0.3s ease-in-out 0s;
+    :before {
+      ${before}
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out 0s;
+    }
+    :hover:before {
+      visibility: visible;
+      transform: scaleX(1);
+    }
+    :hover {
+      color: ${styleVars.colors.linkColor};
+      box-shadow: none;
+    }
   }
-`
-
-const StyledLink = styled(Link)`
-  color: ${styleVars.colors.bodyColor};
-  position: relative;
-  transition: all 0.3s ease-in-out 0s;
-  ${underlined}
-  :hover:before {
-    visibility: visible;
-    transform: scaleX(1);
-  }
-  :hover {
+  .header-link-active {
     color: ${styleVars.colors.linkColor};
-    box-shadow: none;
-  }
-`
-
-const activeLinkStyle = css`
-  color: ${styleVars.colors.linkColor};
-  ${underlined}
-  :before {
-    visibility: visible;
-    transform: scaleX(1);
+    :before {
+      ${before}
+      visibility: visible;
+      transform: scaleX(1);
+    }
   }
 `
 
 const NavLink = ({ title, to }) => (
   <Li>
-    <StyledLink to={to} activeStyle={activeLinkStyle}>
+    <Link to={to} className="header-link" activeClassName="header-link-active">
       {title}
-    </StyledLink>
+    </Link>
   </Li>
 )
 
 export default () => (
   <Header>
+    <Global styles={headerStyles} />
     <HomeLink to="/preview-06-06-2014">
       <Logo src={logo} />
     </HomeLink>
