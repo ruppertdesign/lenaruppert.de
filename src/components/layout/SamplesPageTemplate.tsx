@@ -44,7 +44,11 @@ export default ({ intro, samples, contentIsMarkdown }: SamplesPageProps) => {
         contentIsMarkdown={contentIsMarkdown}
       />
       {samples.map(sample => (
-        <Sample {...sample} contentIsMarkdown={contentIsMarkdown} />
+        <Sample
+          key={sample.id}
+          {...sample}
+          contentIsMarkdown={contentIsMarkdown}
+        />
       ))}
     </ContentWrapper>
   )
