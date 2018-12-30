@@ -84,8 +84,7 @@ export default class ContactForm extends React.PureComponent<{}, State> {
         }),
         { 'form-name': target.getAttribute('name') }
       )
-      this.setState({ submitSuccess: true })
-      fetch('/', {
+      fetch(target.getAttribute('action') as string, {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: this.encode(body),
