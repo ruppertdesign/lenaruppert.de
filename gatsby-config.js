@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Lena Ruppert"
+    title: "Lena Ruppert",
+    description: "TODO Lena: Fallback description"
   },
   plugins: [
     "gatsby-plugin-typescript",

@@ -1,7 +1,8 @@
 ---
-templateKey: 'standard'
+templateKey: "standard"
 path: /datenschutz
 title: Datenschutzerklärung
+description: "TODO Lena: description"
 ---
 
 ## Datenschutz

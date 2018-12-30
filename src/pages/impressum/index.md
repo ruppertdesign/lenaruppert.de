@@ -1,7 +1,8 @@
 ---
-templateKey: 'standard'
+templateKey: "standard"
 path: /impressum
 title: Impressum
+description: "TODO Lena: description"
 ---
 
 ## Angaben gemäß § 5 TMG:

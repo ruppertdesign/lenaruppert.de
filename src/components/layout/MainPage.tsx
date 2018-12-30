@@ -1,5 +1,4 @@
 import * as React from 'react'
-import Helmet from 'react-helmet'
 import styled from '@emotion/styled'
 import Header from './Header'
 import Footer from './Footer'
@@ -9,7 +8,6 @@ import globalStyles from '../../styles/globalStyles'
 
 interface Props {
   children: React.ReactNode
-  title?: string | null
 }
 
 const PageWrapper = styled('section')`
@@ -17,20 +15,13 @@ const PageWrapper = styled('section')`
   padding: 0 1rem;
   margin: 0 auto;
 `
-export default ({ children, title }: Props) => (
-  <section>
-    <Helmet>
-      <html lang="de" />
-      <meta name="robots" content="noindex, nofollow" />
-      <title>
-        {title == null ? 'Lena Ruppert' : `${title} | Lena Ruppert`}
-      </title>
-    </Helmet>
+export default ({ children }: Props) => (
+  <React.Fragment>
     <Global styles={globalStyles} />
     <PageWrapper>
       <Header />
       <main>{children}</main>
       <Footer />
     </PageWrapper>
-  </section>
+  </React.Fragment>
 )

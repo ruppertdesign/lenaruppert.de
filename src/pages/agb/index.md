@@ -2,15 +2,17 @@
 templateKey: standard
 path: /agb
 title: AGB
+description: "TODO Lena: description"
 ---
+
 ## Allgemeines
 
-Diese Geschäftsbedingungen finden Anwendung auf Text- und Bildbeiträge (Material). Geliefertes Material bleibt stets Eigentum der Journalistin. Es wird vorübergehend zur Ausübung der Rechte für die auf der Auftragsbestätigung angegebenen Nutzungsarten überlassen. 
+Diese Geschäftsbedingungen finden Anwendung auf Text- und Bildbeiträge (Material). Geliefertes Material bleibt stets Eigentum der Journalistin. Es wird vorübergehend zur Ausübung der Rechte für die auf der Auftragsbestätigung angegebenen Nutzungsarten überlassen.
 
-Die Verwendung als Archivmaterial ist gesondert zu vereinbaren. Die Lieferung des Materials und die Einräumung von Nutzungsrechten erfolgt zu den nachstehenden Geschäftsbedingungen, soweit in der Auftragsbestätigung nichts Abweichendes angegeben oder sonst schriftlich vereinbart ist. 
+Die Verwendung als Archivmaterial ist gesondert zu vereinbaren. Die Lieferung des Materials und die Einräumung von Nutzungsrechten erfolgt zu den nachstehenden Geschäftsbedingungen, soweit in der Auftragsbestätigung nichts Abweichendes angegeben oder sonst schriftlich vereinbart ist.
 
 Abweichende Geschäftsbedingungen des Bestellers gelten nur, wenn sie schriftlich bestätigt sind. Allgemeinen
-Geschäftsbedingungen des Bestellers wird hiermit widersprochen. Auch für Lieferungen ins Ausland gilt deutsches Recht. 
+Geschäftsbedingungen des Bestellers wird hiermit widersprochen. Auch für Lieferungen ins Ausland gilt deutsches Recht.
 
 ## Honorare
 

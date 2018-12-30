@@ -3293,7 +3293,13 @@ export interface MarkdownRemarkConnectionFrontmatterInputObject_2 {
 
   path?: Maybe<MarkdownRemarkConnectionFrontmatterPathQueryString_2>;
 
+  description?: Maybe<
+    MarkdownRemarkConnectionFrontmatterDescriptionQueryString_2
+  >;
+
   _PARENT?: Maybe<MarkdownRemarkConnectionFrontmatterParentQueryString_2>;
+
+  subTitle?: Maybe<MarkdownRemarkConnectionFrontmatterSubTitleQueryString_2>;
 
   order?: Maybe<MarkdownRemarkConnectionFrontmatterOrderQueryInteger_2>;
 
@@ -3342,7 +3348,35 @@ export interface MarkdownRemarkConnectionFrontmatterPathQueryString_2 {
   nin?: Maybe<(Maybe<string>)[]>;
 }
 
+export interface MarkdownRemarkConnectionFrontmatterDescriptionQueryString_2 {
+  eq?: Maybe<string>;
+
+  ne?: Maybe<string>;
+
+  regex?: Maybe<string>;
+
+  glob?: Maybe<string>;
+
+  in?: Maybe<(Maybe<string>)[]>;
+
+  nin?: Maybe<(Maybe<string>)[]>;
+}
+
 export interface MarkdownRemarkConnectionFrontmatterParentQueryString_2 {
+  eq?: Maybe<string>;
+
+  ne?: Maybe<string>;
+
+  regex?: Maybe<string>;
+
+  glob?: Maybe<string>;
+
+  in?: Maybe<(Maybe<string>)[]>;
+
+  nin?: Maybe<(Maybe<string>)[]>;
+}
+
+export interface MarkdownRemarkConnectionFrontmatterSubTitleQueryString_2 {
   eq?: Maybe<string>;
 
   ne?: Maybe<string>;
@@ -6234,9 +6268,25 @@ export interface SitePluginInternalOwnerQueryString_2 {
 
 export interface SiteSiteMetadataInputObject_2 {
   title?: Maybe<SiteSiteMetadataTitleQueryString_2>;
+
+  description?: Maybe<SiteSiteMetadataDescriptionQueryString_2>;
 }
 
 export interface SiteSiteMetadataTitleQueryString_2 {
+  eq?: Maybe<string>;
+
+  ne?: Maybe<string>;
+
+  regex?: Maybe<string>;
+
+  glob?: Maybe<string>;
+
+  in?: Maybe<(Maybe<string>)[]>;
+
+  nin?: Maybe<(Maybe<string>)[]>;
+}
+
+export interface SiteSiteMetadataDescriptionQueryString_2 {
   eq?: Maybe<string>;
 
   ne?: Maybe<string>;
@@ -7713,7 +7763,11 @@ export interface MarkdownRemarkFrontmatterInputObject_2 {
 
   path?: Maybe<MarkdownRemarkFrontmatterPathQueryString_2>;
 
+  description?: Maybe<MarkdownRemarkFrontmatterDescriptionQueryString_2>;
+
   _PARENT?: Maybe<MarkdownRemarkFrontmatterParentQueryString_2>;
+
+  subTitle?: Maybe<MarkdownRemarkFrontmatterSubTitleQueryString_2>;
 
   order?: Maybe<MarkdownRemarkFrontmatterOrderQueryInteger_2>;
 
@@ -7762,7 +7816,35 @@ export interface MarkdownRemarkFrontmatterPathQueryString_2 {
   nin?: Maybe<(Maybe<string>)[]>;
 }
 
+export interface MarkdownRemarkFrontmatterDescriptionQueryString_2 {
+  eq?: Maybe<string>;
+
+  ne?: Maybe<string>;
+
+  regex?: Maybe<string>;
+
+  glob?: Maybe<string>;
+
+  in?: Maybe<(Maybe<string>)[]>;
+
+  nin?: Maybe<(Maybe<string>)[]>;
+}
+
 export interface MarkdownRemarkFrontmatterParentQueryString_2 {
+  eq?: Maybe<string>;
+
+  ne?: Maybe<string>;
+
+  regex?: Maybe<string>;
+
+  glob?: Maybe<string>;
+
+  in?: Maybe<(Maybe<string>)[]>;
+
+  nin?: Maybe<(Maybe<string>)[]>;
+}
+
+export interface MarkdownRemarkFrontmatterSubTitleQueryString_2 {
   eq?: Maybe<string>;
 
   ne?: Maybe<string>;
@@ -9506,7 +9588,9 @@ export enum MarkdownRemarkConnectionSortByFieldsEnum {
   FrontmatterTitle = "frontmatter___title",
   FrontmatterTemplateKey = "frontmatter___templateKey",
   FrontmatterPath = "frontmatter___path",
+  FrontmatterDescription = "frontmatter___description",
   FrontmatterParent = "frontmatter____PARENT",
+  FrontmatterSubTitle = "frontmatter___subTitle",
   FrontmatterOrder = "frontmatter___order",
   FrontmatterUri = "frontmatter___uri",
   RawMarkdownBody = "rawMarkdownBody",
@@ -9538,7 +9622,9 @@ export enum MarkdownRemarkDistinctEnum {
   FrontmatterTitle = "frontmatter___title",
   FrontmatterTemplateKey = "frontmatter___templateKey",
   FrontmatterPath = "frontmatter___path",
+  FrontmatterDescription = "frontmatter___description",
   FrontmatterParent = "frontmatter____PARENT",
+  FrontmatterSubTitle = "frontmatter___subTitle",
   FrontmatterOrder = "frontmatter___order",
   FrontmatterUri = "frontmatter___uri",
   RawMarkdownBody = "rawMarkdownBody",
@@ -9557,7 +9643,9 @@ export enum MarkdownRemarkGroupEnum {
   FrontmatterTitle = "frontmatter___title",
   FrontmatterTemplateKey = "frontmatter___templateKey",
   FrontmatterPath = "frontmatter___path",
+  FrontmatterDescription = "frontmatter___description",
   FrontmatterParent = "frontmatter____PARENT",
+  FrontmatterSubTitle = "frontmatter___subTitle",
   FrontmatterOrder = "frontmatter___order",
   FrontmatterUri = "frontmatter___uri",
   RawMarkdownBody = "rawMarkdownBody",
@@ -10273,7 +10361,11 @@ export interface Frontmatter_2 {
 
   path?: Maybe<string>;
 
+  description?: Maybe<string>;
+
   _PARENT?: Maybe<string>;
+
+  subTitle?: Maybe<string>;
 
   order?: Maybe<number>;
 
@@ -10606,6 +10698,8 @@ export interface Site extends Node {
 
 export interface SiteMetadata_2 {
   title?: Maybe<string>;
+
+  description?: Maybe<string>;
 }
 
 export interface Internal_14 {

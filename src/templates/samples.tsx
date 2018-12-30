@@ -1,11 +1,11 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
-import StandardPageTemplate from '../components/layout/StandardPageTemplate'
 import MainPage from '../components/layout/MainPage'
 import { MarkdownRemarkConnection } from '../../typings/graphql-types'
 import SamplesPageTemplate, {
   SamplesPageProps,
 } from '../components/layout/SamplesPageTemplate'
+import Seo from '../components/Seo'
 
 interface Props {
   data: {
@@ -52,8 +52,10 @@ const SamplesPage = (props: Props) => {
   if (mappedData == null) {
     return null
   }
+  const { title, description } = mappedData.intro
   return (
-    <MainPage title={mappedData.intro.title}>
+    <MainPage>
+      <Seo title={title} description={description} />
       <SamplesPageTemplate {...mappedData} />
     </MainPage>
   )
@@ -75,6 +77,7 @@ export const samplesPageQuery = graphql`
             templateKey
             title
             subTitle
+            description
             order
             uri
           }

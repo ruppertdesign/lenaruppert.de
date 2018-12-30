@@ -5,6 +5,7 @@ import StandardPageTemplate from '../components/layout/StandardPageTemplate'
 import MainPage from '../components/layout/MainPage'
 import { MarkdownRemark } from '../../typings/graphql-types'
 import * as headerImage from '../img/header.png'
+import Seo from '../components/Seo'
 
 interface Props {
   data: {
@@ -22,13 +23,12 @@ const StartPage = ({ data }: Props) => {
   if (post == null || post.frontmatter == null) {
     return null
   }
+  const { frontmatter, html } = post
   return (
-    <MainPage title={post.frontmatter.title}>
+    <MainPage>
+      <Seo title={frontmatter.title} description={frontmatter.description} />
       <HeaderImage src={headerImage} alt="Willkommen auf lenaruppert.de" />
-      <StandardPageTemplate
-        title={post.frontmatter.title}
-        content={post.html}
-      />
+      <StandardPageTemplate title={frontmatter.title} content={html} />
     </MainPage>
   )
 }
@@ -41,6 +41,7 @@ export const standardPageQuery = graphql`
       html
       frontmatter {
         title
+        description
       }
     }
   }

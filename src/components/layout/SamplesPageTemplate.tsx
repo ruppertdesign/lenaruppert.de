@@ -7,6 +7,7 @@ export interface SamplesPageProps {
   intro: {
     id: string
     title?: string | null
+    description?: string | null
     html?: string | null
   }
   samples: Array<{

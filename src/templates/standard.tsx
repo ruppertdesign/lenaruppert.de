@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import StandardPageTemplate from '../components/layout/StandardPageTemplate'
 import MainPage from '../components/layout/MainPage'
 import { MarkdownRemark } from '../../typings/graphql-types'
+import Seo from '../components/Seo'
 
 interface Props {
   data: {
@@ -15,12 +16,11 @@ const StandardPage = ({ data }: Props) => {
   if (post == null || post.frontmatter == null) {
     return null
   }
+  const { frontmatter, html } = post
   return (
-    <MainPage title={post.frontmatter.title}>
-      <StandardPageTemplate
-        title={post.frontmatter.title}
-        content={post.html}
-      />
+    <MainPage>
+      <Seo title={frontmatter.title} description={frontmatter.description} />
+      <StandardPageTemplate title={frontmatter.title} content={html} />
     </MainPage>
   )
 }
@@ -33,6 +33,7 @@ export const standardPageQuery = graphql`
       html
       frontmatter {
         title
+        description
       }
     }
   }

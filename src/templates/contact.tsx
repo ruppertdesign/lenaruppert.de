@@ -4,6 +4,7 @@ import StandardPageTemplate from '../components/layout/StandardPageTemplate'
 import MainPage from '../components/layout/MainPage'
 import { MarkdownRemark } from '../../typings/graphql-types'
 import ContactForm from '../components/form/ContactForm'
+import Seo from '../components/Seo'
 
 interface Props {
   data: {
@@ -16,11 +17,13 @@ const ContactPage = ({ data }: Props) => {
   if (post == null || post.frontmatter == null) {
     return null
   }
+  const { frontmatter, html } = post
   return (
-    <MainPage title={post.frontmatter.title}>
+    <MainPage>
+      <Seo title={frontmatter.title} description={frontmatter.description} />
       <StandardPageTemplate
-        title={post.frontmatter.title}
-        content={post.html}
+        title={frontmatter.title}
+        content={html}
         bottomComponent={<ContactForm />}
       />
     </MainPage>
@@ -35,6 +38,7 @@ export const ContactPageQuery = graphql`
       html
       frontmatter {
         title
+        description
       }
     }
   }
