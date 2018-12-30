@@ -14,6 +14,7 @@ interface Input {
 }
 
 interface State {
+  novalidate: boolean
   submitError: boolean
   name: Input
   email: Input
@@ -40,6 +41,7 @@ const initialFormValues = fieldNames.reduce(
 export default class ContactForm extends React.PureComponent<{}, State> {
   // @ts-ignore
   state: State = {
+    novalidate: false,
     submitError: false,
     ...initialFormValues,
   }
@@ -67,6 +69,7 @@ export default class ContactForm extends React.PureComponent<{}, State> {
   }
 
   handleUserInput = (event: React.ChangeEvent) => {
+    this.setState({ novalidate: true }) // browser validation enabled if JS is disabled
     const target = event.target as HTMLInputElement
     const valid = validator.validate(target)
     // @ts-ignore: we trust that the names match here
@@ -88,7 +91,7 @@ export default class ContactForm extends React.PureComponent<{}, State> {
         data-netlify="true"
         netlify-honeypot="fax"
         onSubmit={this.handleSubmit}
-        noValidate={true}
+        noValidate={this.state.novalidate}
       >
         <Fieldset>
           <Legend>Kontakt</Legend>
