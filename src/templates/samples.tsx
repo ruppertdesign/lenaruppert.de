@@ -64,7 +64,7 @@ const SamplesPage = (props: Props) => {
 export default SamplesPage
 
 export const samplesPageQuery = graphql`
-  query SamplesPage {
+  query {
     allMarkdownRemark(
       filter: { frontmatter: { templateKey: { in: ["sample", "samples"] } } }
       sort: { fields: [frontmatter___order], order: DESC }

@@ -54,7 +54,7 @@ export default class Seo extends React.PureComponent<Props, {}> {
 }
 
 const SeoQuery = graphql`
-  query Seo {
+  query {
     site {
       siteMetadata {
         title

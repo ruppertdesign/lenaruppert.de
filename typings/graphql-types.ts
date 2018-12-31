@@ -213,9 +213,35 @@ export interface SitePageConnectionPluginCreatorPluginOptionsInputObject {
     SitePageConnectionPluginCreatorPluginOptionsPathToConfigModuleQueryString
   >;
 
+  trackingId?: Maybe<
+    SitePageConnectionPluginCreatorPluginOptionsTrackingIdQueryString
+  >;
+
+  head?: Maybe<SitePageConnectionPluginCreatorPluginOptionsHeadQueryBoolean>;
+
+  anonymize?: Maybe<
+    SitePageConnectionPluginCreatorPluginOptionsAnonymizeQueryBoolean
+  >;
+
+  respectDNT?: Maybe<
+    SitePageConnectionPluginCreatorPluginOptionsRespectDntQueryBoolean
+  >;
+
   path?: Maybe<SitePageConnectionPluginCreatorPluginOptionsPathQueryString>;
 
   name?: Maybe<SitePageConnectionPluginCreatorPluginOptionsNameQueryString>;
+
+  maxWidth?: Maybe<
+    SitePageConnectionPluginCreatorPluginOptionsMaxWidthQueryInteger
+  >;
+
+  linkImagesToOriginal?: Maybe<
+    SitePageConnectionPluginCreatorPluginOptionsLinkImagesToOriginalQueryBoolean
+  >;
+
+  wrapperStyle?: Maybe<
+    SitePageConnectionPluginCreatorPluginOptionsWrapperStyleQueryString
+  >;
 
   target?: Maybe<SitePageConnectionPluginCreatorPluginOptionsTargetQueryString>;
 
@@ -265,6 +291,10 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPluginsInputObject 
 
   pluginOptions?: Maybe<
     SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsInputObject
+  >;
+
+  browserAPIs?: Maybe<
+    SitePageConnectionPluginCreatorPluginOptionsPluginsBrowserApIsQueryList
   >;
 
   pluginFilepath?: Maybe<
@@ -329,6 +359,18 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPluginsVersionQuery
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsInputObject {
+  maxWidth?: Maybe<
+    SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger
+  >;
+
+  linkImagesToOriginal?: Maybe<
+    SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsLinkImagesToOriginalQueryBoolean
+  >;
+
+  wrapperStyle?: Maybe<
+    SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsWrapperStyleQueryString
+  >;
+
   target?: Maybe<
     SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsTargetQueryString
   >;
@@ -336,6 +378,48 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOption
   rel?: Maybe<
     SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsRelQueryString
   >;
+}
+
+export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger {
+  eq?: Maybe<number>;
+
+  ne?: Maybe<number>;
+
+  gt?: Maybe<number>;
+
+  gte?: Maybe<number>;
+
+  lt?: Maybe<number>;
+
+  lte?: Maybe<number>;
+
+  in?: Maybe<(Maybe<number>)[]>;
+
+  nin?: Maybe<(Maybe<number>)[]>;
+}
+
+export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsLinkImagesToOriginalQueryBoolean {
+  eq?: Maybe<boolean>;
+
+  ne?: Maybe<boolean>;
+
+  in?: Maybe<(Maybe<boolean>)[]>;
+
+  nin?: Maybe<(Maybe<boolean>)[]>;
+}
+
+export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsWrapperStyleQueryString {
+  eq?: Maybe<string>;
+
+  ne?: Maybe<string>;
+
+  regex?: Maybe<string>;
+
+  glob?: Maybe<string>;
+
+  in?: Maybe<(Maybe<string>)[]>;
+
+  nin?: Maybe<(Maybe<string>)[]>;
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsTargetQueryString {
@@ -353,6 +437,20 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOption
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsRelQueryString {
+  eq?: Maybe<string>;
+
+  ne?: Maybe<string>;
+
+  regex?: Maybe<string>;
+
+  glob?: Maybe<string>;
+
+  in?: Maybe<(Maybe<string>)[]>;
+
+  nin?: Maybe<(Maybe<string>)[]>;
+}
+
+export interface SitePageConnectionPluginCreatorPluginOptionsPluginsBrowserApIsQueryList {
   eq?: Maybe<string>;
 
   ne?: Maybe<string>;
@@ -394,6 +492,50 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPathToConfigModuleQ
   nin?: Maybe<(Maybe<string>)[]>;
 }
 
+export interface SitePageConnectionPluginCreatorPluginOptionsTrackingIdQueryString {
+  eq?: Maybe<string>;
+
+  ne?: Maybe<string>;
+
+  regex?: Maybe<string>;
+
+  glob?: Maybe<string>;
+
+  in?: Maybe<(Maybe<string>)[]>;
+
+  nin?: Maybe<(Maybe<string>)[]>;
+}
+
+export interface SitePageConnectionPluginCreatorPluginOptionsHeadQueryBoolean {
+  eq?: Maybe<boolean>;
+
+  ne?: Maybe<boolean>;
+
+  in?: Maybe<(Maybe<boolean>)[]>;
+
+  nin?: Maybe<(Maybe<boolean>)[]>;
+}
+
+export interface SitePageConnectionPluginCreatorPluginOptionsAnonymizeQueryBoolean {
+  eq?: Maybe<boolean>;
+
+  ne?: Maybe<boolean>;
+
+  in?: Maybe<(Maybe<boolean>)[]>;
+
+  nin?: Maybe<(Maybe<boolean>)[]>;
+}
+
+export interface SitePageConnectionPluginCreatorPluginOptionsRespectDntQueryBoolean {
+  eq?: Maybe<boolean>;
+
+  ne?: Maybe<boolean>;
+
+  in?: Maybe<(Maybe<boolean>)[]>;
+
+  nin?: Maybe<(Maybe<boolean>)[]>;
+}
+
 export interface SitePageConnectionPluginCreatorPluginOptionsPathQueryString {
   eq?: Maybe<string>;
 
@@ -409,6 +551,48 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPathQueryString {
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsNameQueryString {
+  eq?: Maybe<string>;
+
+  ne?: Maybe<string>;
+
+  regex?: Maybe<string>;
+
+  glob?: Maybe<string>;
+
+  in?: Maybe<(Maybe<string>)[]>;
+
+  nin?: Maybe<(Maybe<string>)[]>;
+}
+
+export interface SitePageConnectionPluginCreatorPluginOptionsMaxWidthQueryInteger {
+  eq?: Maybe<number>;
+
+  ne?: Maybe<number>;
+
+  gt?: Maybe<number>;
+
+  gte?: Maybe<number>;
+
+  lt?: Maybe<number>;
+
+  lte?: Maybe<number>;
+
+  in?: Maybe<(Maybe<number>)[]>;
+
+  nin?: Maybe<(Maybe<number>)[]>;
+}
+
+export interface SitePageConnectionPluginCreatorPluginOptionsLinkImagesToOriginalQueryBoolean {
+  eq?: Maybe<boolean>;
+
+  ne?: Maybe<boolean>;
+
+  in?: Maybe<(Maybe<boolean>)[]>;
+
+  nin?: Maybe<(Maybe<boolean>)[]>;
+}
+
+export interface SitePageConnectionPluginCreatorPluginOptionsWrapperStyleQueryString {
   eq?: Maybe<string>;
 
   ne?: Maybe<string>;
@@ -1095,9 +1279,27 @@ export interface SitePluginConnectionPluginOptionsInputObject_2 {
     SitePluginConnectionPluginOptionsPathToConfigModuleQueryString_2
   >;
 
+  trackingId?: Maybe<SitePluginConnectionPluginOptionsTrackingIdQueryString_2>;
+
+  head?: Maybe<SitePluginConnectionPluginOptionsHeadQueryBoolean_2>;
+
+  anonymize?: Maybe<SitePluginConnectionPluginOptionsAnonymizeQueryBoolean_2>;
+
+  respectDNT?: Maybe<SitePluginConnectionPluginOptionsRespectDntQueryBoolean_2>;
+
   path?: Maybe<SitePluginConnectionPluginOptionsPathQueryString_2>;
 
   name?: Maybe<SitePluginConnectionPluginOptionsNameQueryString_2>;
+
+  maxWidth?: Maybe<SitePluginConnectionPluginOptionsMaxWidthQueryInteger_2>;
+
+  linkImagesToOriginal?: Maybe<
+    SitePluginConnectionPluginOptionsLinkImagesToOriginalQueryBoolean_2
+  >;
+
+  wrapperStyle?: Maybe<
+    SitePluginConnectionPluginOptionsWrapperStyleQueryString_2
+  >;
 
   target?: Maybe<SitePluginConnectionPluginOptionsTargetQueryString_2>;
 
@@ -1131,6 +1333,10 @@ export interface SitePluginConnectionPluginOptionsPluginsInputObject_2 {
 
   pluginOptions?: Maybe<
     SitePluginConnectionPluginOptionsPluginsPluginOptionsInputObject_2
+  >;
+
+  browserAPIs?: Maybe<
+    SitePluginConnectionPluginOptionsPluginsBrowserApIsQueryList_2
   >;
 
   pluginFilepath?: Maybe<
@@ -1195,6 +1401,18 @@ export interface SitePluginConnectionPluginOptionsPluginsVersionQueryString_2 {
 }
 
 export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsInputObject_2 {
+  maxWidth?: Maybe<
+    SitePluginConnectionPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger_2
+  >;
+
+  linkImagesToOriginal?: Maybe<
+    SitePluginConnectionPluginOptionsPluginsPluginOptionsLinkImagesToOriginalQueryBoolean_2
+  >;
+
+  wrapperStyle?: Maybe<
+    SitePluginConnectionPluginOptionsPluginsPluginOptionsWrapperStyleQueryString_2
+  >;
+
   target?: Maybe<
     SitePluginConnectionPluginOptionsPluginsPluginOptionsTargetQueryString_2
   >;
@@ -1202,6 +1420,48 @@ export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsInputObjec
   rel?: Maybe<
     SitePluginConnectionPluginOptionsPluginsPluginOptionsRelQueryString_2
   >;
+}
+
+export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger_2 {
+  eq?: Maybe<number>;
+
+  ne?: Maybe<number>;
+
+  gt?: Maybe<number>;
+
+  gte?: Maybe<number>;
+
+  lt?: Maybe<number>;
+
+  lte?: Maybe<number>;
+
+  in?: Maybe<(Maybe<number>)[]>;
+
+  nin?: Maybe<(Maybe<number>)[]>;
+}
+
+export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsLinkImagesToOriginalQueryBoolean_2 {
+  eq?: Maybe<boolean>;
+
+  ne?: Maybe<boolean>;
+
+  in?: Maybe<(Maybe<boolean>)[]>;
+
+  nin?: Maybe<(Maybe<boolean>)[]>;
+}
+
+export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsWrapperStyleQueryString_2 {
+  eq?: Maybe<string>;
+
+  ne?: Maybe<string>;
+
+  regex?: Maybe<string>;
+
+  glob?: Maybe<string>;
+
+  in?: Maybe<(Maybe<string>)[]>;
+
+  nin?: Maybe<(Maybe<string>)[]>;
 }
 
 export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsTargetQueryString_2 {
@@ -1219,6 +1479,20 @@ export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsTargetQuer
 }
 
 export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsRelQueryString_2 {
+  eq?: Maybe<string>;
+
+  ne?: Maybe<string>;
+
+  regex?: Maybe<string>;
+
+  glob?: Maybe<string>;
+
+  in?: Maybe<(Maybe<string>)[]>;
+
+  nin?: Maybe<(Maybe<string>)[]>;
+}
+
+export interface SitePluginConnectionPluginOptionsPluginsBrowserApIsQueryList_2 {
   eq?: Maybe<string>;
 
   ne?: Maybe<string>;
@@ -1260,6 +1534,50 @@ export interface SitePluginConnectionPluginOptionsPathToConfigModuleQueryString_
   nin?: Maybe<(Maybe<string>)[]>;
 }
 
+export interface SitePluginConnectionPluginOptionsTrackingIdQueryString_2 {
+  eq?: Maybe<string>;
+
+  ne?: Maybe<string>;
+
+  regex?: Maybe<string>;
+
+  glob?: Maybe<string>;
+
+  in?: Maybe<(Maybe<string>)[]>;
+
+  nin?: Maybe<(Maybe<string>)[]>;
+}
+
+export interface SitePluginConnectionPluginOptionsHeadQueryBoolean_2 {
+  eq?: Maybe<boolean>;
+
+  ne?: Maybe<boolean>;
+
+  in?: Maybe<(Maybe<boolean>)[]>;
+
+  nin?: Maybe<(Maybe<boolean>)[]>;
+}
+
+export interface SitePluginConnectionPluginOptionsAnonymizeQueryBoolean_2 {
+  eq?: Maybe<boolean>;
+
+  ne?: Maybe<boolean>;
+
+  in?: Maybe<(Maybe<boolean>)[]>;
+
+  nin?: Maybe<(Maybe<boolean>)[]>;
+}
+
+export interface SitePluginConnectionPluginOptionsRespectDntQueryBoolean_2 {
+  eq?: Maybe<boolean>;
+
+  ne?: Maybe<boolean>;
+
+  in?: Maybe<(Maybe<boolean>)[]>;
+
+  nin?: Maybe<(Maybe<boolean>)[]>;
+}
+
 export interface SitePluginConnectionPluginOptionsPathQueryString_2 {
   eq?: Maybe<string>;
 
@@ -1275,6 +1593,48 @@ export interface SitePluginConnectionPluginOptionsPathQueryString_2 {
 }
 
 export interface SitePluginConnectionPluginOptionsNameQueryString_2 {
+  eq?: Maybe<string>;
+
+  ne?: Maybe<string>;
+
+  regex?: Maybe<string>;
+
+  glob?: Maybe<string>;
+
+  in?: Maybe<(Maybe<string>)[]>;
+
+  nin?: Maybe<(Maybe<string>)[]>;
+}
+
+export interface SitePluginConnectionPluginOptionsMaxWidthQueryInteger_2 {
+  eq?: Maybe<number>;
+
+  ne?: Maybe<number>;
+
+  gt?: Maybe<number>;
+
+  gte?: Maybe<number>;
+
+  lt?: Maybe<number>;
+
+  lte?: Maybe<number>;
+
+  in?: Maybe<(Maybe<number>)[]>;
+
+  nin?: Maybe<(Maybe<number>)[]>;
+}
+
+export interface SitePluginConnectionPluginOptionsLinkImagesToOriginalQueryBoolean_2 {
+  eq?: Maybe<boolean>;
+
+  ne?: Maybe<boolean>;
+
+  in?: Maybe<(Maybe<boolean>)[]>;
+
+  nin?: Maybe<(Maybe<boolean>)[]>;
+}
+
+export interface SitePluginConnectionPluginOptionsWrapperStyleQueryString_2 {
   eq?: Maybe<string>;
 
   ne?: Maybe<string>;
@@ -4825,9 +5185,27 @@ export interface SitePagePluginCreatorPluginOptionsInputObject {
     SitePagePluginCreatorPluginOptionsPathToConfigModuleQueryString
   >;
 
+  trackingId?: Maybe<SitePagePluginCreatorPluginOptionsTrackingIdQueryString>;
+
+  head?: Maybe<SitePagePluginCreatorPluginOptionsHeadQueryBoolean>;
+
+  anonymize?: Maybe<SitePagePluginCreatorPluginOptionsAnonymizeQueryBoolean>;
+
+  respectDNT?: Maybe<SitePagePluginCreatorPluginOptionsRespectDntQueryBoolean>;
+
   path?: Maybe<SitePagePluginCreatorPluginOptionsPathQueryString>;
 
   name?: Maybe<SitePagePluginCreatorPluginOptionsNameQueryString>;
+
+  maxWidth?: Maybe<SitePagePluginCreatorPluginOptionsMaxWidthQueryInteger>;
+
+  linkImagesToOriginal?: Maybe<
+    SitePagePluginCreatorPluginOptionsLinkImagesToOriginalQueryBoolean
+  >;
+
+  wrapperStyle?: Maybe<
+    SitePagePluginCreatorPluginOptionsWrapperStyleQueryString
+  >;
 
   target?: Maybe<SitePagePluginCreatorPluginOptionsTargetQueryString>;
 
@@ -4861,6 +5239,10 @@ export interface SitePagePluginCreatorPluginOptionsPluginsInputObject {
 
   pluginOptions?: Maybe<
     SitePagePluginCreatorPluginOptionsPluginsPluginOptionsInputObject
+  >;
+
+  browserAPIs?: Maybe<
+    SitePagePluginCreatorPluginOptionsPluginsBrowserApIsQueryList
   >;
 
   pluginFilepath?: Maybe<
@@ -4925,6 +5307,18 @@ export interface SitePagePluginCreatorPluginOptionsPluginsVersionQueryString {
 }
 
 export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsInputObject {
+  maxWidth?: Maybe<
+    SitePagePluginCreatorPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger
+  >;
+
+  linkImagesToOriginal?: Maybe<
+    SitePagePluginCreatorPluginOptionsPluginsPluginOptionsLinkImagesToOriginalQueryBoolean
+  >;
+
+  wrapperStyle?: Maybe<
+    SitePagePluginCreatorPluginOptionsPluginsPluginOptionsWrapperStyleQueryString
+  >;
+
   target?: Maybe<
     SitePagePluginCreatorPluginOptionsPluginsPluginOptionsTargetQueryString
   >;
@@ -4932,6 +5326,48 @@ export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsInputObje
   rel?: Maybe<
     SitePagePluginCreatorPluginOptionsPluginsPluginOptionsRelQueryString
   >;
+}
+
+export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger {
+  eq?: Maybe<number>;
+
+  ne?: Maybe<number>;
+
+  gt?: Maybe<number>;
+
+  gte?: Maybe<number>;
+
+  lt?: Maybe<number>;
+
+  lte?: Maybe<number>;
+
+  in?: Maybe<(Maybe<number>)[]>;
+
+  nin?: Maybe<(Maybe<number>)[]>;
+}
+
+export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsLinkImagesToOriginalQueryBoolean {
+  eq?: Maybe<boolean>;
+
+  ne?: Maybe<boolean>;
+
+  in?: Maybe<(Maybe<boolean>)[]>;
+
+  nin?: Maybe<(Maybe<boolean>)[]>;
+}
+
+export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsWrapperStyleQueryString {
+  eq?: Maybe<string>;
+
+  ne?: Maybe<string>;
+
+  regex?: Maybe<string>;
+
+  glob?: Maybe<string>;
+
+  in?: Maybe<(Maybe<string>)[]>;
+
+  nin?: Maybe<(Maybe<string>)[]>;
 }
 
 export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsTargetQueryString {
@@ -4949,6 +5385,20 @@ export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsTargetQue
 }
 
 export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsRelQueryString {
+  eq?: Maybe<string>;
+
+  ne?: Maybe<string>;
+
+  regex?: Maybe<string>;
+
+  glob?: Maybe<string>;
+
+  in?: Maybe<(Maybe<string>)[]>;
+
+  nin?: Maybe<(Maybe<string>)[]>;
+}
+
+export interface SitePagePluginCreatorPluginOptionsPluginsBrowserApIsQueryList {
   eq?: Maybe<string>;
 
   ne?: Maybe<string>;
@@ -4990,6 +5440,50 @@ export interface SitePagePluginCreatorPluginOptionsPathToConfigModuleQueryString
   nin?: Maybe<(Maybe<string>)[]>;
 }
 
+export interface SitePagePluginCreatorPluginOptionsTrackingIdQueryString {
+  eq?: Maybe<string>;
+
+  ne?: Maybe<string>;
+
+  regex?: Maybe<string>;
+
+  glob?: Maybe<string>;
+
+  in?: Maybe<(Maybe<string>)[]>;
+
+  nin?: Maybe<(Maybe<string>)[]>;
+}
+
+export interface SitePagePluginCreatorPluginOptionsHeadQueryBoolean {
+  eq?: Maybe<boolean>;
+
+  ne?: Maybe<boolean>;
+
+  in?: Maybe<(Maybe<boolean>)[]>;
+
+  nin?: Maybe<(Maybe<boolean>)[]>;
+}
+
+export interface SitePagePluginCreatorPluginOptionsAnonymizeQueryBoolean {
+  eq?: Maybe<boolean>;
+
+  ne?: Maybe<boolean>;
+
+  in?: Maybe<(Maybe<boolean>)[]>;
+
+  nin?: Maybe<(Maybe<boolean>)[]>;
+}
+
+export interface SitePagePluginCreatorPluginOptionsRespectDntQueryBoolean {
+  eq?: Maybe<boolean>;
+
+  ne?: Maybe<boolean>;
+
+  in?: Maybe<(Maybe<boolean>)[]>;
+
+  nin?: Maybe<(Maybe<boolean>)[]>;
+}
+
 export interface SitePagePluginCreatorPluginOptionsPathQueryString {
   eq?: Maybe<string>;
 
@@ -5005,6 +5499,48 @@ export interface SitePagePluginCreatorPluginOptionsPathQueryString {
 }
 
 export interface SitePagePluginCreatorPluginOptionsNameQueryString {
+  eq?: Maybe<string>;
+
+  ne?: Maybe<string>;
+
+  regex?: Maybe<string>;
+
+  glob?: Maybe<string>;
+
+  in?: Maybe<(Maybe<string>)[]>;
+
+  nin?: Maybe<(Maybe<string>)[]>;
+}
+
+export interface SitePagePluginCreatorPluginOptionsMaxWidthQueryInteger {
+  eq?: Maybe<number>;
+
+  ne?: Maybe<number>;
+
+  gt?: Maybe<number>;
+
+  gte?: Maybe<number>;
+
+  lt?: Maybe<number>;
+
+  lte?: Maybe<number>;
+
+  in?: Maybe<(Maybe<number>)[]>;
+
+  nin?: Maybe<(Maybe<number>)[]>;
+}
+
+export interface SitePagePluginCreatorPluginOptionsLinkImagesToOriginalQueryBoolean {
+  eq?: Maybe<boolean>;
+
+  ne?: Maybe<boolean>;
+
+  in?: Maybe<(Maybe<boolean>)[]>;
+
+  nin?: Maybe<(Maybe<boolean>)[]>;
+}
+
+export interface SitePagePluginCreatorPluginOptionsWrapperStyleQueryString {
   eq?: Maybe<string>;
 
   ne?: Maybe<string>;
@@ -5645,9 +6181,25 @@ export interface SitePluginPluginOptionsInputObject_2 {
     SitePluginPluginOptionsPathToConfigModuleQueryString_2
   >;
 
+  trackingId?: Maybe<SitePluginPluginOptionsTrackingIdQueryString_2>;
+
+  head?: Maybe<SitePluginPluginOptionsHeadQueryBoolean_2>;
+
+  anonymize?: Maybe<SitePluginPluginOptionsAnonymizeQueryBoolean_2>;
+
+  respectDNT?: Maybe<SitePluginPluginOptionsRespectDntQueryBoolean_2>;
+
   path?: Maybe<SitePluginPluginOptionsPathQueryString_2>;
 
   name?: Maybe<SitePluginPluginOptionsNameQueryString_2>;
+
+  maxWidth?: Maybe<SitePluginPluginOptionsMaxWidthQueryInteger_2>;
+
+  linkImagesToOriginal?: Maybe<
+    SitePluginPluginOptionsLinkImagesToOriginalQueryBoolean_2
+  >;
+
+  wrapperStyle?: Maybe<SitePluginPluginOptionsWrapperStyleQueryString_2>;
 
   target?: Maybe<SitePluginPluginOptionsTargetQueryString_2>;
 
@@ -5682,6 +6234,8 @@ export interface SitePluginPluginOptionsPluginsInputObject_2 {
   pluginOptions?: Maybe<
     SitePluginPluginOptionsPluginsPluginOptionsInputObject_2
   >;
+
+  browserAPIs?: Maybe<SitePluginPluginOptionsPluginsBrowserApIsQueryList_2>;
 
   pluginFilepath?: Maybe<
     SitePluginPluginOptionsPluginsPluginFilepathQueryString_2
@@ -5745,11 +6299,65 @@ export interface SitePluginPluginOptionsPluginsVersionQueryString_2 {
 }
 
 export interface SitePluginPluginOptionsPluginsPluginOptionsInputObject_2 {
+  maxWidth?: Maybe<
+    SitePluginPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger_2
+  >;
+
+  linkImagesToOriginal?: Maybe<
+    SitePluginPluginOptionsPluginsPluginOptionsLinkImagesToOriginalQueryBoolean_2
+  >;
+
+  wrapperStyle?: Maybe<
+    SitePluginPluginOptionsPluginsPluginOptionsWrapperStyleQueryString_2
+  >;
+
   target?: Maybe<
     SitePluginPluginOptionsPluginsPluginOptionsTargetQueryString_2
   >;
 
   rel?: Maybe<SitePluginPluginOptionsPluginsPluginOptionsRelQueryString_2>;
+}
+
+export interface SitePluginPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger_2 {
+  eq?: Maybe<number>;
+
+  ne?: Maybe<number>;
+
+  gt?: Maybe<number>;
+
+  gte?: Maybe<number>;
+
+  lt?: Maybe<number>;
+
+  lte?: Maybe<number>;
+
+  in?: Maybe<(Maybe<number>)[]>;
+
+  nin?: Maybe<(Maybe<number>)[]>;
+}
+
+export interface SitePluginPluginOptionsPluginsPluginOptionsLinkImagesToOriginalQueryBoolean_2 {
+  eq?: Maybe<boolean>;
+
+  ne?: Maybe<boolean>;
+
+  in?: Maybe<(Maybe<boolean>)[]>;
+
+  nin?: Maybe<(Maybe<boolean>)[]>;
+}
+
+export interface SitePluginPluginOptionsPluginsPluginOptionsWrapperStyleQueryString_2 {
+  eq?: Maybe<string>;
+
+  ne?: Maybe<string>;
+
+  regex?: Maybe<string>;
+
+  glob?: Maybe<string>;
+
+  in?: Maybe<(Maybe<string>)[]>;
+
+  nin?: Maybe<(Maybe<string>)[]>;
 }
 
 export interface SitePluginPluginOptionsPluginsPluginOptionsTargetQueryString_2 {
@@ -5767,6 +6375,20 @@ export interface SitePluginPluginOptionsPluginsPluginOptionsTargetQueryString_2 
 }
 
 export interface SitePluginPluginOptionsPluginsPluginOptionsRelQueryString_2 {
+  eq?: Maybe<string>;
+
+  ne?: Maybe<string>;
+
+  regex?: Maybe<string>;
+
+  glob?: Maybe<string>;
+
+  in?: Maybe<(Maybe<string>)[]>;
+
+  nin?: Maybe<(Maybe<string>)[]>;
+}
+
+export interface SitePluginPluginOptionsPluginsBrowserApIsQueryList_2 {
   eq?: Maybe<string>;
 
   ne?: Maybe<string>;
@@ -5808,6 +6430,50 @@ export interface SitePluginPluginOptionsPathToConfigModuleQueryString_2 {
   nin?: Maybe<(Maybe<string>)[]>;
 }
 
+export interface SitePluginPluginOptionsTrackingIdQueryString_2 {
+  eq?: Maybe<string>;
+
+  ne?: Maybe<string>;
+
+  regex?: Maybe<string>;
+
+  glob?: Maybe<string>;
+
+  in?: Maybe<(Maybe<string>)[]>;
+
+  nin?: Maybe<(Maybe<string>)[]>;
+}
+
+export interface SitePluginPluginOptionsHeadQueryBoolean_2 {
+  eq?: Maybe<boolean>;
+
+  ne?: Maybe<boolean>;
+
+  in?: Maybe<(Maybe<boolean>)[]>;
+
+  nin?: Maybe<(Maybe<boolean>)[]>;
+}
+
+export interface SitePluginPluginOptionsAnonymizeQueryBoolean_2 {
+  eq?: Maybe<boolean>;
+
+  ne?: Maybe<boolean>;
+
+  in?: Maybe<(Maybe<boolean>)[]>;
+
+  nin?: Maybe<(Maybe<boolean>)[]>;
+}
+
+export interface SitePluginPluginOptionsRespectDntQueryBoolean_2 {
+  eq?: Maybe<boolean>;
+
+  ne?: Maybe<boolean>;
+
+  in?: Maybe<(Maybe<boolean>)[]>;
+
+  nin?: Maybe<(Maybe<boolean>)[]>;
+}
+
 export interface SitePluginPluginOptionsPathQueryString_2 {
   eq?: Maybe<string>;
 
@@ -5823,6 +6489,48 @@ export interface SitePluginPluginOptionsPathQueryString_2 {
 }
 
 export interface SitePluginPluginOptionsNameQueryString_2 {
+  eq?: Maybe<string>;
+
+  ne?: Maybe<string>;
+
+  regex?: Maybe<string>;
+
+  glob?: Maybe<string>;
+
+  in?: Maybe<(Maybe<string>)[]>;
+
+  nin?: Maybe<(Maybe<string>)[]>;
+}
+
+export interface SitePluginPluginOptionsMaxWidthQueryInteger_2 {
+  eq?: Maybe<number>;
+
+  ne?: Maybe<number>;
+
+  gt?: Maybe<number>;
+
+  gte?: Maybe<number>;
+
+  lt?: Maybe<number>;
+
+  lte?: Maybe<number>;
+
+  in?: Maybe<(Maybe<number>)[]>;
+
+  nin?: Maybe<(Maybe<number>)[]>;
+}
+
+export interface SitePluginPluginOptionsLinkImagesToOriginalQueryBoolean_2 {
+  eq?: Maybe<boolean>;
+
+  ne?: Maybe<boolean>;
+
+  in?: Maybe<(Maybe<boolean>)[]>;
+
+  nin?: Maybe<(Maybe<boolean>)[]>;
+}
+
+export interface SitePluginPluginOptionsWrapperStyleQueryString_2 {
   eq?: Maybe<string>;
 
   ne?: Maybe<string>;
@@ -6270,6 +6978,8 @@ export interface SiteSiteMetadataInputObject_2 {
   title?: Maybe<SiteSiteMetadataTitleQueryString_2>;
 
   description?: Maybe<SiteSiteMetadataDescriptionQueryString_2>;
+
+  siteUrl?: Maybe<SiteSiteMetadataSiteUrlQueryString_2>;
 }
 
 export interface SiteSiteMetadataTitleQueryString_2 {
@@ -6287,6 +6997,20 @@ export interface SiteSiteMetadataTitleQueryString_2 {
 }
 
 export interface SiteSiteMetadataDescriptionQueryString_2 {
+  eq?: Maybe<string>;
+
+  ne?: Maybe<string>;
+
+  regex?: Maybe<string>;
+
+  glob?: Maybe<string>;
+
+  in?: Maybe<(Maybe<string>)[]>;
+
+  nin?: Maybe<(Maybe<string>)[]>;
+}
+
+export interface SiteSiteMetadataSiteUrlQueryString_2 {
   eq?: Maybe<string>;
 
   ne?: Maybe<string>;
@@ -9158,8 +9882,15 @@ export enum SitePluginConnectionSortByFieldsEnum {
   Version = "version",
   PluginOptionsPlugins = "pluginOptions___plugins",
   PluginOptionsPathToConfigModule = "pluginOptions___pathToConfigModule",
+  PluginOptionsTrackingId = "pluginOptions___trackingId",
+  PluginOptionsHead = "pluginOptions___head",
+  PluginOptionsAnonymize = "pluginOptions___anonymize",
+  PluginOptionsRespectDnt = "pluginOptions___respectDNT",
   PluginOptionsPath = "pluginOptions___path",
   PluginOptionsName = "pluginOptions___name",
+  PluginOptionsMaxWidth = "pluginOptions___maxWidth",
+  PluginOptionsLinkImagesToOriginal = "pluginOptions___linkImagesToOriginal",
+  PluginOptionsWrapperStyle = "pluginOptions___wrapperStyle",
   PluginOptionsTarget = "pluginOptions___target",
   PluginOptionsRel = "pluginOptions___rel",
   PluginOptionsModulePath = "pluginOptions___modulePath",
@@ -9199,8 +9930,15 @@ export enum SitePluginDistinctEnum {
   Version = "version",
   PluginOptionsPlugins = "pluginOptions___plugins",
   PluginOptionsPathToConfigModule = "pluginOptions___pathToConfigModule",
+  PluginOptionsTrackingId = "pluginOptions___trackingId",
+  PluginOptionsHead = "pluginOptions___head",
+  PluginOptionsAnonymize = "pluginOptions___anonymize",
+  PluginOptionsRespectDnt = "pluginOptions___respectDNT",
   PluginOptionsPath = "pluginOptions___path",
   PluginOptionsName = "pluginOptions___name",
+  PluginOptionsMaxWidth = "pluginOptions___maxWidth",
+  PluginOptionsLinkImagesToOriginal = "pluginOptions___linkImagesToOriginal",
+  PluginOptionsWrapperStyle = "pluginOptions___wrapperStyle",
   PluginOptionsTarget = "pluginOptions___target",
   PluginOptionsRel = "pluginOptions___rel",
   PluginOptionsModulePath = "pluginOptions___modulePath",
@@ -9235,8 +9973,15 @@ export enum SitePluginGroupEnum {
   Version = "version",
   PluginOptionsPlugins = "pluginOptions___plugins",
   PluginOptionsPathToConfigModule = "pluginOptions___pathToConfigModule",
+  PluginOptionsTrackingId = "pluginOptions___trackingId",
+  PluginOptionsHead = "pluginOptions___head",
+  PluginOptionsAnonymize = "pluginOptions___anonymize",
+  PluginOptionsRespectDnt = "pluginOptions___respectDNT",
   PluginOptionsPath = "pluginOptions___path",
   PluginOptionsName = "pluginOptions___name",
+  PluginOptionsMaxWidth = "pluginOptions___maxWidth",
+  PluginOptionsLinkImagesToOriginal = "pluginOptions___linkImagesToOriginal",
+  PluginOptionsWrapperStyle = "pluginOptions___wrapperStyle",
   PluginOptionsTarget = "pluginOptions___target",
   PluginOptionsRel = "pluginOptions___rel",
   PluginOptionsModulePath = "pluginOptions___modulePath",
@@ -9891,9 +10636,23 @@ export interface PluginOptions_3 {
 
   pathToConfigModule?: Maybe<string>;
 
+  trackingId?: Maybe<string>;
+
+  head?: Maybe<boolean>;
+
+  anonymize?: Maybe<boolean>;
+
+  respectDNT?: Maybe<boolean>;
+
   path?: Maybe<string>;
 
   name?: Maybe<string>;
+
+  maxWidth?: Maybe<number>;
+
+  linkImagesToOriginal?: Maybe<boolean>;
+
+  wrapperStyle?: Maybe<string>;
 
   target?: Maybe<string>;
 
@@ -9921,10 +10680,18 @@ export interface Plugins_2 {
 
   pluginOptions?: Maybe<PluginOptions_4>;
 
+  browserAPIs?: Maybe<(Maybe<string>)[]>;
+
   pluginFilepath?: Maybe<string>;
 }
 
 export interface PluginOptions_4 {
+  maxWidth?: Maybe<number>;
+
+  linkImagesToOriginal?: Maybe<boolean>;
+
+  wrapperStyle?: Maybe<string>;
+
   target?: Maybe<string>;
 
   rel?: Maybe<string>;
@@ -10700,6 +11467,8 @@ export interface SiteMetadata_2 {
   title?: Maybe<string>;
 
   description?: Maybe<string>;
+
+  siteUrl?: Maybe<string>;
 }
 
 export interface Internal_14 {
