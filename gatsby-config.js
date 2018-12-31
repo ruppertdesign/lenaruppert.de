@@ -14,6 +14,15 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "UA-56098867-2",
+        head: false,
+        anonymize: true,
+        respectDNT: true
+      }
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/pages`,
@@ -28,12 +37,10 @@ module.exports = {
       }
     },
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: "gatsby-source-filesystem",
       options: {
-        trackingId: "UA-56098867-2",
-        head: false,
-        anonymize: true,
-        respectDNT: true
+        path: `${__dirname}/static/img`,
+        name: "static-images"
       }
     },
     "gatsby-plugin-sharp",
@@ -43,12 +50,23 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-relative-images`,
+          },
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 740,
+              linkImagesToOriginal: false,
+              wrapperStyle: "border: 1px solid hsla(0, 0%, 0%, 0.2);"
+            }
+          },
+          {
             resolve: "gatsby-remark-external-links",
             options: {
               target: "_blank",
               rel: "nofollow noopener noreferrer"
             }
-          }
+          }          
         ]
       }
     },

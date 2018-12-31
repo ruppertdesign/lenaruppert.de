@@ -7,6 +7,8 @@ description: "TODO Lena: description"
 
 ## Lena Ruppert | Freie Journalistin und Redakteurin
 
+![Lena Ruppert](/img/lena-ruppert.jpg)
+
 Nach meinem Studium der Komparatistik, Philosophie und Nordistik konnte ich meine bislang gesammelten journalistischen Erfahrungen in der Kulturredaktion von süddeutsche.de vertiefen.
 
 Mein Volontariat habe ich bei wissen.de absolviert, wo ich den Beruf des Online-Redakteurs von der Pike auf gelernt habe.
