@@ -55,6 +55,10 @@ export default class ContactForm extends React.PureComponent<{}, State> {
     ...initialFormValues,
   }
 
+  componentDidMount() {
+    this.setState({ novalidate: true }) // browser validation enabled if JS is disabled
+  }
+
   encode = data => {
     return Object.keys(data)
       .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
@@ -100,7 +104,6 @@ export default class ContactForm extends React.PureComponent<{}, State> {
   }
 
   handleUserInput = (event: React.ChangeEvent) => {
-    this.setState({ novalidate: true }) // browser validation enabled if JS is disabled
     const target = event.target as HTMLInputElement
     const valid = validator.validate(target)
     // @ts-ignore: we trust that the names match here
@@ -138,7 +141,7 @@ export default class ContactForm extends React.PureComponent<{}, State> {
           )}
 
           {submitSuccess && (
-            <div className="" id="submitSuccess">
+            <div id="submitSuccess">
               Vielen Dank für Ihre Nachricht. Ich werde sie umgehend
               beantworten.
             </div>
