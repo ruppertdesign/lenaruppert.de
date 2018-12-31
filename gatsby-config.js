@@ -1,12 +1,14 @@
 module.exports = {
   siteMetadata: {
     title: "Lena Ruppert",
-    description: "TODO Lena: Fallback description"
+    description: "TODO Lena: Fallback description",
+    siteUrl: "https://www.lenaruppert.de"
   },
   plugins: [
     "gatsby-plugin-typescript",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-emotion",
+    "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-typography",
       options: {
@@ -50,7 +52,7 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-relative-images`,
+            resolve: `gatsby-remark-relative-images`
           },
           {
             resolve: "gatsby-remark-images",
@@ -66,7 +68,7 @@ module.exports = {
               target: "_blank",
               rel: "nofollow noopener noreferrer"
             }
-          }          
+          }
         ]
       }
     },
