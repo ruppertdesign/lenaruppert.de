@@ -79,7 +79,7 @@ const headerStyles = css`
     }
   }
   .header-link-active {
-    color: ${styleVars.colors.linkColor};
+    color: ${styleVars.colors.bodyColor};
     :before {
       ${before}
       visibility: visible;
