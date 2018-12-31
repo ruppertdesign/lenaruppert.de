@@ -1,7 +1,8 @@
 schema:
   - "http://localhost:8000/___graphql"
 documents: []
-config: {}
+config:
+  namingConvention: "change-case#pascalCase"
 generates:
   ./typings/graphql-types.ts:
     config: {}

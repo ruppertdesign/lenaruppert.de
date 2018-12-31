@@ -4,6 +4,7 @@
   "jsRules": {},
   "rules": {
     "arrow-parens": [true, "ban-single-arg-parens"],
+    "class-name": false,
     "quotemark": [true, "single", "jsx-double"],
     "semicolon": {
       "options": ["never"]
