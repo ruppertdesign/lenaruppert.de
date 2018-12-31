@@ -26,7 +26,7 @@ const styles = css`
     margin: ${rhythm(0.5)} 0;
   }
   .cookie-consent-button {
-    padding: ${rhythm(0.15)} ${rhythm(0.25)};
+    padding: 0 ${rhythm(0.25)};
     margin: auto 0;
     border: 0 none;
     background-color: ${styleVars.colors.linkColor};
