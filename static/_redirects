@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://lenaruppert.netlify.com/* https://www.lenaruppert.de/:splat 301!

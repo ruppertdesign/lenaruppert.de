@@ -4,8 +4,3 @@
 [build.environment]
   YARN_VERSION = "1.9.4"
   YARN_FLAGS = "--no-ignore-optional"
-[[redirects]]
-  from = "https://lenaruppert.netlify.com/*"
-  to = "https://www.lenaruppert.de/:splat"
-  status = 301
-  
