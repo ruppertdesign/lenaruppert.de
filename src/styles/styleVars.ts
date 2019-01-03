@@ -5,7 +5,7 @@ export default {
     grayLighter: 'hsla(0, 0%, 0%, 0.2)',
     grayLightest: 'hsla(0, 0%, 0%, 0.1)',
     headerColor: 'hsla(0, 0%, 0%, 0.9)',
-    linkColor: 'hsla(53, 100%, 64%, 1)',
+    linkColor: 'hsla(50, 100%, 59%, 1)',
     white: 'hsla(0, 0%, 100%, 1)',
     black: 'hsla(0, 0%, 0%, 1)',
     red: 'hsla(0, 1000%, 40%, 1)',
