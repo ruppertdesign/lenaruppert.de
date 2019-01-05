@@ -25,6 +25,19 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-plugin-favicon",
+      options: {
+        logo: "./src/img/favicon.png",
+        icons: {
+          android: false,
+          appleIcon: false,
+          appleStartup: false,
+          favicons: true,
+          firefox: false
+        }
+      }
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/pages`,
