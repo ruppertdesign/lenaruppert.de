@@ -29,7 +29,7 @@ const styles = css`
     padding: 0 ${rhythm(0.25)};
     margin: auto 0;
     border: 0 none;
-    background-color: ${styleVars.colors.linkColor};
+    background-color: ${styleVars.colors.accentColor};
     color: ${styleVars.colors.white};
     cursor: pointer;
     transition: 0.5s ease;

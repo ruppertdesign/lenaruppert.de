@@ -6,7 +6,6 @@ import MainPage from '../components/layout/MainPage'
 import { MarkdownRemark } from '../../typings/graphql-types'
 import * as headerImage from '../img/header.png'
 import Seo from '../components/Seo'
-import LinkTest from '../components/LinkTest'
 
 interface Props {
   data: {
@@ -30,7 +29,6 @@ const StartPage = ({ data }: Props) => {
       <Seo title={frontmatter.title} description={frontmatter.description} />
       <HeaderImage src={headerImage} alt="Willkommen auf lenaruppert.de" />
       <StandardPageTemplate title={frontmatter.title} content={html} />
-      <LinkTest />
     </MainPage>
   )
 }

@@ -5,7 +5,7 @@ import { css } from '@emotion/core'
 import { Global } from '@emotion/core'
 import styleVars from '../../styles/styleVars'
 import * as logo from '../../img/logo.png'
-import { rhythm, scale } from '../../utils/typography'
+import { rhythm } from '../../utils/typography'
 
 const Header = styled('header')`
   margin: 0 auto;
@@ -16,6 +16,7 @@ const Header = styled('header')`
 `
 
 const HomeLink = styled(Link)`
+  box-shadow: none;
   &:hover,
   &:active {
     box-shadow: none;
@@ -54,7 +55,7 @@ const before = `
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: ${styleVars.colors.linkColor};
+  background-color: ${styleVars.colors.accentColor};
 `
 
 // didn't find a way to use emotion with activeClassName directly
@@ -63,6 +64,7 @@ const headerStyles = css`
     color: ${styleVars.colors.bodyColor};
     position: relative;
     transition: all 0.3s ease-in-out 0s;
+    box-shadow: none;
     :before {
       ${before}
       visibility: hidden;
@@ -74,7 +76,7 @@ const headerStyles = css`
       transform: scaleX(1);
     }
     :hover {
-      color: ${styleVars.colors.linkColor};
+      color: ${styleVars.colors.accentColor};
       box-shadow: none;
     }
   }

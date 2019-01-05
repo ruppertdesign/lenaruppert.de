@@ -5,7 +5,7 @@ import { rhythm, scale } from '../../utils/typography'
 const styles = `
   margin: ${rhythm(0.5)} 0;
   border: 0 none;
-  background-color: ${styleVars.colors.linkColor};
+  background-color: ${styleVars.colors.accentColor};
   color: ${styleVars.colors.white};
   cursor: pointer;
   transition: 0.5s ease;

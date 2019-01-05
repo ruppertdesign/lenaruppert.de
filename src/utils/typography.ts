@@ -6,7 +6,12 @@ deYoungTheme.headerColor = styleVars.colors.headerColor
 deYoungTheme.bodyColor = styleVars.colors.bodyColor
 deYoungTheme.overrideThemeStyles = () => ({
   a: {
-    color: styleVars.colors.linkColor,
+    color: 'currentColor',
+    boxShadow: '0 1px 0 0 currentColor',
+    transition: 'all 0.3s ease-in-out 0s',
+  },
+  'a:hover, a:active': {
+    color: styleVars.colors.accentColor,
   },
 })
 
