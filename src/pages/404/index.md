@@ -1,6 +1,6 @@
 ---
 templateKey: "standard"
-path: /404
+path: /404.html
 title: Fehler 404
 description: "TODO Lena: description"
 ---
