@@ -12,7 +12,10 @@ const styles = `
   &:hover,
   &:active {
     background-color: ${styleVars.colors.grayLight};
+    color: ${styleVars.colors.white};
     transition: 0.5s ease;
+    outline: none;
+    box-shadow: none;
   }
   ,
   &:focus {
