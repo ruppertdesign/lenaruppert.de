@@ -25,6 +25,31 @@ const Subtitle = styled('span')`
   ${scale(-0.2)};
 `
 
+const UnstiledLink = styled('a')`
+  box-shadow: none;
+  :hover,
+  :active {
+    color: currentColor;
+    box-shadow: none;
+  }
+`
+
+const Link = ({ uri, children, withStyles }) => {
+  if (uri == null) {
+    return children
+  }
+  const linkProps = {
+    href: uri,
+    target: '_blank',
+    rel: 'nofollow noopener noreferrer',
+  }
+  return withStyles ? (
+    <A {...linkProps}>{children}</A>
+  ) : (
+    <UnstiledLink {...linkProps}>{children}</UnstiledLink>
+  )
+}
+
 export default ({
   id,
   title,
@@ -35,18 +60,18 @@ export default ({
 }: SampleProps) => {
   return (
     <Article key={id}>
-      <h2>{title}</h2>
-      <Subtitle>{subTitle}</Subtitle>
-      <Content
-        className="sample"
-        content={html}
-        contentIsMarkdown={contentIsMarkdown}
-      />
-      {uri != null && (
-        <A href={uri} target="_blank" rel="nofollow noopener noreferrer">
-          Weiter lesen
-        </A>
-      )}
+      <Link uri={uri} withStyles={false}>
+        <h2>{title}</h2>
+        <Subtitle>{subTitle}</Subtitle>
+        <Content
+          className="sample"
+          content={html}
+          contentIsMarkdown={contentIsMarkdown}
+        />
+      </Link>
+      <Link uri={uri} withStyles={true}>
+        Weiter lesen
+      </Link>
     </Article>
   )
 }
