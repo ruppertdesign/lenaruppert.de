@@ -4,6 +4,7 @@ import { A } from '../form/Buttons'
 import styled from '@emotion/styled'
 import styleVars from '../../styles/styleVars'
 import { rhythm, scale } from '../../utils/typography'
+import { link } from 'fs'
 
 export interface SampleProps {
   id: string
@@ -25,30 +26,13 @@ const Subtitle = styled('span')`
   ${scale(-0.2)};
 `
 
-const UnstiledLink = styled('a')`
+const LinkedHeading = styled('a')`
   box-shadow: none;
   :hover,
   :active {
-    color: currentColor;
     box-shadow: none;
   }
 `
-
-const Link = ({ uri, children, withStyles }) => {
-  if (uri == null) {
-    return children
-  }
-  const linkProps = {
-    href: uri,
-    target: '_blank',
-    rel: 'nofollow noopener noreferrer',
-  }
-  return withStyles ? (
-    <A {...linkProps}>{children}</A>
-  ) : (
-    <UnstiledLink {...linkProps}>{children}</UnstiledLink>
-  )
-}
 
 export default ({
   id,
@@ -58,20 +42,23 @@ export default ({
   uri,
   contentIsMarkdown,
 }: SampleProps) => {
+  const linkProps = {
+    href: uri as string,
+    target: '_blank',
+    rel: 'nofollow noopener noreferrer',
+  }
   return (
     <Article key={id}>
-      <Link uri={uri} withStyles={false}>
-        <h2>{title}</h2>
-        <Subtitle>{subTitle}</Subtitle>
-        <Content
-          className="sample"
-          content={html}
-          contentIsMarkdown={contentIsMarkdown}
-        />
-      </Link>
-      <Link uri={uri} withStyles={true}>
-        Weiter lesen
-      </Link>
+      <h2>
+        <LinkedHeading {...linkProps}>{title}</LinkedHeading>
+      </h2>
+      <Subtitle>{subTitle}</Subtitle>
+      <Content
+        className="sample"
+        content={html}
+        contentIsMarkdown={contentIsMarkdown}
+      />
+      <A {...linkProps}>Weiter lesen</A>
     </Article>
   )
 }
