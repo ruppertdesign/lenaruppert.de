@@ -21,7 +21,7 @@ Telefon: <a href="tel:+4917622889049">+49 176 22889049</a>
 Lena Ruppert<br />
 Tannenfleckstraße 12b<br />
 82194 Gröbenzell<br />
-Steuernummer: 117/264/81042
+Steuernummerw: 117/264/81042
 </address>
 
 Quelle: [eRecht24](https://www.e-recht24.de)

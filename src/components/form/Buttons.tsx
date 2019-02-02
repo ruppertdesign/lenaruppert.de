@@ -5,8 +5,10 @@ import { rhythm, scale } from '../../utils/typography'
 const styles = `
   margin: ${rhythm(0.5)} 0;
   border: 0 none;
+  outline: none;
+  box-shadow: none;
   background-color: ${styleVars.colors.accentColor};
-  color: ${styleVars.colors.white};
+  color: ${styleVars.colors.black};
   cursor: pointer;
   transition: 0.5s ease;
   &:hover,
