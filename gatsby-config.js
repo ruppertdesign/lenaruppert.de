@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Lena Ruppert",
-    description: "TODO Lena: Fallback description",
+    description: "Willkommen auf meiner Webseite. Ich bin Lena Ruppert, freie Journalistin und Online-Redakteurin aus München. Ich freue mich, wenn ich für Sie schreiben darf.",
     siteUrl: "https://www.lenaruppert.de"
   },
   plugins: [
