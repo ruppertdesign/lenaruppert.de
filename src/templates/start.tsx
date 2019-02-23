@@ -6,6 +6,8 @@ import MainPage from '../components/layout/MainPage'
 import { MarkdownRemark } from '../../typings/graphql-types'
 import * as headerImage from '../img/header.png'
 import Seo from '../components/Seo'
+import { scale } from '../utils/typography'
+import styleVars from '../styles/styleVars'
 
 interface Props {
   data: {
@@ -18,6 +20,16 @@ const HeaderImage = styled('img')`
   margin: 0;
 `
 
+const Credits = styled('small')`
+  position: relative;
+  top: -0.25rem;
+  display: flex;
+  justify-content: flex-end;
+  ${scale(-0.75)};
+  line-height: 1;
+  color: ${styleVars.colors.grayLight};
+`
+
 const StartPage = ({ data }: Props) => {
   const { markdownRemark: post } = data
   if (post == null || post.frontmatter == null) {
@@ -28,6 +40,9 @@ const StartPage = ({ data }: Props) => {
     <MainPage>
       <Seo title={frontmatter.title} description={frontmatter.description} />
       <HeaderImage src={headerImage} alt="Willkommen auf lenaruppert.de" />
+      <Credits>
+        image: <a href="https://pixabay.com">pixabay</a>
+      </Credits>
       <StandardPageTemplate title={frontmatter.title} content={html} />
     </MainPage>
   )
