@@ -30,7 +30,7 @@ const styles = css`
     margin: auto 0;
     border: 0 none;
     background-color: ${styleVars.colors.accentColor};
-    color: ${styleVars.colors.white};
+    color: ${styleVars.colors.black};
     cursor: pointer;
     transition: 0.5s ease;
     ${scale(-0.2)};
