@@ -79,6 +79,7 @@ export const samplesPageQuery = graphql`
             subTitle
             description
             order
+            offline
             uri
           }
         }

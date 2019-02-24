@@ -3,6 +3,7 @@ templateKey: "sample"
 title: "Neue Studie zeigt: So schnell zerstören wir Wildnis – unwiederbringlich"
 subTitle: "Weather Channel: Schwerpunkt Umwelt"
 order: 8
+offline: false
 uri: https://weather.com/de-DE/wissen/umwelt/news/neue-studie-zeigt-so-schnell-zerstoren-wir-wildnis
 ---
 

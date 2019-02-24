@@ -3,6 +3,7 @@ templateKey: "sample"
 title: "Der Schnupfen-Knigge: Darauf sollten Sie achten"
 subTitle: "web.de und gmx.de: Schwerpunkt Gesellschaft / Umwelt"
 order: 13
+offline: false
 uri: https://web.de/magazine/gesundheit/schnupfen-knigge-ansteckung-behandlung-32651178
 ---
 

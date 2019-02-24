@@ -3,6 +3,7 @@ templateKey: "sample"
 title: "Polargebiete - eisige Märchenlandschaften"
 subTitle: "wissen.de: Schwerpunkt Kultur, Gesellschaft, Umwelt"
 order: 4
+offline: false
 uri: https://www.wissen.de/bilder/polargebiete-eisige-maerchenlandschaften
 ---
 

@@ -22,6 +22,7 @@ pages_fields: &pages_fields
 collections:
   - name: "pages"
     label: "Seiten"
+    label_singular: "Seite"
     files:
       - file: "src/pages/404/index.md"
         label: "404"
@@ -61,6 +62,7 @@ collections:
         <<: *pages_fields
   - name: "samples"
     label: "Textproben"
+    label_singular: "Textprobe"
     folder: "src/pages/textproben"
     create: true
     filter: { field: "templateKey", value: "sample" }
@@ -74,5 +76,6 @@ collections:
       - { label: "Titel", name: "title", widget: "string" }
       - { label: "Untertitel", name: "subTitle", widget: "string" }
       - { label: "Reihenfolge", name: "order", widget: "number" }
+      - { label: "Offline", name: "offline", widget: "boolean" }
       - { label: "Link", name: "uri", widget: "string" }
       - { label: "Text", name: "body", widget: "markdown" }

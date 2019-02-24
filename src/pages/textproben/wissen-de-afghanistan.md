@@ -3,6 +3,7 @@ templateKey: "sample"
 title: „In Afghanistan ist doch immer Krieg“
 subTitle: "wissen.de: Schwerpunkt Kultur, Gesellschaft, Umwelt"
 order: 6
+offline: false
 uri: https://www.wissen.de/afghanistan-ist-doch-immer-krieg
 ---
 

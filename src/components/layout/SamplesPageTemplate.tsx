@@ -16,6 +16,7 @@ export interface SamplesPageProps {
     subTitle?: string | null
     html?: string | null
     uri?: string | null
+    offline?: boolean | null
     order?: number | null
   }>
   contentIsMarkdown?: boolean

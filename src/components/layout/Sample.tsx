@@ -4,7 +4,6 @@ import { A } from '../form/Buttons'
 import styled from '@emotion/styled'
 import styleVars from '../../styles/styleVars'
 import { rhythm, scale } from '../../utils/typography'
-import { link } from 'fs'
 
 export interface SampleProps {
   id: string
@@ -13,6 +12,7 @@ export interface SampleProps {
   html?: string | null
   uri?: string | null
   order?: number | null
+  offline?: boolean | null
   contentIsMarkdown?: boolean
 }
 
@@ -40,12 +40,17 @@ export default ({
   subTitle,
   html,
   uri,
+  offline,
   contentIsMarkdown,
 }: SampleProps) => {
   const linkProps = {
     href: uri as string,
     target: '_blank',
     rel: 'nofollow noopener noreferrer',
+  }
+  console.info(offline, title)
+  if (offline) {
+    return null
   }
   return (
     <Article key={id}>

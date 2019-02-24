@@ -3,6 +3,7 @@ templateKey: "sample"
 title: Harry Potter - das Ende einer Ära?
 subTitle: "wissen.de: Schwerpunkt Kultur, Gesellschaft, Umwelt"
 order: 7
+offline: false
 uri: https://www.wissen.de/podcast/harry-potter-das-ende-einer-aera-podcast-142
 ---
 

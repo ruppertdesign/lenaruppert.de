@@ -3,6 +3,7 @@ templateKey: "sample"
 title: "Wie funktioniert ein Geldautomat?"
 subTitle: "web.de und gmx.de: Schwerpunkt Gesellschaft / Umwelt"
 order: 12
+offline: false
 uri: https://web.de/magazine/geld-karriere/funktioniert-geldautomat-32467272
 ---
 

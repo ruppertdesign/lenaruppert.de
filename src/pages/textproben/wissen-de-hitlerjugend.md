@@ -3,6 +3,7 @@ templateKey: "sample"
 title: "Die Hitlerjugend"
 subTitle: "wissen.de: Schwerpunkt Kultur, Gesellschaft, Umwelt"
 order: 5
+offline: false
 uri: https://www.wissen.de/podcast/die-hitlerjugend
 ---
 
