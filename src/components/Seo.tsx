@@ -33,7 +33,7 @@ export default class Seo extends React.PureComponent<Props, {}> {
           },
           {
             property: `og:title`,
-            content: title,
+            content: title || mainTitle,
           },
           {
             property: `og:description`,
