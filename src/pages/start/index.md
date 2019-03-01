@@ -1,8 +1,10 @@
 ---
-templateKey: "start"
-path: /preview-06-06-2014
+templateKey: start
 title: Willkommen
-description: "TODO Lena: description"
+description: >
+  Willkommen auf meiner Webseite. Ich bin Lena Ruppert, freie Journalistin und
+  Online-Redakteurin aus München. Ich freue mich, wenn ich für Sie schreiben
+  darf.
 ---
 
 … auf meiner Webseite. Ich bin Lena Ruppert, freie Journalistin und Online-Redakteurin aus München.
