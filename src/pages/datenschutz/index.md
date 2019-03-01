@@ -1,8 +1,9 @@
 ---
-templateKey: "standard"
-path: /datenschutz
+templateKey: standard
 title: Datenschutzerklärung
-description: "TODO Lena: description"
+description: >
+  Ich bin Lena Ruppert, freie Journalistin und Online-Redakteurin. Kontaktieren
+  Sie mich gerne. Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst.
 ---
 
 ## Datenschutz
