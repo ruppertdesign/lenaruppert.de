@@ -3,8 +3,8 @@ templateKey: standard
 title: Referenzen
 description: >
   Ich bin Lena Ruppert, vielseitige Journalistin und erfahrene
-  Online-Redakteurin. Hier erhalten Sie einen kleinen Überblick über einige
-  meiner bisherigen Texte.
+  Online-Redakteurin. Mit diesen Auftraggebern darf und durfte ich bereits
+  zusammenarbeiten.
 ---
 
 <ul class="references">
