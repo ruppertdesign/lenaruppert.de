@@ -1,8 +1,9 @@
 ---
 templateKey: samples
-path: /textproben
 title: Textproben
-description: "TODO Lena: description"
+description: >
+  Ich bin Lena Ruppert, vielseitige Journalistin und erfahrene
+  Online-Redakteurin. Hier erhalten Sie einen kleinen Überblick über einige
+  meiner bisherigen Texte.
 ---
-
-TODO Lena: Hier finden Sie einige Auszüge meiner Artikel von [web.de](https://web.de/magazine/autor/lena-ruppert-31369988), gmx.de und wissen.de.
+Hier finden Sie eine kleine Auswahl meiner bisherigen Artikel.
