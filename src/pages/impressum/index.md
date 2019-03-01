@@ -1,8 +1,9 @@
 ---
-templateKey: "standard"
-path: /impressum
+templateKey: standard
 title: Impressum
-description: "TODO Lena: description"
+description: >
+  Ich bin Lena Ruppert, freie Journalistin und Online-Redakteurin. Kontaktieren
+  Sie mich bei Interesse gerne. Ich freue mich, wenn ich für Sie schreiben darf.
 ---
 
 ## Angaben gemäß § 5 TMG:
