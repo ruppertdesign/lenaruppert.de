@@ -1,8 +1,10 @@
 ---
 templateKey: standard
-path: /ueber-mich
 title: Über mich
-description: "TODO Lena: description"
+description: >
+  Ich bin Lena Ruppert, erfahrene Journalistin und Online-Redakteurin. Hier
+  erfahren Sie mehr über meinen beruflichen Werdegang. Gerne schreibe ich auch
+  für Sie.
 ---
 
 ## Lena Ruppert | Freie Journalistin und Redakteurin
