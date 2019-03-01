@@ -1,8 +1,9 @@
 ---
 templateKey: standard
-path: /agb
 title: AGB
-description: "TODO Lena: description"
+description: >
+  Ich bin Lena Ruppert, freie Journalistin und Online-Redakteurin. Dies sind
+  meine Geschäftsbedingungen. Ich freue mich, wenn ich für Sie schreiben darf.
 ---
 
 ## Allgemeines
