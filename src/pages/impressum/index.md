@@ -2,8 +2,9 @@
 templateKey: standard
 title: Impressum
 description: >
-  Ich bin Lena Ruppert, freie Journalistin und Online-Redakteurin. Kontaktieren
-  Sie mich bei Interesse gerne. Ich freue mich, wenn ich für Sie schreiben darf.
+  Ich bin Lena Ruppert, freie Journalistin und Online-Redakteurin aus
+  Gröbenzell. Kontaktieren Sie mich gerne. Ich freue mich, wenn ich für Sie
+  schreiben darf.
 ---
 
 ## Angaben gemäß § 5 TMG:
