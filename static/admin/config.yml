@@ -45,6 +45,10 @@ collections:
         label: "Kontakt"
         name: "kontakt"
         <<: *pages_fields
+      - file: "src/pages/danke/index.md"
+        label: "Danke"
+        name: "danke"
+        <<: *pages_fields
       - file: "src/pages/referenzen/index.md"
         label: "Referenzen"
         name: "referenzen"
