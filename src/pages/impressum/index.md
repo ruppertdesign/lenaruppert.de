@@ -1,5 +1,6 @@
 ---
 templateKey: standard
+path: /impressum
 title: Impressum
 description: >
   Ich bin Lena Ruppert, freie Journalistin und Online-Redakteurin aus

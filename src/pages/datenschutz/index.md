@@ -1,5 +1,6 @@
 ---
 templateKey: standard
+path: /datenschutz
 title: Datenschutzerklärung
 description: >
   Ich bin Lena Ruppert, freie Journalistin und Online-Redakteurin. Kontaktieren

@@ -1,5 +1,6 @@
 ---
 templateKey: standard
+path: /referenzen
 title: Referenzen
 description: >
   Ich bin Lena Ruppert, vielseitige Journalistin und erfahrene

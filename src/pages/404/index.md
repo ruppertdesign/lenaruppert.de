@@ -1,5 +1,6 @@
 ---
 templateKey: standard
+path: /404.html
 title: Fehler 404
 description: >+
   Leider ist ein Fehler passiert. Besuchen Sie bei Interesse sehr gerne meine

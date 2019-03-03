@@ -1,5 +1,6 @@
 ---
 templateKey: standard
+path: /agb
 title: AGB
 description: >
   Ich bin Lena Ruppert, freie Journalistin und Online-Redakteurin. Dies sind

@@ -1,5 +1,6 @@
 ---
 templateKey: standard
+path: /ueber-mich
 title: Über mich
 description: >
   Ich bin Lena Ruppert, erfahrene Journalistin und Online-Redakteurin. Hier

@@ -1,5 +1,6 @@
 ---
 templateKey: contact
+path: /kontakt
 title: Kontakt
 description: >-
   Ich bin Lena Ruppert, freie Journalistin und Online-Redakteurin. Kontaktieren
