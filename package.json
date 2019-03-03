@@ -25,6 +25,7 @@
     "src/**/*.{js,jsx,ts,tsx}": [
       "yarn run lint",
       "yarn run format",
+      "yarn version --patch",
       "git add"
     ]
   },
