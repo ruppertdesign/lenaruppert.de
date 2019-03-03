@@ -24,10 +24,6 @@ export default class Seo extends React.PureComponent<Props, {}> {
         titleTemplate={`%s | ${siteMetadata!.title}`}
         meta={[
           {
-            name: 'robots',
-            content: 'noindex, nofollow',
-          },
-          {
             name: `description`,
             content: metaDescription,
           },
