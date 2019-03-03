@@ -18,14 +18,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged && yarn version --patch --no-git-tag-version"
     }
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
       "yarn run lint",
-      "yarn run format",
-      "yarn version --patch",
+      "yarn run format",      
       "git add"
     ]
   },
