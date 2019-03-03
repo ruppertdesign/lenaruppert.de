@@ -13,6 +13,7 @@ const defaultPages = [
   '404',
   'agb',
   'datenschutz',
+  'danke',
   'impressum',
   'kontakt',
   'referenzen',
