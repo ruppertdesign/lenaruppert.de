@@ -1,6 +1,6 @@
 ---
 templateKey: start
-path: /preview-06-06-2014
+path: /
 title: Willkommen
 description: >
   Willkommen auf meiner Webseite. Ich bin Lena Ruppert, freie Journalistin und
