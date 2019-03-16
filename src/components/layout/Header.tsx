@@ -101,7 +101,7 @@ const NavLink = ({ title, to }) => (
 export default () => (
   <Header>
     <Global styles={headerStyles} />
-    <HomeLink aria-label="lenaruppert.de start" to="/preview-06-06-2014">
+    <HomeLink aria-label="lenaruppert.de start" to="/">
       <Logo src={logo} alt="Logo Lena Ruppert" />
     </HomeLink>
     <Nav>
