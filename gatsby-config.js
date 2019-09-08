@@ -6,7 +6,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-typescript",
-    "@rhysforyou/gatsby-plugin-react-helmet-async",
+    "gatsby-plugin-react-helmet",
     "gatsby-plugin-emotion",
     "gatsby-plugin-sitemap",
     {
