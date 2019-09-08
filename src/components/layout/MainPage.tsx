@@ -1,5 +1,6 @@
 import * as React from 'react'
 import styled from '@emotion/styled'
+import { HelmetProvider } from 'react-helmet-async'
 import Header from './Header'
 import Footer from './Footer'
 import CookieConsent from '../CookieConsent'
@@ -17,7 +18,7 @@ const PageWrapper = styled('section')`
   margin: 0 auto;
 `
 export default ({ children }: Props) => (
-  <React.Fragment>
+  <HelmetProvider>
     <Global styles={globalStyles} />
     <PageWrapper>
       <Header />
@@ -25,5 +26,5 @@ export default ({ children }: Props) => (
       <Footer />
     </PageWrapper>
     <CookieConsent />
-  </React.Fragment>
+  </HelmetProvider>
 )
