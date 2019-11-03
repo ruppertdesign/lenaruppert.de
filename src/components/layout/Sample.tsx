@@ -48,7 +48,6 @@ export default ({
     target: '_blank',
     rel: 'nofollow noopener noreferrer',
   }
-  console.info(offline, title)
   if (offline) {
     return null
   }
