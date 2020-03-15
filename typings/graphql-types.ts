@@ -1,7 +1,7 @@
 export type Maybe<T> = T | null
 
 export interface SitePageConnectionSort {
-  fields: Array<Maybe<SitePageConnectionSortByFieldsEnum>>
+  fields: Maybe<SitePageConnectionSortByFieldsEnum>[]
 
   order?: SitePageConnectionSortOrderValues
 }
@@ -41,9 +41,9 @@ export interface SitePageConnectionJsonNameQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionInternalComponentNameQueryString {
@@ -55,9 +55,9 @@ export interface SitePageConnectionInternalComponentNameQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPathQueryString_2 {
@@ -69,9 +69,9 @@ export interface SitePageConnectionPathQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionComponentQueryString {
@@ -83,9 +83,9 @@ export interface SitePageConnectionComponentQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionComponentChunkNameQueryString {
@@ -97,9 +97,9 @@ export interface SitePageConnectionComponentChunkNameQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionContextInputObject {
@@ -115,9 +115,9 @@ export interface SitePageConnectionContextIdQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorInputObject {
@@ -159,9 +159,9 @@ export interface SitePageConnectionPluginCreatorResolveQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorIdQueryString {
@@ -173,9 +173,9 @@ export interface SitePageConnectionPluginCreatorIdQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorNameQueryString {
@@ -187,9 +187,9 @@ export interface SitePageConnectionPluginCreatorNameQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorVersionQueryString {
@@ -201,9 +201,9 @@ export interface SitePageConnectionPluginCreatorVersionQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsInputObject {
@@ -327,9 +327,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPluginsResolveQuery
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsPluginsIdQueryString {
@@ -341,9 +341,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPluginsIdQueryStrin
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsPluginsNameQueryString {
@@ -355,9 +355,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPluginsNameQueryStr
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsPluginsVersionQueryString {
@@ -369,9 +369,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPluginsVersionQuery
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsInputObject {
@@ -425,9 +425,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOption
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsLinkImagesToOriginalQueryBoolean {
@@ -435,9 +435,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOption
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsWrapperStyleQueryString {
@@ -449,9 +449,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOption
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsBackgroundColorQueryString {
@@ -463,9 +463,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOption
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsShowCaptionsQueryBoolean {
@@ -473,9 +473,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOption
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsPathPrefixQueryString {
@@ -487,9 +487,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOption
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsWithWebpQueryBoolean {
@@ -497,9 +497,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOption
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsTargetQueryString {
@@ -511,9 +511,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOption
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsRelQueryString {
@@ -525,9 +525,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginOption
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsPluginsBrowserApIsQueryList {
@@ -539,9 +539,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPluginsBrowserApIsQ
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginFilepathQueryString {
@@ -553,9 +553,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPluginsPluginFilepa
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsPathToConfigModuleQueryString {
@@ -567,9 +567,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPathToConfigModuleQ
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsTrackingIdQueryString {
@@ -581,9 +581,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsTrackingIdQueryStri
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsHeadQueryBoolean {
@@ -591,9 +591,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsHeadQueryBoolean {
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsAnonymizeQueryBoolean {
@@ -601,9 +601,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsAnonymizeQueryBoole
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsRespectDntQueryBoolean {
@@ -611,9 +611,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsRespectDntQueryBool
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsPathQueryString {
@@ -625,9 +625,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPathQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsNameQueryString {
@@ -639,9 +639,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsNameQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsMaxWidthQueryInteger {
@@ -657,9 +657,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsMaxWidthQueryIntege
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsLinkImagesToOriginalQueryBoolean {
@@ -667,9 +667,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsLinkImagesToOrigina
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsWrapperStyleQueryString {
@@ -681,9 +681,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsWrapperStyleQuerySt
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsBackgroundColorQueryString {
@@ -695,9 +695,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsBackgroundColorQuer
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsShowCaptionsQueryBoolean {
@@ -705,9 +705,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsShowCaptionsQueryBo
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsPathPrefixQueryString {
@@ -719,9 +719,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPathPrefixQueryStri
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsWithWebpQueryBoolean {
@@ -729,9 +729,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsWithWebpQueryBoolea
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsTargetQueryString {
@@ -743,9 +743,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsTargetQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsRelQueryString {
@@ -757,9 +757,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsRelQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsModulePathQueryString {
@@ -771,9 +771,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsModulePathQueryStri
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsStylesPathQueryString {
@@ -785,9 +785,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsStylesPathQueryStri
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsEnableIdentityWidgetQueryBoolean {
@@ -795,9 +795,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsEnableIdentityWidge
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsHtmlTitleQueryString {
@@ -809,9 +809,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsHtmlTitleQueryStrin
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginOptionsPathCheckQueryBoolean {
@@ -819,9 +819,9 @@ export interface SitePageConnectionPluginCreatorPluginOptionsPathCheckQueryBoole
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePageConnectionPluginCreatorNodeApIsQueryList {
@@ -833,9 +833,9 @@ export interface SitePageConnectionPluginCreatorNodeApIsQueryList {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorBrowserApIsQueryList {
@@ -847,9 +847,9 @@ export interface SitePageConnectionPluginCreatorBrowserApIsQueryList {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorSsrApIsQueryList {
@@ -861,9 +861,9 @@ export interface SitePageConnectionPluginCreatorSsrApIsQueryList {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPluginFilepathQueryString {
@@ -875,9 +875,9 @@ export interface SitePageConnectionPluginCreatorPluginFilepathQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonInputObject {
@@ -919,9 +919,9 @@ export interface SitePageConnectionPluginCreatorPackageJsonNameQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonDescriptionQueryString {
@@ -933,9 +933,9 @@ export interface SitePageConnectionPluginCreatorPackageJsonDescriptionQueryStrin
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonVersionQueryString {
@@ -947,9 +947,9 @@ export interface SitePageConnectionPluginCreatorPackageJsonVersionQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonMainQueryString {
@@ -961,9 +961,9 @@ export interface SitePageConnectionPluginCreatorPackageJsonMainQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonAuthorQueryString {
@@ -975,9 +975,9 @@ export interface SitePageConnectionPluginCreatorPackageJsonAuthorQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonLicenseQueryString {
@@ -989,9 +989,9 @@ export interface SitePageConnectionPluginCreatorPackageJsonLicenseQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonDependenciesQueryList {
@@ -1019,9 +1019,9 @@ export interface SitePageConnectionPluginCreatorPackageJsonDependenciesNameQuery
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonDependenciesVersionQueryString {
@@ -1033,9 +1033,9 @@ export interface SitePageConnectionPluginCreatorPackageJsonDependenciesVersionQu
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonDevDependenciesQueryList {
@@ -1063,9 +1063,9 @@ export interface SitePageConnectionPluginCreatorPackageJsonDevDependenciesNameQu
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonDevDependenciesVersionQueryString {
@@ -1077,9 +1077,9 @@ export interface SitePageConnectionPluginCreatorPackageJsonDevDependenciesVersio
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonPeerDependenciesQueryList {
@@ -1107,9 +1107,9 @@ export interface SitePageConnectionPluginCreatorPackageJsonPeerDependenciesNameQ
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonPeerDependenciesVersionQueryString {
@@ -1121,9 +1121,9 @@ export interface SitePageConnectionPluginCreatorPackageJsonPeerDependenciesVersi
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorPackageJsonKeywordsQueryList {
@@ -1135,9 +1135,9 @@ export interface SitePageConnectionPluginCreatorPackageJsonKeywordsQueryList {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorParentQueryString {
@@ -1149,9 +1149,9 @@ export interface SitePageConnectionPluginCreatorParentQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorInternalInputObject {
@@ -1173,9 +1173,9 @@ export interface SitePageConnectionPluginCreatorInternalContentDigestQueryString
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorInternalTypeQueryString {
@@ -1187,9 +1187,9 @@ export interface SitePageConnectionPluginCreatorInternalTypeQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorInternalOwnerQueryString {
@@ -1201,9 +1201,9 @@ export interface SitePageConnectionPluginCreatorInternalOwnerQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionPluginCreatorIdQueryString_2 {
@@ -1215,9 +1215,9 @@ export interface SitePageConnectionPluginCreatorIdQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionComponentPathQueryString {
@@ -1229,9 +1229,9 @@ export interface SitePageConnectionComponentPathQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionIdQueryString_2 {
@@ -1243,9 +1243,9 @@ export interface SitePageConnectionIdQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionInternalInputObject_2 {
@@ -1267,9 +1267,9 @@ export interface SitePageConnectionInternalTypeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionInternalContentDigestQueryString_2 {
@@ -1281,9 +1281,9 @@ export interface SitePageConnectionInternalContentDigestQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionInternalDescriptionQueryString {
@@ -1295,9 +1295,9 @@ export interface SitePageConnectionInternalDescriptionQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageConnectionInternalOwnerQueryString_2 {
@@ -1309,13 +1309,13 @@ export interface SitePageConnectionInternalOwnerQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionSort {
-  fields: Array<Maybe<SitePluginConnectionSortByFieldsEnum>>
+  fields: Maybe<SitePluginConnectionSortByFieldsEnum>[]
 
   order?: SitePluginConnectionSortOrderValues
 }
@@ -1353,9 +1353,9 @@ export interface SitePluginConnectionResolveQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionIdQueryString_2 {
@@ -1367,9 +1367,9 @@ export interface SitePluginConnectionIdQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionNameQueryString_2 {
@@ -1381,9 +1381,9 @@ export interface SitePluginConnectionNameQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionVersionQueryString_2 {
@@ -1395,9 +1395,9 @@ export interface SitePluginConnectionVersionQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsInputObject_2 {
@@ -1493,9 +1493,9 @@ export interface SitePluginConnectionPluginOptionsPluginsResolveQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsPluginsIdQueryString_2 {
@@ -1507,9 +1507,9 @@ export interface SitePluginConnectionPluginOptionsPluginsIdQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsPluginsNameQueryString_2 {
@@ -1521,9 +1521,9 @@ export interface SitePluginConnectionPluginOptionsPluginsNameQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsPluginsVersionQueryString_2 {
@@ -1535,9 +1535,9 @@ export interface SitePluginConnectionPluginOptionsPluginsVersionQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsInputObject_2 {
@@ -1591,9 +1591,9 @@ export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsMaxWidthQu
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsLinkImagesToOriginalQueryBoolean_2 {
@@ -1601,9 +1601,9 @@ export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsLinkImages
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsWrapperStyleQueryString_2 {
@@ -1615,9 +1615,9 @@ export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsWrapperSty
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsBackgroundColorQueryString_2 {
@@ -1629,9 +1629,9 @@ export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsBackground
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsShowCaptionsQueryBoolean_2 {
@@ -1639,9 +1639,9 @@ export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsShowCaptio
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsPathPrefixQueryString_2 {
@@ -1653,9 +1653,9 @@ export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsPathPrefix
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsWithWebpQueryBoolean_2 {
@@ -1663,9 +1663,9 @@ export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsWithWebpQu
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsTargetQueryString_2 {
@@ -1677,9 +1677,9 @@ export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsTargetQuer
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsRelQueryString_2 {
@@ -1691,9 +1691,9 @@ export interface SitePluginConnectionPluginOptionsPluginsPluginOptionsRelQuerySt
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsPluginsBrowserApIsQueryList_2 {
@@ -1705,9 +1705,9 @@ export interface SitePluginConnectionPluginOptionsPluginsBrowserApIsQueryList_2 
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsPluginsPluginFilepathQueryString_2 {
@@ -1719,9 +1719,9 @@ export interface SitePluginConnectionPluginOptionsPluginsPluginFilepathQueryStri
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsPathToConfigModuleQueryString_2 {
@@ -1733,9 +1733,9 @@ export interface SitePluginConnectionPluginOptionsPathToConfigModuleQueryString_
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsTrackingIdQueryString_2 {
@@ -1747,9 +1747,9 @@ export interface SitePluginConnectionPluginOptionsTrackingIdQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsHeadQueryBoolean_2 {
@@ -1757,9 +1757,9 @@ export interface SitePluginConnectionPluginOptionsHeadQueryBoolean_2 {
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsAnonymizeQueryBoolean_2 {
@@ -1767,9 +1767,9 @@ export interface SitePluginConnectionPluginOptionsAnonymizeQueryBoolean_2 {
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsRespectDntQueryBoolean_2 {
@@ -1777,9 +1777,9 @@ export interface SitePluginConnectionPluginOptionsRespectDntQueryBoolean_2 {
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsPathQueryString_2 {
@@ -1791,9 +1791,9 @@ export interface SitePluginConnectionPluginOptionsPathQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsNameQueryString_2 {
@@ -1805,9 +1805,9 @@ export interface SitePluginConnectionPluginOptionsNameQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsMaxWidthQueryInteger_2 {
@@ -1823,9 +1823,9 @@ export interface SitePluginConnectionPluginOptionsMaxWidthQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsLinkImagesToOriginalQueryBoolean_2 {
@@ -1833,9 +1833,9 @@ export interface SitePluginConnectionPluginOptionsLinkImagesToOriginalQueryBoole
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsWrapperStyleQueryString_2 {
@@ -1847,9 +1847,9 @@ export interface SitePluginConnectionPluginOptionsWrapperStyleQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsBackgroundColorQueryString_2 {
@@ -1861,9 +1861,9 @@ export interface SitePluginConnectionPluginOptionsBackgroundColorQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsShowCaptionsQueryBoolean_2 {
@@ -1871,9 +1871,9 @@ export interface SitePluginConnectionPluginOptionsShowCaptionsQueryBoolean_2 {
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsPathPrefixQueryString_2 {
@@ -1885,9 +1885,9 @@ export interface SitePluginConnectionPluginOptionsPathPrefixQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsWithWebpQueryBoolean_2 {
@@ -1895,9 +1895,9 @@ export interface SitePluginConnectionPluginOptionsWithWebpQueryBoolean_2 {
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsTargetQueryString_2 {
@@ -1909,9 +1909,9 @@ export interface SitePluginConnectionPluginOptionsTargetQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsRelQueryString_2 {
@@ -1923,9 +1923,9 @@ export interface SitePluginConnectionPluginOptionsRelQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsModulePathQueryString_2 {
@@ -1937,9 +1937,9 @@ export interface SitePluginConnectionPluginOptionsModulePathQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsStylesPathQueryString_2 {
@@ -1951,9 +1951,9 @@ export interface SitePluginConnectionPluginOptionsStylesPathQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsEnableIdentityWidgetQueryBoolean_2 {
@@ -1961,9 +1961,9 @@ export interface SitePluginConnectionPluginOptionsEnableIdentityWidgetQueryBoole
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsHtmlTitleQueryString_2 {
@@ -1975,9 +1975,9 @@ export interface SitePluginConnectionPluginOptionsHtmlTitleQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginOptionsPathCheckQueryBoolean_2 {
@@ -1985,9 +1985,9 @@ export interface SitePluginConnectionPluginOptionsPathCheckQueryBoolean_2 {
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePluginConnectionNodeApIsQueryList_2 {
@@ -1999,9 +1999,9 @@ export interface SitePluginConnectionNodeApIsQueryList_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionBrowserApIsQueryList_2 {
@@ -2013,9 +2013,9 @@ export interface SitePluginConnectionBrowserApIsQueryList_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionSsrApIsQueryList_2 {
@@ -2027,9 +2027,9 @@ export interface SitePluginConnectionSsrApIsQueryList_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPluginFilepathQueryString_2 {
@@ -2041,9 +2041,9 @@ export interface SitePluginConnectionPluginFilepathQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPackageJsonInputObject_2 {
@@ -2081,9 +2081,9 @@ export interface SitePluginConnectionPackageJsonNameQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPackageJsonDescriptionQueryString_2 {
@@ -2095,9 +2095,9 @@ export interface SitePluginConnectionPackageJsonDescriptionQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPackageJsonVersionQueryString_2 {
@@ -2109,9 +2109,9 @@ export interface SitePluginConnectionPackageJsonVersionQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPackageJsonMainQueryString_2 {
@@ -2123,9 +2123,9 @@ export interface SitePluginConnectionPackageJsonMainQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPackageJsonAuthorQueryString_2 {
@@ -2137,9 +2137,9 @@ export interface SitePluginConnectionPackageJsonAuthorQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPackageJsonLicenseQueryString_2 {
@@ -2151,9 +2151,9 @@ export interface SitePluginConnectionPackageJsonLicenseQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPackageJsonDependenciesQueryList_2 {
@@ -2177,9 +2177,9 @@ export interface SitePluginConnectionPackageJsonDependenciesNameQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPackageJsonDependenciesVersionQueryString_2 {
@@ -2191,9 +2191,9 @@ export interface SitePluginConnectionPackageJsonDependenciesVersionQueryString_2
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPackageJsonDevDependenciesQueryList_2 {
@@ -2219,9 +2219,9 @@ export interface SitePluginConnectionPackageJsonDevDependenciesNameQueryString_2
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPackageJsonDevDependenciesVersionQueryString_2 {
@@ -2233,9 +2233,9 @@ export interface SitePluginConnectionPackageJsonDevDependenciesVersionQueryStrin
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPackageJsonPeerDependenciesQueryList_2 {
@@ -2263,9 +2263,9 @@ export interface SitePluginConnectionPackageJsonPeerDependenciesNameQueryString_
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPackageJsonPeerDependenciesVersionQueryString_2 {
@@ -2277,9 +2277,9 @@ export interface SitePluginConnectionPackageJsonPeerDependenciesVersionQueryStri
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionPackageJsonKeywordsQueryList_2 {
@@ -2291,9 +2291,9 @@ export interface SitePluginConnectionPackageJsonKeywordsQueryList_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionInternalInputObject_2 {
@@ -2313,9 +2313,9 @@ export interface SitePluginConnectionInternalContentDigestQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionInternalTypeQueryString_2 {
@@ -2327,9 +2327,9 @@ export interface SitePluginConnectionInternalTypeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginConnectionInternalOwnerQueryString_2 {
@@ -2341,13 +2341,13 @@ export interface SitePluginConnectionInternalOwnerQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryConnectionSort {
-  fields: Array<Maybe<DirectoryConnectionSortByFieldsEnum>>
+  fields: Maybe<DirectoryConnectionSortByFieldsEnum>[]
 
   order?: DirectoryConnectionSortOrderValues
 }
@@ -2435,9 +2435,9 @@ export interface DirectoryConnectionIdQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryConnectionInternalInputObject_2 {
@@ -2459,9 +2459,9 @@ export interface DirectoryConnectionInternalContentDigestQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryConnectionInternalTypeQueryString_2 {
@@ -2473,9 +2473,9 @@ export interface DirectoryConnectionInternalTypeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryConnectionInternalDescriptionQueryString_2 {
@@ -2487,9 +2487,9 @@ export interface DirectoryConnectionInternalDescriptionQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryConnectionInternalOwnerQueryString_2 {
@@ -2501,9 +2501,9 @@ export interface DirectoryConnectionInternalOwnerQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryConnectionSourceInstanceNameQueryString_2 {
@@ -2515,9 +2515,9 @@ export interface DirectoryConnectionSourceInstanceNameQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryConnectionAbsolutePathQueryString_2 {
@@ -2529,9 +2529,9 @@ export interface DirectoryConnectionAbsolutePathQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryConnectionRelativePathQueryString_2 {
@@ -2543,9 +2543,9 @@ export interface DirectoryConnectionRelativePathQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryConnectionExtensionQueryString_2 {
@@ -2557,9 +2557,9 @@ export interface DirectoryConnectionExtensionQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryConnectionSizeQueryInteger_2 {
@@ -2575,9 +2575,9 @@ export interface DirectoryConnectionSizeQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryConnectionPrettySizeQueryString_2 {
@@ -2589,9 +2589,9 @@ export interface DirectoryConnectionPrettySizeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryConnectionModifiedTimeQueryString_2 {
@@ -2603,9 +2603,9 @@ export interface DirectoryConnectionModifiedTimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryConnectionAccessTimeQueryString_2 {
@@ -2617,9 +2617,9 @@ export interface DirectoryConnectionAccessTimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryConnectionChangeTimeQueryString_2 {
@@ -2631,9 +2631,9 @@ export interface DirectoryConnectionChangeTimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryConnectionBirthTimeQueryString_2 {
@@ -2645,9 +2645,9 @@ export interface DirectoryConnectionBirthTimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryConnectionRootQueryString_2 {
@@ -2659,9 +2659,9 @@ export interface DirectoryConnectionRootQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryConnectionDirQueryString_2 {
@@ -2673,9 +2673,9 @@ export interface DirectoryConnectionDirQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryConnectionBaseQueryString_2 {
@@ -2687,9 +2687,9 @@ export interface DirectoryConnectionBaseQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryConnectionExtQueryString_2 {
@@ -2701,9 +2701,9 @@ export interface DirectoryConnectionExtQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryConnectionNameQueryString_2 {
@@ -2715,9 +2715,9 @@ export interface DirectoryConnectionNameQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryConnectionRelativeDirectoryQueryString_2 {
@@ -2729,9 +2729,9 @@ export interface DirectoryConnectionRelativeDirectoryQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryConnectionDevQueryInteger_2 {
@@ -2747,9 +2747,9 @@ export interface DirectoryConnectionDevQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryConnectionModeQueryInteger_2 {
@@ -2765,9 +2765,9 @@ export interface DirectoryConnectionModeQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryConnectionNlinkQueryInteger_2 {
@@ -2783,9 +2783,9 @@ export interface DirectoryConnectionNlinkQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryConnectionUidQueryInteger_2 {
@@ -2801,9 +2801,9 @@ export interface DirectoryConnectionUidQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryConnectionGidQueryInteger_2 {
@@ -2819,9 +2819,9 @@ export interface DirectoryConnectionGidQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryConnectionRdevQueryInteger_2 {
@@ -2837,9 +2837,9 @@ export interface DirectoryConnectionRdevQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryConnectionBlksizeQueryInteger_2 {
@@ -2855,9 +2855,9 @@ export interface DirectoryConnectionBlksizeQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryConnectionInoQueryInteger_2 {
@@ -2873,9 +2873,9 @@ export interface DirectoryConnectionInoQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryConnectionBlocksQueryInteger_2 {
@@ -2891,9 +2891,9 @@ export interface DirectoryConnectionBlocksQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryConnectionAtimeMsQueryFloat_2 {
@@ -2909,9 +2909,9 @@ export interface DirectoryConnectionAtimeMsQueryFloat_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryConnectionMtimeMsQueryFloat_2 {
@@ -2927,9 +2927,9 @@ export interface DirectoryConnectionMtimeMsQueryFloat_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryConnectionCtimeMsQueryFloat_2 {
@@ -2945,9 +2945,9 @@ export interface DirectoryConnectionCtimeMsQueryFloat_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryConnectionBirthtimeMsQueryFloat_2 {
@@ -2963,9 +2963,9 @@ export interface DirectoryConnectionBirthtimeMsQueryFloat_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryConnectionAtimeQueryString_2 {
@@ -2977,9 +2977,9 @@ export interface DirectoryConnectionAtimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryConnectionMtimeQueryString_2 {
@@ -2991,9 +2991,9 @@ export interface DirectoryConnectionMtimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryConnectionCtimeQueryString_2 {
@@ -3005,9 +3005,9 @@ export interface DirectoryConnectionCtimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryConnectionBirthtimeQueryString_2 {
@@ -3019,13 +3019,13 @@ export interface DirectoryConnectionBirthtimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionSort {
-  fields: Array<Maybe<FileConnectionSortByFieldsEnum>>
+  fields: Maybe<FileConnectionSortByFieldsEnum>[]
 
   order?: FileConnectionSortOrderValues
 }
@@ -3113,9 +3113,9 @@ export interface FileConnectionIdQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionInternalInputObject_2 {
@@ -3139,9 +3139,9 @@ export interface FileConnectionInternalContentDigestQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionInternalTypeQueryString_2 {
@@ -3153,9 +3153,9 @@ export interface FileConnectionInternalTypeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionInternalMediaTypeQueryString_2 {
@@ -3167,9 +3167,9 @@ export interface FileConnectionInternalMediaTypeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionInternalDescriptionQueryString_2 {
@@ -3181,9 +3181,9 @@ export interface FileConnectionInternalDescriptionQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionInternalOwnerQueryString_2 {
@@ -3195,9 +3195,9 @@ export interface FileConnectionInternalOwnerQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionSourceInstanceNameQueryString_2 {
@@ -3209,9 +3209,9 @@ export interface FileConnectionSourceInstanceNameQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionAbsolutePathQueryString_2 {
@@ -3223,9 +3223,9 @@ export interface FileConnectionAbsolutePathQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionRelativePathQueryString_2 {
@@ -3237,9 +3237,9 @@ export interface FileConnectionRelativePathQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionExtensionQueryString_2 {
@@ -3251,9 +3251,9 @@ export interface FileConnectionExtensionQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionSizeQueryInteger_2 {
@@ -3269,9 +3269,9 @@ export interface FileConnectionSizeQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileConnectionPrettySizeQueryString_2 {
@@ -3283,9 +3283,9 @@ export interface FileConnectionPrettySizeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionModifiedTimeQueryString_2 {
@@ -3297,9 +3297,9 @@ export interface FileConnectionModifiedTimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionAccessTimeQueryString_2 {
@@ -3311,9 +3311,9 @@ export interface FileConnectionAccessTimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionChangeTimeQueryString_2 {
@@ -3325,9 +3325,9 @@ export interface FileConnectionChangeTimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionBirthTimeQueryString_2 {
@@ -3339,9 +3339,9 @@ export interface FileConnectionBirthTimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionRootQueryString_2 {
@@ -3353,9 +3353,9 @@ export interface FileConnectionRootQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionDirQueryString_2 {
@@ -3367,9 +3367,9 @@ export interface FileConnectionDirQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionBaseQueryString_2 {
@@ -3381,9 +3381,9 @@ export interface FileConnectionBaseQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionExtQueryString_2 {
@@ -3395,9 +3395,9 @@ export interface FileConnectionExtQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionNameQueryString_2 {
@@ -3409,9 +3409,9 @@ export interface FileConnectionNameQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionRelativeDirectoryQueryString_2 {
@@ -3423,9 +3423,9 @@ export interface FileConnectionRelativeDirectoryQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionDevQueryInteger_2 {
@@ -3441,9 +3441,9 @@ export interface FileConnectionDevQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileConnectionModeQueryInteger_2 {
@@ -3459,9 +3459,9 @@ export interface FileConnectionModeQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileConnectionNlinkQueryInteger_2 {
@@ -3477,9 +3477,9 @@ export interface FileConnectionNlinkQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileConnectionUidQueryInteger_2 {
@@ -3495,9 +3495,9 @@ export interface FileConnectionUidQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileConnectionGidQueryInteger_2 {
@@ -3513,9 +3513,9 @@ export interface FileConnectionGidQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileConnectionRdevQueryInteger_2 {
@@ -3531,9 +3531,9 @@ export interface FileConnectionRdevQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileConnectionBlksizeQueryInteger_2 {
@@ -3549,9 +3549,9 @@ export interface FileConnectionBlksizeQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileConnectionInoQueryInteger_2 {
@@ -3567,9 +3567,9 @@ export interface FileConnectionInoQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileConnectionBlocksQueryInteger_2 {
@@ -3585,9 +3585,9 @@ export interface FileConnectionBlocksQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileConnectionAtimeMsQueryFloat_2 {
@@ -3603,9 +3603,9 @@ export interface FileConnectionAtimeMsQueryFloat_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileConnectionMtimeMsQueryFloat_2 {
@@ -3621,9 +3621,9 @@ export interface FileConnectionMtimeMsQueryFloat_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileConnectionCtimeMsQueryFloat_2 {
@@ -3639,9 +3639,9 @@ export interface FileConnectionCtimeMsQueryFloat_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileConnectionBirthtimeMsQueryFloat_2 {
@@ -3657,9 +3657,9 @@ export interface FileConnectionBirthtimeMsQueryFloat_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileConnectionAtimeQueryString_2 {
@@ -3671,9 +3671,9 @@ export interface FileConnectionAtimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionMtimeQueryString_2 {
@@ -3685,9 +3685,9 @@ export interface FileConnectionMtimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionCtimeQueryString_2 {
@@ -3699,9 +3699,9 @@ export interface FileConnectionCtimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileConnectionBirthtimeQueryString_2 {
@@ -3713,9 +3713,9 @@ export interface FileConnectionBirthtimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface PublicUrlQueryString_4 {
@@ -3727,9 +3727,9 @@ export interface PublicUrlQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DuotoneGradient {
@@ -3761,7 +3761,7 @@ export interface Potrace {
 }
 
 export interface MarkdownRemarkConnectionSort {
-  fields: Array<Maybe<MarkdownRemarkConnectionSortByFieldsEnum>>
+  fields: Maybe<MarkdownRemarkConnectionSortByFieldsEnum>[]
 
   order?: MarkdownRemarkConnectionSortOrderValues
 }
@@ -3803,9 +3803,9 @@ export interface MarkdownRemarkConnectionIdQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkConnectionInternalInputObject_2 {
@@ -3831,9 +3831,9 @@ export interface MarkdownRemarkConnectionInternalContentQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkConnectionInternalTypeQueryString_2 {
@@ -3845,9 +3845,9 @@ export interface MarkdownRemarkConnectionInternalTypeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkConnectionInternalContentDigestQueryString_2 {
@@ -3859,9 +3859,9 @@ export interface MarkdownRemarkConnectionInternalContentDigestQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkConnectionInternalOwnerQueryString_2 {
@@ -3873,9 +3873,9 @@ export interface MarkdownRemarkConnectionInternalOwnerQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkConnectionInternalFieldOwnersInputObject_2 {
@@ -3891,9 +3891,9 @@ export interface MarkdownRemarkConnectionInternalFieldOwnersSlugQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkConnectionFrontmatterInputObject_2 {
@@ -3927,9 +3927,9 @@ export interface MarkdownRemarkConnectionFrontmatterTitleQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkConnectionFrontmatterTemplateKeyQueryString_2 {
@@ -3941,9 +3941,9 @@ export interface MarkdownRemarkConnectionFrontmatterTemplateKeyQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkConnectionFrontmatterPathQueryString_2 {
@@ -3955,9 +3955,9 @@ export interface MarkdownRemarkConnectionFrontmatterPathQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkConnectionFrontmatterDescriptionQueryString_2 {
@@ -3969,9 +3969,9 @@ export interface MarkdownRemarkConnectionFrontmatterDescriptionQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkConnectionFrontmatterParentQueryString_2 {
@@ -3983,9 +3983,9 @@ export interface MarkdownRemarkConnectionFrontmatterParentQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkConnectionFrontmatterSubTitleQueryString_2 {
@@ -3997,9 +3997,9 @@ export interface MarkdownRemarkConnectionFrontmatterSubTitleQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkConnectionFrontmatterOrderQueryInteger_2 {
@@ -4015,9 +4015,9 @@ export interface MarkdownRemarkConnectionFrontmatterOrderQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface MarkdownRemarkConnectionFrontmatterUriQueryString_2 {
@@ -4029,9 +4029,9 @@ export interface MarkdownRemarkConnectionFrontmatterUriQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkConnectionRawMarkdownBodyQueryString_2 {
@@ -4043,9 +4043,9 @@ export interface MarkdownRemarkConnectionRawMarkdownBodyQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkConnectionFileAbsolutePathQueryString_2 {
@@ -4057,9 +4057,9 @@ export interface MarkdownRemarkConnectionFileAbsolutePathQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkConnectionFieldsInputObject_2 {
@@ -4075,9 +4075,9 @@ export interface MarkdownRemarkConnectionFieldsSlugQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface HtmlQueryString_4 {
@@ -4089,9 +4089,9 @@ export interface HtmlQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ExcerptQueryString_4 {
@@ -4103,9 +4103,9 @@ export interface ExcerptQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface HeadingsQueryList_4 {
@@ -4127,9 +4127,9 @@ export interface HeadingsListElemValueQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface HeadingsListElemDepthQueryInt_4 {
@@ -4145,9 +4145,9 @@ export interface HeadingsListElemDepthQueryInt_4 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface TimeToReadQueryInt_4 {
@@ -4163,9 +4163,9 @@ export interface TimeToReadQueryInt_4 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface TableOfContentsQueryString_4 {
@@ -4177,9 +4177,9 @@ export interface TableOfContentsQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface WordCountTypeName_4 {
@@ -4203,9 +4203,9 @@ export interface WordCountParagraphsQueryInt_4 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface WordCountSentencesQueryInt_4 {
@@ -4221,9 +4221,9 @@ export interface WordCountSentencesQueryInt_4 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface WordCountWordsQueryInt_4 {
@@ -4239,13 +4239,13 @@ export interface WordCountWordsQueryInt_4 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface ImageSharpConnectionSort {
-  fields: Array<Maybe<ImageSharpConnectionSortByFieldsEnum>>
+  fields: Maybe<ImageSharpConnectionSortByFieldsEnum>[]
 
   order?: ImageSharpConnectionSortOrderValues
 }
@@ -4277,9 +4277,9 @@ export interface ImageSharpConnectionIdQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ImageSharpConnectionInternalInputObject_2 {
@@ -4299,9 +4299,9 @@ export interface ImageSharpConnectionInternalContentDigestQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ImageSharpConnectionInternalTypeQueryString_2 {
@@ -4313,9 +4313,9 @@ export interface ImageSharpConnectionInternalTypeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ImageSharpConnectionInternalOwnerQueryString_2 {
@@ -4327,9 +4327,9 @@ export interface ImageSharpConnectionInternalOwnerQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FixedTypeName_4 {
@@ -4363,9 +4363,9 @@ export interface FixedBase64QueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FixedTracedSvgQueryString_4 {
@@ -4377,9 +4377,9 @@ export interface FixedTracedSvgQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FixedAspectRatioQueryFloat_4 {
@@ -4395,9 +4395,9 @@ export interface FixedAspectRatioQueryFloat_4 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FixedWidthQueryFloat_4 {
@@ -4413,9 +4413,9 @@ export interface FixedWidthQueryFloat_4 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FixedHeightQueryFloat_4 {
@@ -4431,9 +4431,9 @@ export interface FixedHeightQueryFloat_4 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FixedSrcQueryString_4 {
@@ -4445,9 +4445,9 @@ export interface FixedSrcQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FixedSrcSetQueryString_4 {
@@ -4459,9 +4459,9 @@ export interface FixedSrcSetQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FixedSrcWebpQueryString_4 {
@@ -4473,9 +4473,9 @@ export interface FixedSrcWebpQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FixedSrcSetWebpQueryString_4 {
@@ -4487,9 +4487,9 @@ export interface FixedSrcSetWebpQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FixedOriginalNameQueryString_4 {
@@ -4501,9 +4501,9 @@ export interface FixedOriginalNameQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ResolutionsTypeName_4 {
@@ -4537,9 +4537,9 @@ export interface ResolutionsBase64QueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ResolutionsTracedSvgQueryString_4 {
@@ -4551,9 +4551,9 @@ export interface ResolutionsTracedSvgQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ResolutionsAspectRatioQueryFloat_4 {
@@ -4569,9 +4569,9 @@ export interface ResolutionsAspectRatioQueryFloat_4 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface ResolutionsWidthQueryFloat_4 {
@@ -4587,9 +4587,9 @@ export interface ResolutionsWidthQueryFloat_4 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface ResolutionsHeightQueryFloat_4 {
@@ -4605,9 +4605,9 @@ export interface ResolutionsHeightQueryFloat_4 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface ResolutionsSrcQueryString_4 {
@@ -4619,9 +4619,9 @@ export interface ResolutionsSrcQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ResolutionsSrcSetQueryString_4 {
@@ -4633,9 +4633,9 @@ export interface ResolutionsSrcSetQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ResolutionsSrcWebpQueryString_4 {
@@ -4647,9 +4647,9 @@ export interface ResolutionsSrcWebpQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ResolutionsSrcSetWebpQueryString_4 {
@@ -4661,9 +4661,9 @@ export interface ResolutionsSrcSetWebpQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ResolutionsOriginalNameQueryString_4 {
@@ -4675,9 +4675,9 @@ export interface ResolutionsOriginalNameQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FluidTypeName_4 {
@@ -4715,9 +4715,9 @@ export interface FluidBase64QueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FluidTracedSvgQueryString_4 {
@@ -4729,9 +4729,9 @@ export interface FluidTracedSvgQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FluidAspectRatioQueryFloat_4 {
@@ -4747,9 +4747,9 @@ export interface FluidAspectRatioQueryFloat_4 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FluidSrcQueryString_4 {
@@ -4761,9 +4761,9 @@ export interface FluidSrcQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FluidSrcSetQueryString_4 {
@@ -4775,9 +4775,9 @@ export interface FluidSrcSetQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FluidSrcWebpQueryString_4 {
@@ -4789,9 +4789,9 @@ export interface FluidSrcWebpQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FluidSrcSetWebpQueryString_4 {
@@ -4803,9 +4803,9 @@ export interface FluidSrcSetWebpQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FluidSizesQueryString_4 {
@@ -4817,9 +4817,9 @@ export interface FluidSizesQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FluidOriginalImgQueryString_4 {
@@ -4831,9 +4831,9 @@ export interface FluidOriginalImgQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FluidOriginalNameQueryString_4 {
@@ -4845,9 +4845,9 @@ export interface FluidOriginalNameQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FluidPresentationWidthQueryInt_4 {
@@ -4863,9 +4863,9 @@ export interface FluidPresentationWidthQueryInt_4 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FluidPresentationHeightQueryInt_4 {
@@ -4881,9 +4881,9 @@ export interface FluidPresentationHeightQueryInt_4 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface SizesTypeName_4 {
@@ -4921,9 +4921,9 @@ export interface SizesBase64QueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SizesTracedSvgQueryString_4 {
@@ -4935,9 +4935,9 @@ export interface SizesTracedSvgQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SizesAspectRatioQueryFloat_4 {
@@ -4953,9 +4953,9 @@ export interface SizesAspectRatioQueryFloat_4 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface SizesSrcQueryString_4 {
@@ -4967,9 +4967,9 @@ export interface SizesSrcQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SizesSrcSetQueryString_4 {
@@ -4981,9 +4981,9 @@ export interface SizesSrcSetQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SizesSrcWebpQueryString_4 {
@@ -4995,9 +4995,9 @@ export interface SizesSrcWebpQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SizesSrcSetWebpQueryString_4 {
@@ -5009,9 +5009,9 @@ export interface SizesSrcSetWebpQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SizesSizesQueryString_4 {
@@ -5023,9 +5023,9 @@ export interface SizesSizesQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SizesOriginalImgQueryString_4 {
@@ -5037,9 +5037,9 @@ export interface SizesOriginalImgQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SizesOriginalNameQueryString_4 {
@@ -5051,9 +5051,9 @@ export interface SizesOriginalNameQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SizesPresentationWidthQueryInt_4 {
@@ -5069,9 +5069,9 @@ export interface SizesPresentationWidthQueryInt_4 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface SizesPresentationHeightQueryInt_4 {
@@ -5087,9 +5087,9 @@ export interface SizesPresentationHeightQueryInt_4 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface OriginalTypeName_4 {
@@ -5113,9 +5113,9 @@ export interface OriginalWidthQueryFloat_4 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface OriginalHeightQueryFloat_4 {
@@ -5131,9 +5131,9 @@ export interface OriginalHeightQueryFloat_4 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface OriginalSrcQueryString_4 {
@@ -5145,9 +5145,9 @@ export interface OriginalSrcQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ResizeTypeName_4 {
@@ -5173,9 +5173,9 @@ export interface ResizeSrcQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ResizeTracedSvgQueryString_4 {
@@ -5187,9 +5187,9 @@ export interface ResizeTracedSvgQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ResizeWidthQueryInt_4 {
@@ -5205,9 +5205,9 @@ export interface ResizeWidthQueryInt_4 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface ResizeHeightQueryInt_4 {
@@ -5223,9 +5223,9 @@ export interface ResizeHeightQueryInt_4 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface ResizeAspectRatioQueryFloat_4 {
@@ -5241,9 +5241,9 @@ export interface ResizeAspectRatioQueryFloat_4 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface ResizeOriginalNameQueryString_4 {
@@ -5255,9 +5255,9 @@ export interface ResizeOriginalNameQueryString_4 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageJsonNameQueryString {
@@ -5269,9 +5269,9 @@ export interface SitePageJsonNameQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageInternalComponentNameQueryString {
@@ -5283,9 +5283,9 @@ export interface SitePageInternalComponentNameQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePathQueryString_2 {
@@ -5297,9 +5297,9 @@ export interface SitePagePathQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageComponentQueryString {
@@ -5311,9 +5311,9 @@ export interface SitePageComponentQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageComponentChunkNameQueryString {
@@ -5325,9 +5325,9 @@ export interface SitePageComponentChunkNameQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageContextInputObject {
@@ -5343,9 +5343,9 @@ export interface SitePageContextIdQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorInputObject {
@@ -5383,9 +5383,9 @@ export interface SitePagePluginCreatorResolveQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorIdQueryString {
@@ -5397,9 +5397,9 @@ export interface SitePagePluginCreatorIdQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorNameQueryString {
@@ -5411,9 +5411,9 @@ export interface SitePagePluginCreatorNameQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorVersionQueryString {
@@ -5425,9 +5425,9 @@ export interface SitePagePluginCreatorVersionQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsInputObject {
@@ -5523,9 +5523,9 @@ export interface SitePagePluginCreatorPluginOptionsPluginsResolveQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsPluginsIdQueryString {
@@ -5537,9 +5537,9 @@ export interface SitePagePluginCreatorPluginOptionsPluginsIdQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsPluginsNameQueryString {
@@ -5551,9 +5551,9 @@ export interface SitePagePluginCreatorPluginOptionsPluginsNameQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsPluginsVersionQueryString {
@@ -5565,9 +5565,9 @@ export interface SitePagePluginCreatorPluginOptionsPluginsVersionQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsInputObject {
@@ -5621,9 +5621,9 @@ export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsMaxWidthQ
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsLinkImagesToOriginalQueryBoolean {
@@ -5631,9 +5631,9 @@ export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsLinkImage
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsWrapperStyleQueryString {
@@ -5645,9 +5645,9 @@ export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsWrapperSt
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsBackgroundColorQueryString {
@@ -5659,9 +5659,9 @@ export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsBackgroun
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsShowCaptionsQueryBoolean {
@@ -5669,9 +5669,9 @@ export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsShowCapti
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsPathPrefixQueryString {
@@ -5683,9 +5683,9 @@ export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsPathPrefi
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsWithWebpQueryBoolean {
@@ -5693,9 +5693,9 @@ export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsWithWebpQ
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsTargetQueryString {
@@ -5707,9 +5707,9 @@ export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsTargetQue
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsRelQueryString {
@@ -5721,9 +5721,9 @@ export interface SitePagePluginCreatorPluginOptionsPluginsPluginOptionsRelQueryS
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsPluginsBrowserApIsQueryList {
@@ -5735,9 +5735,9 @@ export interface SitePagePluginCreatorPluginOptionsPluginsBrowserApIsQueryList {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsPluginsPluginFilepathQueryString {
@@ -5749,9 +5749,9 @@ export interface SitePagePluginCreatorPluginOptionsPluginsPluginFilepathQueryStr
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsPathToConfigModuleQueryString {
@@ -5763,9 +5763,9 @@ export interface SitePagePluginCreatorPluginOptionsPathToConfigModuleQueryString
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsTrackingIdQueryString {
@@ -5777,9 +5777,9 @@ export interface SitePagePluginCreatorPluginOptionsTrackingIdQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsHeadQueryBoolean {
@@ -5787,9 +5787,9 @@ export interface SitePagePluginCreatorPluginOptionsHeadQueryBoolean {
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsAnonymizeQueryBoolean {
@@ -5797,9 +5797,9 @@ export interface SitePagePluginCreatorPluginOptionsAnonymizeQueryBoolean {
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsRespectDntQueryBoolean {
@@ -5807,9 +5807,9 @@ export interface SitePagePluginCreatorPluginOptionsRespectDntQueryBoolean {
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsPathQueryString {
@@ -5821,9 +5821,9 @@ export interface SitePagePluginCreatorPluginOptionsPathQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsNameQueryString {
@@ -5835,9 +5835,9 @@ export interface SitePagePluginCreatorPluginOptionsNameQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsMaxWidthQueryInteger {
@@ -5853,9 +5853,9 @@ export interface SitePagePluginCreatorPluginOptionsMaxWidthQueryInteger {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsLinkImagesToOriginalQueryBoolean {
@@ -5863,9 +5863,9 @@ export interface SitePagePluginCreatorPluginOptionsLinkImagesToOriginalQueryBool
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsWrapperStyleQueryString {
@@ -5877,9 +5877,9 @@ export interface SitePagePluginCreatorPluginOptionsWrapperStyleQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsBackgroundColorQueryString {
@@ -5891,9 +5891,9 @@ export interface SitePagePluginCreatorPluginOptionsBackgroundColorQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsShowCaptionsQueryBoolean {
@@ -5901,9 +5901,9 @@ export interface SitePagePluginCreatorPluginOptionsShowCaptionsQueryBoolean {
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsPathPrefixQueryString {
@@ -5915,9 +5915,9 @@ export interface SitePagePluginCreatorPluginOptionsPathPrefixQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsWithWebpQueryBoolean {
@@ -5925,9 +5925,9 @@ export interface SitePagePluginCreatorPluginOptionsWithWebpQueryBoolean {
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsTargetQueryString {
@@ -5939,9 +5939,9 @@ export interface SitePagePluginCreatorPluginOptionsTargetQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsRelQueryString {
@@ -5953,9 +5953,9 @@ export interface SitePagePluginCreatorPluginOptionsRelQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsModulePathQueryString {
@@ -5967,9 +5967,9 @@ export interface SitePagePluginCreatorPluginOptionsModulePathQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsStylesPathQueryString {
@@ -5981,9 +5981,9 @@ export interface SitePagePluginCreatorPluginOptionsStylesPathQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsEnableIdentityWidgetQueryBoolean {
@@ -5991,9 +5991,9 @@ export interface SitePagePluginCreatorPluginOptionsEnableIdentityWidgetQueryBool
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsHtmlTitleQueryString {
@@ -6005,9 +6005,9 @@ export interface SitePagePluginCreatorPluginOptionsHtmlTitleQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginOptionsPathCheckQueryBoolean {
@@ -6015,9 +6015,9 @@ export interface SitePagePluginCreatorPluginOptionsPathCheckQueryBoolean {
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePagePluginCreatorNodeApIsQueryList {
@@ -6029,9 +6029,9 @@ export interface SitePagePluginCreatorNodeApIsQueryList {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorBrowserApIsQueryList {
@@ -6043,9 +6043,9 @@ export interface SitePagePluginCreatorBrowserApIsQueryList {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorSsrApIsQueryList {
@@ -6057,9 +6057,9 @@ export interface SitePagePluginCreatorSsrApIsQueryList {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPluginFilepathQueryString {
@@ -6071,9 +6071,9 @@ export interface SitePagePluginCreatorPluginFilepathQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPackageJsonInputObject {
@@ -6111,9 +6111,9 @@ export interface SitePagePluginCreatorPackageJsonNameQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPackageJsonDescriptionQueryString {
@@ -6125,9 +6125,9 @@ export interface SitePagePluginCreatorPackageJsonDescriptionQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPackageJsonVersionQueryString {
@@ -6139,9 +6139,9 @@ export interface SitePagePluginCreatorPackageJsonVersionQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPackageJsonMainQueryString {
@@ -6153,9 +6153,9 @@ export interface SitePagePluginCreatorPackageJsonMainQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPackageJsonAuthorQueryString {
@@ -6167,9 +6167,9 @@ export interface SitePagePluginCreatorPackageJsonAuthorQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPackageJsonLicenseQueryString {
@@ -6181,9 +6181,9 @@ export interface SitePagePluginCreatorPackageJsonLicenseQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPackageJsonDependenciesQueryList {
@@ -6207,9 +6207,9 @@ export interface SitePagePluginCreatorPackageJsonDependenciesNameQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPackageJsonDependenciesVersionQueryString {
@@ -6221,9 +6221,9 @@ export interface SitePagePluginCreatorPackageJsonDependenciesVersionQueryString 
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPackageJsonDevDependenciesQueryList {
@@ -6247,9 +6247,9 @@ export interface SitePagePluginCreatorPackageJsonDevDependenciesNameQueryString 
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPackageJsonDevDependenciesVersionQueryString {
@@ -6261,9 +6261,9 @@ export interface SitePagePluginCreatorPackageJsonDevDependenciesVersionQueryStri
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPackageJsonPeerDependenciesQueryList {
@@ -6289,9 +6289,9 @@ export interface SitePagePluginCreatorPackageJsonPeerDependenciesNameQueryString
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPackageJsonPeerDependenciesVersionQueryString {
@@ -6303,9 +6303,9 @@ export interface SitePagePluginCreatorPackageJsonPeerDependenciesVersionQueryStr
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorPackageJsonKeywordsQueryList {
@@ -6317,9 +6317,9 @@ export interface SitePagePluginCreatorPackageJsonKeywordsQueryList {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorParentQueryString {
@@ -6331,9 +6331,9 @@ export interface SitePagePluginCreatorParentQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorInternalInputObject {
@@ -6353,9 +6353,9 @@ export interface SitePagePluginCreatorInternalContentDigestQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorInternalTypeQueryString {
@@ -6367,9 +6367,9 @@ export interface SitePagePluginCreatorInternalTypeQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorInternalOwnerQueryString {
@@ -6381,9 +6381,9 @@ export interface SitePagePluginCreatorInternalOwnerQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePagePluginCreatorIdQueryString_2 {
@@ -6395,9 +6395,9 @@ export interface SitePagePluginCreatorIdQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageComponentPathQueryString {
@@ -6409,9 +6409,9 @@ export interface SitePageComponentPathQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageIdQueryString_2 {
@@ -6423,9 +6423,9 @@ export interface SitePageIdQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageInternalInputObject_2 {
@@ -6447,9 +6447,9 @@ export interface SitePageInternalTypeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageInternalContentDigestQueryString_2 {
@@ -6461,9 +6461,9 @@ export interface SitePageInternalContentDigestQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageInternalDescriptionQueryString {
@@ -6475,9 +6475,9 @@ export interface SitePageInternalDescriptionQueryString {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePageInternalOwnerQueryString_2 {
@@ -6489,9 +6489,9 @@ export interface SitePageInternalOwnerQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginResolveQueryString_2 {
@@ -6503,9 +6503,9 @@ export interface SitePluginResolveQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginIdQueryString_2 {
@@ -6517,9 +6517,9 @@ export interface SitePluginIdQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginNameQueryString_2 {
@@ -6531,9 +6531,9 @@ export interface SitePluginNameQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginVersionQueryString_2 {
@@ -6545,9 +6545,9 @@ export interface SitePluginVersionQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginOptionsInputObject_2 {
@@ -6635,9 +6635,9 @@ export interface SitePluginPluginOptionsPluginsResolveQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginOptionsPluginsIdQueryString_2 {
@@ -6649,9 +6649,9 @@ export interface SitePluginPluginOptionsPluginsIdQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginOptionsPluginsNameQueryString_2 {
@@ -6663,9 +6663,9 @@ export interface SitePluginPluginOptionsPluginsNameQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginOptionsPluginsVersionQueryString_2 {
@@ -6677,9 +6677,9 @@ export interface SitePluginPluginOptionsPluginsVersionQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginOptionsPluginsPluginOptionsInputObject_2 {
@@ -6731,9 +6731,9 @@ export interface SitePluginPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface SitePluginPluginOptionsPluginsPluginOptionsLinkImagesToOriginalQueryBoolean_2 {
@@ -6741,9 +6741,9 @@ export interface SitePluginPluginOptionsPluginsPluginOptionsLinkImagesToOriginal
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePluginPluginOptionsPluginsPluginOptionsWrapperStyleQueryString_2 {
@@ -6755,9 +6755,9 @@ export interface SitePluginPluginOptionsPluginsPluginOptionsWrapperStyleQueryStr
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginOptionsPluginsPluginOptionsBackgroundColorQueryString_2 {
@@ -6769,9 +6769,9 @@ export interface SitePluginPluginOptionsPluginsPluginOptionsBackgroundColorQuery
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginOptionsPluginsPluginOptionsShowCaptionsQueryBoolean_2 {
@@ -6779,9 +6779,9 @@ export interface SitePluginPluginOptionsPluginsPluginOptionsShowCaptionsQueryBoo
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePluginPluginOptionsPluginsPluginOptionsPathPrefixQueryString_2 {
@@ -6793,9 +6793,9 @@ export interface SitePluginPluginOptionsPluginsPluginOptionsPathPrefixQueryStrin
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginOptionsPluginsPluginOptionsWithWebpQueryBoolean_2 {
@@ -6803,9 +6803,9 @@ export interface SitePluginPluginOptionsPluginsPluginOptionsWithWebpQueryBoolean
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePluginPluginOptionsPluginsPluginOptionsTargetQueryString_2 {
@@ -6817,9 +6817,9 @@ export interface SitePluginPluginOptionsPluginsPluginOptionsTargetQueryString_2 
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginOptionsPluginsPluginOptionsRelQueryString_2 {
@@ -6831,9 +6831,9 @@ export interface SitePluginPluginOptionsPluginsPluginOptionsRelQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginOptionsPluginsBrowserApIsQueryList_2 {
@@ -6845,9 +6845,9 @@ export interface SitePluginPluginOptionsPluginsBrowserApIsQueryList_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginOptionsPluginsPluginFilepathQueryString_2 {
@@ -6859,9 +6859,9 @@ export interface SitePluginPluginOptionsPluginsPluginFilepathQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginOptionsPathToConfigModuleQueryString_2 {
@@ -6873,9 +6873,9 @@ export interface SitePluginPluginOptionsPathToConfigModuleQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginOptionsTrackingIdQueryString_2 {
@@ -6887,9 +6887,9 @@ export interface SitePluginPluginOptionsTrackingIdQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginOptionsHeadQueryBoolean_2 {
@@ -6897,9 +6897,9 @@ export interface SitePluginPluginOptionsHeadQueryBoolean_2 {
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePluginPluginOptionsAnonymizeQueryBoolean_2 {
@@ -6907,9 +6907,9 @@ export interface SitePluginPluginOptionsAnonymizeQueryBoolean_2 {
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePluginPluginOptionsRespectDntQueryBoolean_2 {
@@ -6917,9 +6917,9 @@ export interface SitePluginPluginOptionsRespectDntQueryBoolean_2 {
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePluginPluginOptionsPathQueryString_2 {
@@ -6931,9 +6931,9 @@ export interface SitePluginPluginOptionsPathQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginOptionsNameQueryString_2 {
@@ -6945,9 +6945,9 @@ export interface SitePluginPluginOptionsNameQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginOptionsMaxWidthQueryInteger_2 {
@@ -6963,9 +6963,9 @@ export interface SitePluginPluginOptionsMaxWidthQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface SitePluginPluginOptionsLinkImagesToOriginalQueryBoolean_2 {
@@ -6973,9 +6973,9 @@ export interface SitePluginPluginOptionsLinkImagesToOriginalQueryBoolean_2 {
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePluginPluginOptionsWrapperStyleQueryString_2 {
@@ -6987,9 +6987,9 @@ export interface SitePluginPluginOptionsWrapperStyleQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginOptionsBackgroundColorQueryString_2 {
@@ -7001,9 +7001,9 @@ export interface SitePluginPluginOptionsBackgroundColorQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginOptionsShowCaptionsQueryBoolean_2 {
@@ -7011,9 +7011,9 @@ export interface SitePluginPluginOptionsShowCaptionsQueryBoolean_2 {
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePluginPluginOptionsPathPrefixQueryString_2 {
@@ -7025,9 +7025,9 @@ export interface SitePluginPluginOptionsPathPrefixQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginOptionsWithWebpQueryBoolean_2 {
@@ -7035,9 +7035,9 @@ export interface SitePluginPluginOptionsWithWebpQueryBoolean_2 {
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePluginPluginOptionsTargetQueryString_2 {
@@ -7049,9 +7049,9 @@ export interface SitePluginPluginOptionsTargetQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginOptionsRelQueryString_2 {
@@ -7063,9 +7063,9 @@ export interface SitePluginPluginOptionsRelQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginOptionsModulePathQueryString_2 {
@@ -7077,9 +7077,9 @@ export interface SitePluginPluginOptionsModulePathQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginOptionsStylesPathQueryString_2 {
@@ -7091,9 +7091,9 @@ export interface SitePluginPluginOptionsStylesPathQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginOptionsEnableIdentityWidgetQueryBoolean_2 {
@@ -7101,9 +7101,9 @@ export interface SitePluginPluginOptionsEnableIdentityWidgetQueryBoolean_2 {
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePluginPluginOptionsHtmlTitleQueryString_2 {
@@ -7115,9 +7115,9 @@ export interface SitePluginPluginOptionsHtmlTitleQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginOptionsPathCheckQueryBoolean_2 {
@@ -7125,9 +7125,9 @@ export interface SitePluginPluginOptionsPathCheckQueryBoolean_2 {
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SitePluginNodeApIsQueryList_2 {
@@ -7139,9 +7139,9 @@ export interface SitePluginNodeApIsQueryList_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginBrowserApIsQueryList_2 {
@@ -7153,9 +7153,9 @@ export interface SitePluginBrowserApIsQueryList_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginSsrApIsQueryList_2 {
@@ -7167,9 +7167,9 @@ export interface SitePluginSsrApIsQueryList_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPluginFilepathQueryString_2 {
@@ -7181,9 +7181,9 @@ export interface SitePluginPluginFilepathQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPackageJsonInputObject_2 {
@@ -7217,9 +7217,9 @@ export interface SitePluginPackageJsonNameQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPackageJsonDescriptionQueryString_2 {
@@ -7231,9 +7231,9 @@ export interface SitePluginPackageJsonDescriptionQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPackageJsonVersionQueryString_2 {
@@ -7245,9 +7245,9 @@ export interface SitePluginPackageJsonVersionQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPackageJsonMainQueryString_2 {
@@ -7259,9 +7259,9 @@ export interface SitePluginPackageJsonMainQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPackageJsonAuthorQueryString_2 {
@@ -7273,9 +7273,9 @@ export interface SitePluginPackageJsonAuthorQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPackageJsonLicenseQueryString_2 {
@@ -7287,9 +7287,9 @@ export interface SitePluginPackageJsonLicenseQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPackageJsonDependenciesQueryList_2 {
@@ -7311,9 +7311,9 @@ export interface SitePluginPackageJsonDependenciesNameQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPackageJsonDependenciesVersionQueryString_2 {
@@ -7325,9 +7325,9 @@ export interface SitePluginPackageJsonDependenciesVersionQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPackageJsonDevDependenciesQueryList_2 {
@@ -7349,9 +7349,9 @@ export interface SitePluginPackageJsonDevDependenciesNameQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPackageJsonDevDependenciesVersionQueryString_2 {
@@ -7363,9 +7363,9 @@ export interface SitePluginPackageJsonDevDependenciesVersionQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPackageJsonPeerDependenciesQueryList_2 {
@@ -7387,9 +7387,9 @@ export interface SitePluginPackageJsonPeerDependenciesNameQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPackageJsonPeerDependenciesVersionQueryString_2 {
@@ -7401,9 +7401,9 @@ export interface SitePluginPackageJsonPeerDependenciesVersionQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginPackageJsonKeywordsQueryList_2 {
@@ -7415,9 +7415,9 @@ export interface SitePluginPackageJsonKeywordsQueryList_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginInternalInputObject_2 {
@@ -7437,9 +7437,9 @@ export interface SitePluginInternalContentDigestQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginInternalTypeQueryString_2 {
@@ -7451,9 +7451,9 @@ export interface SitePluginInternalTypeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePluginInternalOwnerQueryString_2 {
@@ -7465,9 +7465,9 @@ export interface SitePluginInternalOwnerQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SiteSiteMetadataInputObject_2 {
@@ -7487,9 +7487,9 @@ export interface SiteSiteMetadataTitleQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SiteSiteMetadataDescriptionQueryString_2 {
@@ -7501,9 +7501,9 @@ export interface SiteSiteMetadataDescriptionQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SiteSiteMetadataSiteUrlQueryString_2 {
@@ -7515,9 +7515,9 @@ export interface SiteSiteMetadataSiteUrlQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePortQueryString_2 {
@@ -7529,9 +7529,9 @@ export interface SitePortQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SiteHostQueryString_2 {
@@ -7543,9 +7543,9 @@ export interface SiteHostQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePathPrefixQueryString_2 {
@@ -7557,9 +7557,9 @@ export interface SitePathPrefixQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SitePolyfillQueryBoolean_2 {
@@ -7567,9 +7567,9 @@ export interface SitePolyfillQueryBoolean_2 {
 
   ne?: Maybe<boolean>
 
-  in?: Maybe<Array<Maybe<boolean>>>
+  in?: Maybe<Maybe<boolean>[]>
 
-  nin?: Maybe<Array<Maybe<boolean>>>
+  nin?: Maybe<Maybe<boolean>[]>
 }
 
 export interface SiteBuildTimeQueryString_2 {
@@ -7581,9 +7581,9 @@ export interface SiteBuildTimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SiteIdQueryString_2 {
@@ -7595,9 +7595,9 @@ export interface SiteIdQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SiteInternalInputObject_2 {
@@ -7617,9 +7617,9 @@ export interface SiteInternalContentDigestQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SiteInternalTypeQueryString_2 {
@@ -7631,9 +7631,9 @@ export interface SiteInternalTypeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SiteInternalOwnerQueryString_2 {
@@ -7645,9 +7645,9 @@ export interface SiteInternalOwnerQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryIdQueryString_2 {
@@ -7659,9 +7659,9 @@ export interface DirectoryIdQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryInternalInputObject_2 {
@@ -7683,9 +7683,9 @@ export interface DirectoryInternalContentDigestQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryInternalTypeQueryString_2 {
@@ -7697,9 +7697,9 @@ export interface DirectoryInternalTypeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryInternalDescriptionQueryString_2 {
@@ -7711,9 +7711,9 @@ export interface DirectoryInternalDescriptionQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryInternalOwnerQueryString_2 {
@@ -7725,9 +7725,9 @@ export interface DirectoryInternalOwnerQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectorySourceInstanceNameQueryString_2 {
@@ -7739,9 +7739,9 @@ export interface DirectorySourceInstanceNameQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryAbsolutePathQueryString_2 {
@@ -7753,9 +7753,9 @@ export interface DirectoryAbsolutePathQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryRelativePathQueryString_2 {
@@ -7767,9 +7767,9 @@ export interface DirectoryRelativePathQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryExtensionQueryString_2 {
@@ -7781,9 +7781,9 @@ export interface DirectoryExtensionQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectorySizeQueryInteger_2 {
@@ -7799,9 +7799,9 @@ export interface DirectorySizeQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryPrettySizeQueryString_2 {
@@ -7813,9 +7813,9 @@ export interface DirectoryPrettySizeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryModifiedTimeQueryString_2 {
@@ -7827,9 +7827,9 @@ export interface DirectoryModifiedTimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryAccessTimeQueryString_2 {
@@ -7841,9 +7841,9 @@ export interface DirectoryAccessTimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryChangeTimeQueryString_2 {
@@ -7855,9 +7855,9 @@ export interface DirectoryChangeTimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryBirthTimeQueryString_2 {
@@ -7869,9 +7869,9 @@ export interface DirectoryBirthTimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryRootQueryString_2 {
@@ -7883,9 +7883,9 @@ export interface DirectoryRootQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryDirQueryString_2 {
@@ -7897,9 +7897,9 @@ export interface DirectoryDirQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryBaseQueryString_2 {
@@ -7911,9 +7911,9 @@ export interface DirectoryBaseQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryExtQueryString_2 {
@@ -7925,9 +7925,9 @@ export interface DirectoryExtQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryNameQueryString_2 {
@@ -7939,9 +7939,9 @@ export interface DirectoryNameQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryRelativeDirectoryQueryString_2 {
@@ -7953,9 +7953,9 @@ export interface DirectoryRelativeDirectoryQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryDevQueryInteger_2 {
@@ -7971,9 +7971,9 @@ export interface DirectoryDevQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryModeQueryInteger_2 {
@@ -7989,9 +7989,9 @@ export interface DirectoryModeQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryNlinkQueryInteger_2 {
@@ -8007,9 +8007,9 @@ export interface DirectoryNlinkQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryUidQueryInteger_2 {
@@ -8025,9 +8025,9 @@ export interface DirectoryUidQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryGidQueryInteger_2 {
@@ -8043,9 +8043,9 @@ export interface DirectoryGidQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryRdevQueryInteger_2 {
@@ -8061,9 +8061,9 @@ export interface DirectoryRdevQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryBlksizeQueryInteger_2 {
@@ -8079,9 +8079,9 @@ export interface DirectoryBlksizeQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryInoQueryInteger_2 {
@@ -8097,9 +8097,9 @@ export interface DirectoryInoQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryBlocksQueryInteger_2 {
@@ -8115,9 +8115,9 @@ export interface DirectoryBlocksQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryAtimeMsQueryFloat_2 {
@@ -8133,9 +8133,9 @@ export interface DirectoryAtimeMsQueryFloat_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryMtimeMsQueryFloat_2 {
@@ -8151,9 +8151,9 @@ export interface DirectoryMtimeMsQueryFloat_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryCtimeMsQueryFloat_2 {
@@ -8169,9 +8169,9 @@ export interface DirectoryCtimeMsQueryFloat_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryBirthtimeMsQueryFloat_2 {
@@ -8187,9 +8187,9 @@ export interface DirectoryBirthtimeMsQueryFloat_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface DirectoryAtimeQueryString_2 {
@@ -8201,9 +8201,9 @@ export interface DirectoryAtimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryMtimeQueryString_2 {
@@ -8215,9 +8215,9 @@ export interface DirectoryMtimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryCtimeQueryString_2 {
@@ -8229,9 +8229,9 @@ export interface DirectoryCtimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface DirectoryBirthtimeQueryString_2 {
@@ -8243,9 +8243,9 @@ export interface DirectoryBirthtimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileIdQueryString_2 {
@@ -8257,9 +8257,9 @@ export interface FileIdQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileInternalInputObject_2 {
@@ -8283,9 +8283,9 @@ export interface FileInternalContentDigestQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileInternalTypeQueryString_2 {
@@ -8297,9 +8297,9 @@ export interface FileInternalTypeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileInternalMediaTypeQueryString_2 {
@@ -8311,9 +8311,9 @@ export interface FileInternalMediaTypeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileInternalDescriptionQueryString_2 {
@@ -8325,9 +8325,9 @@ export interface FileInternalDescriptionQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileInternalOwnerQueryString_2 {
@@ -8339,9 +8339,9 @@ export interface FileInternalOwnerQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileSourceInstanceNameQueryString_2 {
@@ -8353,9 +8353,9 @@ export interface FileSourceInstanceNameQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileAbsolutePathQueryString_2 {
@@ -8367,9 +8367,9 @@ export interface FileAbsolutePathQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileRelativePathQueryString_2 {
@@ -8381,9 +8381,9 @@ export interface FileRelativePathQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileExtensionQueryString_2 {
@@ -8395,9 +8395,9 @@ export interface FileExtensionQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileSizeQueryInteger_2 {
@@ -8413,9 +8413,9 @@ export interface FileSizeQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FilePrettySizeQueryString_2 {
@@ -8427,9 +8427,9 @@ export interface FilePrettySizeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileModifiedTimeQueryString_2 {
@@ -8441,9 +8441,9 @@ export interface FileModifiedTimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileAccessTimeQueryString_2 {
@@ -8455,9 +8455,9 @@ export interface FileAccessTimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileChangeTimeQueryString_2 {
@@ -8469,9 +8469,9 @@ export interface FileChangeTimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileBirthTimeQueryString_2 {
@@ -8483,9 +8483,9 @@ export interface FileBirthTimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileRootQueryString_2 {
@@ -8497,9 +8497,9 @@ export interface FileRootQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileDirQueryString_2 {
@@ -8511,9 +8511,9 @@ export interface FileDirQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileBaseQueryString_2 {
@@ -8525,9 +8525,9 @@ export interface FileBaseQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileExtQueryString_2 {
@@ -8539,9 +8539,9 @@ export interface FileExtQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileNameQueryString_2 {
@@ -8553,9 +8553,9 @@ export interface FileNameQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileRelativeDirectoryQueryString_2 {
@@ -8567,9 +8567,9 @@ export interface FileRelativeDirectoryQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileDevQueryInteger_2 {
@@ -8585,9 +8585,9 @@ export interface FileDevQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileModeQueryInteger_2 {
@@ -8603,9 +8603,9 @@ export interface FileModeQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileNlinkQueryInteger_2 {
@@ -8621,9 +8621,9 @@ export interface FileNlinkQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileUidQueryInteger_2 {
@@ -8639,9 +8639,9 @@ export interface FileUidQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileGidQueryInteger_2 {
@@ -8657,9 +8657,9 @@ export interface FileGidQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileRdevQueryInteger_2 {
@@ -8675,9 +8675,9 @@ export interface FileRdevQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileBlksizeQueryInteger_2 {
@@ -8693,9 +8693,9 @@ export interface FileBlksizeQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileInoQueryInteger_2 {
@@ -8711,9 +8711,9 @@ export interface FileInoQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileBlocksQueryInteger_2 {
@@ -8729,9 +8729,9 @@ export interface FileBlocksQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileAtimeMsQueryFloat_2 {
@@ -8747,9 +8747,9 @@ export interface FileAtimeMsQueryFloat_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileMtimeMsQueryFloat_2 {
@@ -8765,9 +8765,9 @@ export interface FileMtimeMsQueryFloat_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileCtimeMsQueryFloat_2 {
@@ -8783,9 +8783,9 @@ export interface FileCtimeMsQueryFloat_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileBirthtimeMsQueryFloat_2 {
@@ -8801,9 +8801,9 @@ export interface FileBirthtimeMsQueryFloat_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FileAtimeQueryString_2 {
@@ -8815,9 +8815,9 @@ export interface FileAtimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileMtimeQueryString_2 {
@@ -8829,9 +8829,9 @@ export interface FileMtimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileCtimeQueryString_2 {
@@ -8843,9 +8843,9 @@ export interface FileCtimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FileBirthtimeQueryString_2 {
@@ -8857,9 +8857,9 @@ export interface FileBirthtimeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface PublicUrlQueryString_3 {
@@ -8871,9 +8871,9 @@ export interface PublicUrlQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkIdQueryString_2 {
@@ -8885,9 +8885,9 @@ export interface MarkdownRemarkIdQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkInternalInputObject_2 {
@@ -8911,9 +8911,9 @@ export interface MarkdownRemarkInternalContentQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkInternalTypeQueryString_2 {
@@ -8925,9 +8925,9 @@ export interface MarkdownRemarkInternalTypeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkInternalContentDigestQueryString_2 {
@@ -8939,9 +8939,9 @@ export interface MarkdownRemarkInternalContentDigestQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkInternalOwnerQueryString_2 {
@@ -8953,9 +8953,9 @@ export interface MarkdownRemarkInternalOwnerQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkInternalFieldOwnersInputObject_2 {
@@ -8971,9 +8971,9 @@ export interface MarkdownRemarkInternalFieldOwnersSlugQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkFrontmatterInputObject_2 {
@@ -9003,9 +9003,9 @@ export interface MarkdownRemarkFrontmatterTitleQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkFrontmatterTemplateKeyQueryString_2 {
@@ -9017,9 +9017,9 @@ export interface MarkdownRemarkFrontmatterTemplateKeyQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkFrontmatterPathQueryString_2 {
@@ -9031,9 +9031,9 @@ export interface MarkdownRemarkFrontmatterPathQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkFrontmatterDescriptionQueryString_2 {
@@ -9045,9 +9045,9 @@ export interface MarkdownRemarkFrontmatterDescriptionQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkFrontmatterParentQueryString_2 {
@@ -9059,9 +9059,9 @@ export interface MarkdownRemarkFrontmatterParentQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkFrontmatterSubTitleQueryString_2 {
@@ -9073,9 +9073,9 @@ export interface MarkdownRemarkFrontmatterSubTitleQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkFrontmatterOrderQueryInteger_2 {
@@ -9091,9 +9091,9 @@ export interface MarkdownRemarkFrontmatterOrderQueryInteger_2 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface MarkdownRemarkFrontmatterUriQueryString_2 {
@@ -9105,9 +9105,9 @@ export interface MarkdownRemarkFrontmatterUriQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkRawMarkdownBodyQueryString_2 {
@@ -9119,9 +9119,9 @@ export interface MarkdownRemarkRawMarkdownBodyQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkFileAbsolutePathQueryString_2 {
@@ -9133,9 +9133,9 @@ export interface MarkdownRemarkFileAbsolutePathQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface MarkdownRemarkFieldsInputObject_2 {
@@ -9151,9 +9151,9 @@ export interface MarkdownRemarkFieldsSlugQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface HtmlQueryString_3 {
@@ -9165,9 +9165,9 @@ export interface HtmlQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ExcerptQueryString_3 {
@@ -9179,9 +9179,9 @@ export interface ExcerptQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface HeadingsQueryList_3 {
@@ -9203,9 +9203,9 @@ export interface HeadingsListElemValueQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface HeadingsListElemDepthQueryInt_3 {
@@ -9221,9 +9221,9 @@ export interface HeadingsListElemDepthQueryInt_3 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface TimeToReadQueryInt_3 {
@@ -9239,9 +9239,9 @@ export interface TimeToReadQueryInt_3 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface TableOfContentsQueryString_3 {
@@ -9253,9 +9253,9 @@ export interface TableOfContentsQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface WordCountTypeName_3 {
@@ -9279,9 +9279,9 @@ export interface WordCountParagraphsQueryInt_3 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface WordCountSentencesQueryInt_3 {
@@ -9297,9 +9297,9 @@ export interface WordCountSentencesQueryInt_3 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface WordCountWordsQueryInt_3 {
@@ -9315,9 +9315,9 @@ export interface WordCountWordsQueryInt_3 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface ImageSharpIdQueryString_2 {
@@ -9329,9 +9329,9 @@ export interface ImageSharpIdQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ImageSharpInternalInputObject_2 {
@@ -9351,9 +9351,9 @@ export interface ImageSharpInternalContentDigestQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ImageSharpInternalTypeQueryString_2 {
@@ -9365,9 +9365,9 @@ export interface ImageSharpInternalTypeQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ImageSharpInternalOwnerQueryString_2 {
@@ -9379,9 +9379,9 @@ export interface ImageSharpInternalOwnerQueryString_2 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FixedTypeName_3 {
@@ -9415,9 +9415,9 @@ export interface FixedBase64QueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FixedTracedSvgQueryString_3 {
@@ -9429,9 +9429,9 @@ export interface FixedTracedSvgQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FixedAspectRatioQueryFloat_3 {
@@ -9447,9 +9447,9 @@ export interface FixedAspectRatioQueryFloat_3 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FixedWidthQueryFloat_3 {
@@ -9465,9 +9465,9 @@ export interface FixedWidthQueryFloat_3 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FixedHeightQueryFloat_3 {
@@ -9483,9 +9483,9 @@ export interface FixedHeightQueryFloat_3 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FixedSrcQueryString_3 {
@@ -9497,9 +9497,9 @@ export interface FixedSrcQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FixedSrcSetQueryString_3 {
@@ -9511,9 +9511,9 @@ export interface FixedSrcSetQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FixedSrcWebpQueryString_3 {
@@ -9525,9 +9525,9 @@ export interface FixedSrcWebpQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FixedSrcSetWebpQueryString_3 {
@@ -9539,9 +9539,9 @@ export interface FixedSrcSetWebpQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FixedOriginalNameQueryString_3 {
@@ -9553,9 +9553,9 @@ export interface FixedOriginalNameQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ResolutionsTypeName_3 {
@@ -9589,9 +9589,9 @@ export interface ResolutionsBase64QueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ResolutionsTracedSvgQueryString_3 {
@@ -9603,9 +9603,9 @@ export interface ResolutionsTracedSvgQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ResolutionsAspectRatioQueryFloat_3 {
@@ -9621,9 +9621,9 @@ export interface ResolutionsAspectRatioQueryFloat_3 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface ResolutionsWidthQueryFloat_3 {
@@ -9639,9 +9639,9 @@ export interface ResolutionsWidthQueryFloat_3 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface ResolutionsHeightQueryFloat_3 {
@@ -9657,9 +9657,9 @@ export interface ResolutionsHeightQueryFloat_3 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface ResolutionsSrcQueryString_3 {
@@ -9671,9 +9671,9 @@ export interface ResolutionsSrcQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ResolutionsSrcSetQueryString_3 {
@@ -9685,9 +9685,9 @@ export interface ResolutionsSrcSetQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ResolutionsSrcWebpQueryString_3 {
@@ -9699,9 +9699,9 @@ export interface ResolutionsSrcWebpQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ResolutionsSrcSetWebpQueryString_3 {
@@ -9713,9 +9713,9 @@ export interface ResolutionsSrcSetWebpQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ResolutionsOriginalNameQueryString_3 {
@@ -9727,9 +9727,9 @@ export interface ResolutionsOriginalNameQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FluidTypeName_3 {
@@ -9767,9 +9767,9 @@ export interface FluidBase64QueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FluidTracedSvgQueryString_3 {
@@ -9781,9 +9781,9 @@ export interface FluidTracedSvgQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FluidAspectRatioQueryFloat_3 {
@@ -9799,9 +9799,9 @@ export interface FluidAspectRatioQueryFloat_3 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FluidSrcQueryString_3 {
@@ -9813,9 +9813,9 @@ export interface FluidSrcQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FluidSrcSetQueryString_3 {
@@ -9827,9 +9827,9 @@ export interface FluidSrcSetQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FluidSrcWebpQueryString_3 {
@@ -9841,9 +9841,9 @@ export interface FluidSrcWebpQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FluidSrcSetWebpQueryString_3 {
@@ -9855,9 +9855,9 @@ export interface FluidSrcSetWebpQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FluidSizesQueryString_3 {
@@ -9869,9 +9869,9 @@ export interface FluidSizesQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FluidOriginalImgQueryString_3 {
@@ -9883,9 +9883,9 @@ export interface FluidOriginalImgQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FluidOriginalNameQueryString_3 {
@@ -9897,9 +9897,9 @@ export interface FluidOriginalNameQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface FluidPresentationWidthQueryInt_3 {
@@ -9915,9 +9915,9 @@ export interface FluidPresentationWidthQueryInt_3 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface FluidPresentationHeightQueryInt_3 {
@@ -9933,9 +9933,9 @@ export interface FluidPresentationHeightQueryInt_3 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface SizesTypeName_3 {
@@ -9973,9 +9973,9 @@ export interface SizesBase64QueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SizesTracedSvgQueryString_3 {
@@ -9987,9 +9987,9 @@ export interface SizesTracedSvgQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SizesAspectRatioQueryFloat_3 {
@@ -10005,9 +10005,9 @@ export interface SizesAspectRatioQueryFloat_3 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface SizesSrcQueryString_3 {
@@ -10019,9 +10019,9 @@ export interface SizesSrcQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SizesSrcSetQueryString_3 {
@@ -10033,9 +10033,9 @@ export interface SizesSrcSetQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SizesSrcWebpQueryString_3 {
@@ -10047,9 +10047,9 @@ export interface SizesSrcWebpQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SizesSrcSetWebpQueryString_3 {
@@ -10061,9 +10061,9 @@ export interface SizesSrcSetWebpQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SizesSizesQueryString_3 {
@@ -10075,9 +10075,9 @@ export interface SizesSizesQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SizesOriginalImgQueryString_3 {
@@ -10089,9 +10089,9 @@ export interface SizesOriginalImgQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SizesOriginalNameQueryString_3 {
@@ -10103,9 +10103,9 @@ export interface SizesOriginalNameQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface SizesPresentationWidthQueryInt_3 {
@@ -10121,9 +10121,9 @@ export interface SizesPresentationWidthQueryInt_3 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface SizesPresentationHeightQueryInt_3 {
@@ -10139,9 +10139,9 @@ export interface SizesPresentationHeightQueryInt_3 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface OriginalTypeName_3 {
@@ -10165,9 +10165,9 @@ export interface OriginalWidthQueryFloat_3 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface OriginalHeightQueryFloat_3 {
@@ -10183,9 +10183,9 @@ export interface OriginalHeightQueryFloat_3 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface OriginalSrcQueryString_3 {
@@ -10197,9 +10197,9 @@ export interface OriginalSrcQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ResizeTypeName_3 {
@@ -10225,9 +10225,9 @@ export interface ResizeSrcQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ResizeTracedSvgQueryString_3 {
@@ -10239,9 +10239,9 @@ export interface ResizeTracedSvgQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export interface ResizeWidthQueryInt_3 {
@@ -10257,9 +10257,9 @@ export interface ResizeWidthQueryInt_3 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface ResizeHeightQueryInt_3 {
@@ -10275,9 +10275,9 @@ export interface ResizeHeightQueryInt_3 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface ResizeAspectRatioQueryFloat_3 {
@@ -10293,9 +10293,9 @@ export interface ResizeAspectRatioQueryFloat_3 {
 
   lte?: Maybe<number>
 
-  in?: Maybe<Array<Maybe<number>>>
+  in?: Maybe<Maybe<number>[]>
 
-  nin?: Maybe<Array<Maybe<number>>>
+  nin?: Maybe<Maybe<number>[]>
 }
 
 export interface ResizeOriginalNameQueryString_3 {
@@ -10307,9 +10307,9 @@ export interface ResizeOriginalNameQueryString_3 {
 
   glob?: Maybe<string>
 
-  in?: Maybe<Array<Maybe<string>>>
+  in?: Maybe<Maybe<string>[]>
 
-  nin?: Maybe<Array<Maybe<string>>>
+  nin?: Maybe<Maybe<string>[]>
 }
 
 export enum SitePageConnectionSortByFieldsEnum {
@@ -11009,7 +11009,7 @@ export interface Node {
   /** The parent of this node. */
   parent?: Maybe<Node>
   /** The children of this node. */
-  children?: Maybe<Array<Maybe<Node>>>
+  children?: Maybe<Maybe<Node>[]>
 }
 
 // ====================================================
@@ -11050,13 +11050,13 @@ export interface SitePageConnection {
   /** Information to aid in pagination. */
   pageInfo: PageInfo
   /** A list of edges. */
-  edges?: Maybe<Array<Maybe<SitePageEdge>>>
+  edges?: Maybe<Maybe<SitePageEdge>[]>
 
   totalCount?: Maybe<number>
 
-  distinct?: Maybe<Array<Maybe<string>>>
+  distinct?: Maybe<Maybe<string>[]>
 
-  group?: Maybe<Array<Maybe<SitePageGroupConnectionConnection>>>
+  group?: Maybe<Maybe<SitePageGroupConnectionConnection>[]>
 }
 
 /** Information about pagination in a connection. */
@@ -11082,7 +11082,7 @@ export interface SitePage extends Node {
   /** The parent of this node. */
   parent?: Maybe<Node>
   /** The children of this node. */
-  children?: Maybe<Array<Maybe<Node>>>
+  children?: Maybe<Maybe<Node>[]>
 
   jsonName?: Maybe<string>
 
@@ -11116,7 +11116,7 @@ export interface SitePlugin extends Node {
   /** The parent of this node. */
   parent?: Maybe<Node>
   /** The children of this node. */
-  children?: Maybe<Array<Maybe<Node>>>
+  children?: Maybe<Maybe<Node>[]>
 
   resolve?: Maybe<string>
 
@@ -11126,11 +11126,11 @@ export interface SitePlugin extends Node {
 
   pluginOptions?: Maybe<PluginOptions_3>
 
-  nodeAPIs?: Maybe<Array<Maybe<string>>>
+  nodeAPIs?: Maybe<Maybe<string>[]>
 
-  browserAPIs?: Maybe<Array<Maybe<string>>>
+  browserAPIs?: Maybe<Maybe<string>[]>
 
-  ssrAPIs?: Maybe<Array<Maybe<string>>>
+  ssrAPIs?: Maybe<Maybe<string>[]>
 
   pluginFilepath?: Maybe<string>
 
@@ -11140,7 +11140,7 @@ export interface SitePlugin extends Node {
 }
 
 export interface PluginOptions_3 {
-  plugins?: Maybe<Array<Maybe<Plugins_2>>>
+  plugins?: Maybe<Maybe<Plugins_2>[]>
 
   pathToConfigModule?: Maybe<string>
 
@@ -11196,7 +11196,7 @@ export interface Plugins_2 {
 
   pluginOptions?: Maybe<PluginOptions_4>
 
-  browserAPIs?: Maybe<Array<Maybe<string>>>
+  browserAPIs?: Maybe<Maybe<string>[]>
 
   pluginFilepath?: Maybe<string>
 }
@@ -11234,13 +11234,13 @@ export interface PackageJson_2 {
 
   license?: Maybe<string>
 
-  dependencies?: Maybe<Array<Maybe<Dependencies_2>>>
+  dependencies?: Maybe<Maybe<Dependencies_2>[]>
 
-  devDependencies?: Maybe<Array<Maybe<DevDependencies_2>>>
+  devDependencies?: Maybe<Maybe<DevDependencies_2>[]>
 
-  peerDependencies?: Maybe<Array<Maybe<PeerDependencies_2>>>
+  peerDependencies?: Maybe<Maybe<PeerDependencies_2>[]>
 
-  keywords?: Maybe<Array<Maybe<string>>>
+  keywords?: Maybe<Maybe<string>[]>
 }
 
 export interface Dependencies_2 {
@@ -11284,7 +11284,7 @@ export interface SitePageGroupConnectionConnection {
   /** Information to aid in pagination. */
   pageInfo: PageInfo
   /** A list of edges. */
-  edges?: Maybe<Array<Maybe<SitePageGroupConnectionEdge>>>
+  edges?: Maybe<Maybe<SitePageGroupConnectionEdge>[]>
 
   field?: Maybe<string>
 
@@ -11308,13 +11308,13 @@ export interface SitePluginConnection {
   /** Information to aid in pagination. */
   pageInfo: PageInfo
   /** A list of edges. */
-  edges?: Maybe<Array<Maybe<SitePluginEdge>>>
+  edges?: Maybe<Maybe<SitePluginEdge>[]>
 
   totalCount?: Maybe<number>
 
-  distinct?: Maybe<Array<Maybe<string>>>
+  distinct?: Maybe<Maybe<string>[]>
 
-  group?: Maybe<Array<Maybe<SitePluginGroupConnectionConnection>>>
+  group?: Maybe<Maybe<SitePluginGroupConnectionConnection>[]>
 }
 
 /** An edge in a connection. */
@@ -11332,7 +11332,7 @@ export interface SitePluginGroupConnectionConnection {
   /** Information to aid in pagination. */
   pageInfo: PageInfo
   /** A list of edges. */
-  edges?: Maybe<Array<Maybe<SitePluginGroupConnectionEdge>>>
+  edges?: Maybe<Maybe<SitePluginGroupConnectionEdge>[]>
 
   field?: Maybe<string>
 
@@ -11356,13 +11356,13 @@ export interface DirectoryConnection {
   /** Information to aid in pagination. */
   pageInfo: PageInfo
   /** A list of edges. */
-  edges?: Maybe<Array<Maybe<DirectoryEdge>>>
+  edges?: Maybe<Maybe<DirectoryEdge>[]>
 
   totalCount?: Maybe<number>
 
-  distinct?: Maybe<Array<Maybe<string>>>
+  distinct?: Maybe<Maybe<string>[]>
 
-  group?: Maybe<Array<Maybe<DirectoryGroupConnectionConnection>>>
+  group?: Maybe<Maybe<DirectoryGroupConnectionConnection>[]>
 }
 
 /** An edge in a connection. */
@@ -11382,7 +11382,7 @@ export interface Directory extends Node {
   /** The parent of this node. */
   parent?: Maybe<Node>
   /** The children of this node. */
-  children?: Maybe<Array<Maybe<Node>>>
+  children?: Maybe<Maybe<Node>[]>
 
   internal?: Maybe<Internal_10>
 
@@ -11468,7 +11468,7 @@ export interface DirectoryGroupConnectionConnection {
   /** Information to aid in pagination. */
   pageInfo: PageInfo
   /** A list of edges. */
-  edges?: Maybe<Array<Maybe<DirectoryGroupConnectionEdge>>>
+  edges?: Maybe<Maybe<DirectoryGroupConnectionEdge>[]>
 
   field?: Maybe<string>
 
@@ -11492,13 +11492,13 @@ export interface FileConnection {
   /** Information to aid in pagination. */
   pageInfo: PageInfo
   /** A list of edges. */
-  edges?: Maybe<Array<Maybe<FileEdge>>>
+  edges?: Maybe<Maybe<FileEdge>[]>
 
   totalCount?: Maybe<number>
 
-  distinct?: Maybe<Array<Maybe<string>>>
+  distinct?: Maybe<Maybe<string>[]>
 
-  group?: Maybe<Array<Maybe<FileGroupConnectionConnection>>>
+  group?: Maybe<Maybe<FileGroupConnectionConnection>[]>
 }
 
 /** An edge in a connection. */
@@ -11518,7 +11518,7 @@ export interface File extends Node {
   /** The parent of this node. */
   parent?: Maybe<Node>
   /** The children of this node. */
-  children?: Maybe<Array<Maybe<Node>>>
+  children?: Maybe<Maybe<Node>[]>
   /** The child of this node of type markdownRemark */
   childMarkdownRemark?: Maybe<MarkdownRemark>
   /** The child of this node of type imageSharp */
@@ -11602,7 +11602,7 @@ export interface MarkdownRemark extends Node {
   /** The parent of this node. */
   parent?: Maybe<Node>
   /** The children of this node. */
-  children?: Maybe<Array<Maybe<Node>>>
+  children?: Maybe<Maybe<Node>[]>
 
   internal?: Maybe<Internal_12>
 
@@ -11620,7 +11620,7 @@ export interface MarkdownRemark extends Node {
 
   excerpt?: Maybe<string>
 
-  headings?: Maybe<Array<Maybe<MarkdownHeading>>>
+  headings?: Maybe<Maybe<MarkdownHeading>[]>
 
   timeToRead?: Maybe<number>
 
@@ -11688,7 +11688,7 @@ export interface ImageSharp extends Node {
   /** The parent of this node. */
   parent?: Maybe<Node>
   /** The children of this node. */
-  children?: Maybe<Array<Maybe<Node>>>
+  children?: Maybe<Maybe<Node>[]>
 
   internal?: Maybe<Internal_13>
 
@@ -11848,7 +11848,7 @@ export interface FileGroupConnectionConnection {
   /** Information to aid in pagination. */
   pageInfo: PageInfo
   /** A list of edges. */
-  edges?: Maybe<Array<Maybe<FileGroupConnectionEdge>>>
+  edges?: Maybe<Maybe<FileGroupConnectionEdge>[]>
 
   field?: Maybe<string>
 
@@ -11872,13 +11872,13 @@ export interface MarkdownRemarkConnection {
   /** Information to aid in pagination. */
   pageInfo: PageInfo
   /** A list of edges. */
-  edges?: Maybe<Array<Maybe<MarkdownRemarkEdge>>>
+  edges?: Maybe<Maybe<MarkdownRemarkEdge>[]>
 
   totalCount?: Maybe<number>
 
-  distinct?: Maybe<Array<Maybe<string>>>
+  distinct?: Maybe<Maybe<string>[]>
 
-  group?: Maybe<Array<Maybe<MarkdownRemarkGroupConnectionConnection>>>
+  group?: Maybe<Maybe<MarkdownRemarkGroupConnectionConnection>[]>
 }
 
 /** An edge in a connection. */
@@ -11896,7 +11896,7 @@ export interface MarkdownRemarkGroupConnectionConnection {
   /** Information to aid in pagination. */
   pageInfo: PageInfo
   /** A list of edges. */
-  edges?: Maybe<Array<Maybe<MarkdownRemarkGroupConnectionEdge>>>
+  edges?: Maybe<Maybe<MarkdownRemarkGroupConnectionEdge>[]>
 
   field?: Maybe<string>
 
@@ -11920,13 +11920,13 @@ export interface ImageSharpConnection {
   /** Information to aid in pagination. */
   pageInfo: PageInfo
   /** A list of edges. */
-  edges?: Maybe<Array<Maybe<ImageSharpEdge>>>
+  edges?: Maybe<Maybe<ImageSharpEdge>[]>
 
   totalCount?: Maybe<number>
 
-  distinct?: Maybe<Array<Maybe<string>>>
+  distinct?: Maybe<Maybe<string>[]>
 
-  group?: Maybe<Array<Maybe<ImageSharpGroupConnectionConnection>>>
+  group?: Maybe<Maybe<ImageSharpGroupConnectionConnection>[]>
 }
 
 /** An edge in a connection. */
@@ -11944,7 +11944,7 @@ export interface ImageSharpGroupConnectionConnection {
   /** Information to aid in pagination. */
   pageInfo: PageInfo
   /** A list of edges. */
-  edges?: Maybe<Array<Maybe<ImageSharpGroupConnectionEdge>>>
+  edges?: Maybe<Maybe<ImageSharpGroupConnectionEdge>[]>
 
   field?: Maybe<string>
 
@@ -11970,7 +11970,7 @@ export interface Site extends Node {
   /** The parent of this node. */
   parent?: Maybe<Node>
   /** The children of this node. */
-  children?: Maybe<Array<Maybe<Node>>>
+  children?: Maybe<Maybe<Node>[]>
 
   siteMetadata?: Maybe<SiteMetadata_2>
 
@@ -12588,7 +12588,7 @@ export interface FluidImageSharpArgs {
 
   sizes?: Maybe<string>
   /** A list of image widths to be generated. Example: [ 200, 340, 520, 890 ] */
-  srcSetBreakpoints?: Array<Maybe<number>>
+  srcSetBreakpoints?: Maybe<number>[]
 }
 export interface SizesImageSharpArgs {
   maxWidth?: Maybe<number>
@@ -12613,7 +12613,7 @@ export interface SizesImageSharpArgs {
 
   sizes?: Maybe<string>
   /** A list of image widths to be generated. Example: [ 200, 340, 520, 890 ] */
-  srcSetBreakpoints?: Array<Maybe<number>>
+  srcSetBreakpoints?: Maybe<number>[]
 }
 export interface ResizeImageSharpArgs {
   width?: Maybe<number>

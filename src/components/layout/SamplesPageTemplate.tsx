@@ -10,7 +10,7 @@ export interface SamplesPageProps {
     description?: string | null
     html?: string | null
   }
-  samples: Array<{
+  samples: {
     id: string
     title?: string | null
     subTitle?: string | null
@@ -18,7 +18,7 @@ export interface SamplesPageProps {
     uri?: string | null
     offline?: boolean | null
     order?: number | null
-  }>
+  }[]
   contentIsMarkdown?: boolean
 }
 
