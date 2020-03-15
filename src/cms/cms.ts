@@ -23,6 +23,7 @@ const defaultPages = [
   'textproben',
   'ueber-mich',
 ]
+// @ts-ignore not sure if this is a bug
 defaultPages.forEach(page => CMS.registerPreviewTemplate(page, PagePreview))
-
+// @ts-ignore not sure if this is a bug
 CMS.registerPreviewTemplate('samples', SamplePreview)
