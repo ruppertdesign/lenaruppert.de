@@ -1,5 +1,4 @@
 import * as React from 'react'
-import ReactMarkdown from 'react-markdown'
 import Content from '../Content'
 import ContentWrapper from './ContentWrapper'
 
