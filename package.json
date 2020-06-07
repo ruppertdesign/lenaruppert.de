@@ -1,7 +1,7 @@
 {
   "name": "lenaruppert.de",
   "description": "Lenaruppert website",
-  "version": "1.0.32",
+  "version": "1.0.33",
   "author": "Florian Hirsch",
   "license": "UNLICENSED",
   "private": true,
@@ -14,7 +14,7 @@
     "format": "yarn prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.{js,jsx,ts,tsx}'",
     "graphql-types": "gql-gen",
     "type-check": "tsc --noEmit",
-    "lint": "yarn tslint --project . --fix"
+    "lint": "yarn eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "husky": {
     "hooks": {
@@ -69,14 +69,16 @@
     "react-markdown": "^4.2.2",
     "react-typography": "^0.16.19",
     "set-value": "^3.0.1",
-    "tslint": "^6.1.0",
-    "tslint-config-prettier": "^1.15.0",
-    "tslint-react": "^4.0.0",
     "typescript": "^3.6.2",
     "typography": "^0.16.19",
     "typography-theme-de-young": "^0.16.19"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.1.0",
+    "@typescript-eslint/parser": "^3.1.0",
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-react": "^7.20.0",
     "graphql-code-generator": "^0.18.2",
     "graphql-codegen-typescript-client": "^0.18.2",
     "graphql-codegen-typescript-common": "^0.18.2",

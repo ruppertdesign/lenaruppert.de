@@ -90,7 +90,12 @@ const headerStyles = css`
   }
 `
 
-const NavLink = ({ title, to }) => (
+interface NavLinkProps {
+  title: string
+  to: string
+}
+
+const NavLink = ({ title, to }: NavLinkProps) => (
   <Li>
     <Link to={to} className="header-link" activeClassName="header-link-active">
       {title}

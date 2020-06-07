@@ -10,7 +10,14 @@ const Content = styled('p')`
   color: ${styleVars.colors.grayLight};
 `
 
-const FooterLink = ({ title, to }) => <Link to={to}>{title}</Link>
+interface FooterLinkProps {
+  title: string
+  to: string
+}
+
+const FooterLink = ({ title, to }: FooterLinkProps) => (
+  <Link to={to}>{title}</Link>
+)
 
 export default () => (
   <footer>

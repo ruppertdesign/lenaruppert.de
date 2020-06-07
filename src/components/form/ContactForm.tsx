@@ -46,7 +46,7 @@ const initialFormValues = fieldNames.reduce(
   {}
 )
 
-export default class ContactForm extends React.PureComponent<{}, State> {
+export default class ContactForm extends React.PureComponent<unknown, State> {
   // @ts-ignore
   state: State = {
     novalidate: false,

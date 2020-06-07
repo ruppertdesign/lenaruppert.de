@@ -8,7 +8,7 @@ interface Props {
   description?: string | null
 }
 
-export default class Seo extends React.PureComponent<Props, {}> {
+export default class Seo extends React.PureComponent<Props, unknown> {
   renderMeta = (data: Query) => {
     const { title, description } = this.props
     const siteMetadata = data.site!.siteMetadata

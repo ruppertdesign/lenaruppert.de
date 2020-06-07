@@ -41,6 +41,7 @@ export default ({
     <textarea
       id={id}
       name={id}
+      value={value}
       placeholder={label}
       onChange={onChange}
       css={[inputStyles, inputTextareaStyles, !valid && errorInputStyles]}
