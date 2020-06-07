@@ -19,7 +19,7 @@ const mapProps = ({ data }: Props): SamplesPageProps | null => {
     return null
   }
   const mappedNodes = edges
-    .map(edge => {
+    .map((edge) => {
       const { frontmatter, html, id } =
         edge != null && edge.node != null
           ? edge.node
@@ -34,12 +34,12 @@ const mapProps = ({ data }: Props): SamplesPageProps | null => {
         html,
       }
     })
-    .filter(node => node.id != null)
+    .filter((node) => node.id != null)
   const intro = mappedNodes.filter(
-    node => (node as any).templateKey === 'samples'
+    (node) => (node as any).templateKey === 'samples'
   )[0]
   const samples = mappedNodes.filter(
-    node => (node as any).templateKey === 'sample'
+    (node) => (node as any).templateKey === 'sample'
   )
   return {
     intro,

@@ -31,7 +31,7 @@ export default ({ intro, samples, contentIsMarkdown }: SamplesPageProps) => {
         content={intro.html}
         contentIsMarkdown={contentIsMarkdown}
       />
-      {samples.map(sample => (
+      {samples.map((sample) => (
         <Sample
           key={sample.id}
           {...sample}

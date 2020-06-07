@@ -59,9 +59,11 @@ export default class ContactForm extends React.PureComponent<{}, State> {
     this.setState({ novalidate: true }) // browser validation enabled if JS is disabled
   }
 
-  encode = data => {
+  encode = (data) => {
     return Object.keys(data)
-      .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .map(
+        (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+      )
       .join('&')
   }
 
@@ -79,7 +81,9 @@ export default class ContactForm extends React.PureComponent<{}, State> {
         valid: validator.validate(field),
       }
     }
-    const formValid = Object.values(fields).every(field => (field as any).valid)
+    const formValid = Object.values(fields).every(
+      (field) => (field as any).valid
+    )
     if (formValid) {
       const body = Object.keys(fields).reduce(
         (acc, curr) => ({
