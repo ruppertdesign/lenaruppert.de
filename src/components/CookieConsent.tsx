@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import styleVars from '../styles/styleVars'
 import { scale, rhythm } from '../utils/typography'
 import css from '@emotion/css'
-import { Global } from '@emotion/core'
+import { Global } from '@emotion/react'
 
 const styles = css`
   .cookie-consent {
@@ -58,8 +58,6 @@ export default () => (
       contentClasses="cookie-consent-content"
       buttonClasses="cookie-consent-button"
       expires={365}
-      acceptOnScroll={true}
-      acceptOnScrollPercentage={99}
     >
       Mit der Nutzung dieser Website stimmst du den Cookie-Richtlinien zu. Mehr
       Infos <Link to="/datenschutz">in meiner Datenschutzerklärung</Link>.

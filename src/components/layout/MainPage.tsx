@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 import Header from './Header'
 import Footer from './Footer'
 import CookieConsent from '../CookieConsent'
-import { Global } from '@emotion/core'
+import { Global } from '@emotion/react'
 import styleVars from '../../styles/styleVars'
 import globalStyles from '../../styles/globalStyles'
 
