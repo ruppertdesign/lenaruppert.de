@@ -12,8 +12,8 @@ description: >
 
 <address>
 Lena Ruppert<br />
-Tannenfleckstraße 12b<br />
-82194 Gröbenzell<br />
+Salachweg 21 b<br />
+86807 Buchloe<br />
 E-Mail: <a href="mailto:info@lenaruppert.de">info@lenaruppert.de</a><br />
 Telefon: <a href="tel:+4917622889049">+49 176 22889049</a>
 </address>
@@ -22,8 +22,8 @@ Telefon: <a href="tel:+4917622889049">+49 176 22889049</a>
 
 <address>
 Lena Ruppert<br />
-Tannenfleckstraße 12b<br />
-82194 Gröbenzell<br />
+Salachweg 21 b<br />
+86807 Buchloe<br />
 Steuernummerw: 117/264/81042
 </address>
 
