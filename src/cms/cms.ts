@@ -2,7 +2,9 @@ import CMS from 'netlify-cms-app'
 import PagePreview from './preview-templates/PagePreview'
 import SamplePreview from './preview-templates/SamplePreview'
 import typography from '../utils/typography'
-import './cms.css'
+
+// FIXME fhi enable google fonts
+// import './cms.css'
 
 CMS.init()
 

@@ -4,6 +4,14 @@ import styleVars from '../styles/styleVars'
 
 deYoungTheme.headerColor = styleVars.colors.headerColor
 deYoungTheme.bodyColor = styleVars.colors.bodyColor
+
+// FIXME fhi enable google fonts
+deYoungTheme.googleFonts = []
+deYoungTheme.fonts = {
+  body: 'Helvetica, Arial, sans-serif',
+  header: 'Helvetica, Arial, sans-serif',
+}
+
 deYoungTheme.overrideThemeStyles = () => ({
   a: {
     color: 'currentColor',
