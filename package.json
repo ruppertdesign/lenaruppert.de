@@ -1,7 +1,7 @@
 {
   "name": "lenaruppert.de",
   "description": "Lenaruppert website",
-  "version": "1.0.48",
+  "version": "1.0.49",
   "author": "Florian Hirsch",
   "license": "UNLICENSED",
   "private": true,
@@ -87,5 +87,8 @@
     "lint-staged": "^10.0.8",
     "prettier": "^2.0.5",
     "rimraf": "^3.0.0"
+  },
+  "resolutions": {
+    "sharp": "0.31.3"
   }
 }
