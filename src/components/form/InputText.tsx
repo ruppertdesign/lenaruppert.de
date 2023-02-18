@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Label from './Label'
 import { rhythm } from '../../utils/typography'
-import css from '@emotion/css'
+import { css } from '@emotion/react'
 import {
   inputStyles,
   errorInputStyles,
@@ -46,12 +46,16 @@ export default ({
       value={value}
       onChange={onChange}
       type="text"
+      // eslint-disable-next-line react/no-unknown-property
       css={[inputStyles, inputTextStyles, !valid && errorInputStyles]}
       required={required}
       minLength={minLength}
       maxLength={maxLength}
       pattern={pattern}
     />
-    {!valid && <div css={errorMessageStyles}>{errorMsg}</div>}
+    {
+      // eslint-disable-next-line react/no-unknown-property
+      !valid && <div css={errorMessageStyles}>{errorMsg}</div>
+    }
   </React.Fragment>
 )

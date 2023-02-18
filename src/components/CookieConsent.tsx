@@ -3,8 +3,7 @@ import CookieConsent from 'react-cookie-consent'
 import { Link } from 'gatsby'
 import styleVars from '../styles/styleVars'
 import { scale, rhythm } from '../utils/typography'
-import css from '@emotion/css'
-import { Global } from '@emotion/react'
+import { css, Global } from '@emotion/react'
 
 const styles = css`
   .cookie-consent {

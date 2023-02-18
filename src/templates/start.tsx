@@ -51,7 +51,7 @@ const StartPage = ({ data }: Props) => {
 export default StartPage
 
 export const standardPageQuery = graphql`
-  query($id: String!) {
+  query ($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

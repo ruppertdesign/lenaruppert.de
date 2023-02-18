@@ -1,4 +1,4 @@
-import css from '@emotion/css'
+import { css } from '@emotion/react'
 import { rhythm } from '../utils/typography'
 import styleVars from './styleVars'
 

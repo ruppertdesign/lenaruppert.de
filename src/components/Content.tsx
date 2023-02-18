@@ -12,7 +12,8 @@ export default ({ content, className, contentIsMarkdown }: Props) => {
     return null
   }
   if (contentIsMarkdown) {
-    return <ReactMarkdown className={className} source={content} />
+    // eslint-disable-next-line react/no-children-prop
+    return <ReactMarkdown className={className} children={content} />
   }
   return (
     <div className={className} dangerouslySetInnerHTML={{ __html: content }} />
