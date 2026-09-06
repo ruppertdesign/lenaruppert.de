@@ -71,8 +71,8 @@ export default class ContactForm extends React.PureComponent<unknown, State> {
     event.preventDefault()
     const target = event.target as HTMLFormElement
     const fields = {}
-    // @ts-ignore: no idea how to fix that
-    for (const field of target.elements) {
+    for (const rawField of target.elements) {
+      const field = rawField as HTMLInputElement
       if (!fieldNames.includes(field.name)) {
         continue
       }
