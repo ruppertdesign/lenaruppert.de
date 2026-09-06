@@ -1,9 +1,9 @@
 import * as React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import styled from '@emotion/styled'
 import { css, Global } from '@emotion/react'
 import styleVars from '../../styles/styleVars'
-import * as logo from '../../img/logo.png'
+import logo from '../../img/logo.png'
 import { rhythm } from '../../utils/typography'
 
 const Header = styled('header')`

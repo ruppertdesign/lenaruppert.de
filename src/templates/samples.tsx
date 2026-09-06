@@ -67,7 +67,7 @@ export const samplesPageQuery = graphql`
   query {
     allMarkdownRemark(
       filter: { frontmatter: { templateKey: { in: ["sample", "samples"] } } }
-      sort: { fields: [frontmatter___order], order: DESC }
+      sort: { frontmatter: { order: DESC } }
     ) {
       edges {
         node {

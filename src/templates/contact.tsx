@@ -33,7 +33,7 @@ const ContactPage = ({ data }: Props) => {
 export default ContactPage
 
 export const ContactPageQuery = graphql`
-  query($id: String!) {
+  query ($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

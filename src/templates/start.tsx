@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 import StandardPageTemplate from '../components/layout/StandardPageTemplate'
 import MainPage from '../components/layout/MainPage'
 import { MarkdownRemark } from '../../typings/graphql-types'
-import * as headerImage from '../img/header.png'
+import headerImage from '../img/header.png'
 import Seo from '../components/Seo'
 import { scale } from '../utils/typography'
 import styleVars from '../styles/styleVars'
@@ -51,7 +51,7 @@ const StartPage = ({ data }: Props) => {
 export default StartPage
 
 export const standardPageQuery = graphql`
-  query($id: String!) {
+  query ($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
