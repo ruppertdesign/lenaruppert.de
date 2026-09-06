@@ -1,7 +1,7 @@
 {
   "name": "lenaruppert.de",
   "description": "Lenaruppert website",
-  "version": "1.0.63",
+  "version": "1.0.64",
   "author": "Florian Hirsch",
   "license": "UNLICENSED",
   "private": true,
@@ -47,7 +47,6 @@
     "react": "^19.2.8",
     "react-cookie-consent": "^10.0.2",
     "react-dom": "^19.2.8",
-    "react-markdown": "^5.0.3",
     "react-typography": "^0.16.19",
     "typography": "^0.16.19",
     "typography-theme-de-young": "^0.16.19"

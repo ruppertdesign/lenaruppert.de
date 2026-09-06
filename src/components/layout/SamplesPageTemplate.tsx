@@ -19,24 +19,15 @@ export interface SamplesPageProps {
     offline?: boolean | null
     order?: number | null
   }[]
-  contentIsMarkdown?: boolean
 }
 
-export default ({ intro, samples, contentIsMarkdown }: SamplesPageProps) => {
+export default ({ intro, samples }: SamplesPageProps) => {
   return (
     <ContentWrapper>
       <h1>{intro.title}</h1>
-      <Content
-        className="content"
-        content={intro.html}
-        contentIsMarkdown={contentIsMarkdown}
-      />
+      <Content className="content" content={intro.html} />
       {samples.map((sample) => (
-        <Sample
-          key={sample.id}
-          {...sample}
-          contentIsMarkdown={contentIsMarkdown}
-        />
+        <Sample key={sample.id} {...sample} />
       ))}
     </ContentWrapper>
   )
