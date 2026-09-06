@@ -25,6 +25,7 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-var-requires": "off",
-    "react/display-name": "off"
+    "react/display-name": "off",
+    "react/no-unknown-property": ["error", { ignore: ["css"] }]
   },
 };

@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Label from './Label'
 import { rhythm } from '../../utils/typography'
-import css from '@emotion/css'
+import { css } from '@emotion/css'
 import {
   inputStyles,
   errorInputStyles,
