@@ -1,32 +1,29 @@
 {
   "name": "lenaruppert.de",
   "description": "Lenaruppert website",
-  "version": "1.0.56",
+  "version": "1.0.58",
   "author": "Florian Hirsch",
   "license": "UNLICENSED",
   "private": true,
   "main": "n/a",
+  "packageManager": "pnpm@12.3.4",
   "engines": {
     "node": ">=18.0.0 <26"
   },
   "scripts": {
     "clean": "rimraf .cache public",
     "develop": "gatsby develop",
-    "build": "yarn clean && gatsby build",
+    "build": "pnpm run clean && gatsby build",
     "serve": "gatsby serve",
-    "format": "yarn prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.{js,jsx,ts,tsx}'",
+    "format": "pnpm exec prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.{js,jsx,ts,tsx}'",
     "type-check": "tsc --noEmit",
-    "lint": "yarn eslint . --ext .js,.jsx,.ts,.tsx"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && yarn version --patch --no-git-tag-version && git add package.json"
-    }
+    "lint": "pnpm exec eslint . --ext .js,.jsx,.ts,.tsx",
+    "prepare": "husky"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
-      "yarn run lint",
-      "yarn run format"
+      "pnpm run lint",
+      "pnpm run format"
     ]
   },
   "dependencies": {
@@ -63,17 +60,13 @@
     "typography": "^0.16.19",
     "typography-theme-de-young": "^0.16.19"
   },
-  "resolutions": {
-    "@types/react": "^18.3.0",
-    "@types/react-dom": "^18.3.0"
-  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.1.0",
     "@typescript-eslint/parser": "^4.1.0",
     "eslint": "^7.2.0",
     "eslint-config-prettier": "^7.0.0",
     "eslint-plugin-react": "^7.20.0",
-    "husky": "^4.2.3",
+    "husky": "^9.1.7",
     "lint-staged": "^10.0.8",
     "prettier": "^2.0.5",
     "rimraf": "^3.0.0"
