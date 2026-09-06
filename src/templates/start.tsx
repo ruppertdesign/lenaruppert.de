@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, HeadProps } from 'gatsby'
 import styled from '@emotion/styled'
 import StandardPageTemplate from '../components/layout/StandardPageTemplate'
 import MainPage from '../components/layout/MainPage'
@@ -38,7 +38,6 @@ const StartPage = ({ data }: Props) => {
   const { frontmatter, html } = post
   return (
     <MainPage>
-      <Seo title={frontmatter.title} description={frontmatter.description} />
       <HeaderImage src={headerImage} alt="Willkommen auf lenaruppert.de" />
       <Credits>
         image: <a href="https://pixabay.com">pixabay</a>
@@ -49,6 +48,13 @@ const StartPage = ({ data }: Props) => {
 }
 
 export default StartPage
+
+export const Head = ({ data }: HeadProps<Props['data']>) => {
+  const frontmatter = data.markdownRemark?.frontmatter
+  return (
+    <Seo title={frontmatter?.title} description={frontmatter?.description} />
+  )
+}
 
 export const standardPageQuery = graphql`
   query ($id: String!) {

@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, HeadProps } from 'gatsby'
 import MainPage from '../components/layout/MainPage'
 import { MarkdownRemarkConnection } from '../../typings/graphql-types'
 import SamplesPageTemplate, {
@@ -52,16 +52,23 @@ const SamplesPage = (props: Props) => {
   if (mappedData == null) {
     return null
   }
-  const { title, description } = mappedData.intro
   return (
     <MainPage>
-      <Seo title={title} description={description} />
       <SamplesPageTemplate {...mappedData} />
     </MainPage>
   )
 }
 
 export default SamplesPage
+
+export const Head = (props: HeadProps<Props['data']>) => {
+  const mappedData = mapProps(props)
+  if (mappedData == null) {
+    return null
+  }
+  const { title, description } = mappedData.intro
+  return <Seo title={title} description={description} />
+}
 
 export const samplesPageQuery = graphql`
   query {

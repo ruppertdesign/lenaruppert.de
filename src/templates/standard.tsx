@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, HeadProps } from 'gatsby'
 import StandardPageTemplate from '../components/layout/StandardPageTemplate'
 import MainPage from '../components/layout/MainPage'
 import { MarkdownRemark } from '../../typings/graphql-types'
@@ -19,13 +19,19 @@ const StandardPage = ({ data }: Props) => {
   const { frontmatter, html } = post
   return (
     <MainPage>
-      <Seo title={frontmatter.title} description={frontmatter.description} />
       <StandardPageTemplate title={frontmatter.title} content={html} />
     </MainPage>
   )
 }
 
 export default StandardPage
+
+export const Head = ({ data }: HeadProps<Props['data']>) => {
+  const frontmatter = data.markdownRemark?.frontmatter
+  return (
+    <Seo title={frontmatter?.title} description={frontmatter?.description} />
+  )
+}
 
 export const standardPageQuery = graphql`
   query ($id: String!) {

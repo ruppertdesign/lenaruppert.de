@@ -5,7 +5,6 @@ module.exports = {
     siteUrl: "https://www.lenaruppert.de"
   },
   plugins: [
-    "gatsby-plugin-react-helmet",
     "gatsby-plugin-emotion",
     "gatsby-plugin-sitemap",
     {
