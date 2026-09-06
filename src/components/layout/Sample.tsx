@@ -13,7 +13,6 @@ export interface SampleProps {
   uri?: string | null
   order?: number | null
   offline?: boolean | null
-  contentIsMarkdown?: boolean
 }
 
 const Article = styled('article')`
@@ -34,15 +33,7 @@ const LinkedHeading = styled('a')`
   }
 `
 
-export default ({
-  id,
-  title,
-  subTitle,
-  html,
-  uri,
-  offline,
-  contentIsMarkdown,
-}: SampleProps) => {
+export default ({ id, title, subTitle, html, uri, offline }: SampleProps) => {
   const linkProps = {
     href: uri as string,
     target: '_blank',
@@ -57,11 +48,7 @@ export default ({
         <LinkedHeading {...linkProps}>{title}</LinkedHeading>
       </h2>
       <Subtitle>{subTitle}</Subtitle>
-      <Content
-        className="sample"
-        content={html}
-        contentIsMarkdown={contentIsMarkdown}
-      />
+      <Content className="sample" content={html} />
       <A {...linkProps}>Weiter lesen</A>
     </Article>
   )
